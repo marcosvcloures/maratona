@@ -1,0 +1,13 @@
+A = adhoc
+B = estrutura de dados
+C = adhoc
+D = adhoc
+E = adhoc
+F = string
+G = adhoc
+H = adhoc
+I = kruskal
+J = string
+K = estrutura de dados
+L = adhoc
+M = adhoc

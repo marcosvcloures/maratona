@@ -1,0 +1,2 @@
+forfiles /p in /c "cmd /c D:\Desktop\a.exe < @path > D:\Desktop\resp\@fname.sol"
+forfiles /p out /c "cmd /c cd D:\Desktop\resp & FC @file  @path"
