@@ -1,12 +1,7 @@
 //  - Radial sweep in Q2 quadrant in nlogn.
 //  - Sorts events using cross product to avoid dealing with
 //    numeric problems.
-#include <map>
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#include <cassert>
-
+#include <bits/stdc++.h>
 using namespace std;
 
 struct Point {

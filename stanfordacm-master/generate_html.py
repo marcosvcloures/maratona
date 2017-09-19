@@ -1,5 +1,7 @@
 #!/usr/bin/python
 import subprocess
+import os
+
 code_dir = "code"
 title = "Stanford ACM-ICPC Team Notebook"
 
@@ -24,16 +26,17 @@ def add_toc(html, sections):
 def get_sections():
     sections = []
     section_name = None
-    with open('contents.txt', 'r') as f:
+    dir = os.path.dirname(__file__)
+    with open(os.path.join(dir, 'contents.txt'), 'r') as f:
         for line in f:
             if '#' in line: line = line[:line.find('#')]
             line = line.strip()
             if len(line) == 0: continue
             if line[0] == '[':
+                subsections = []
                 if section_name is not None:
                     sections.append((section_name, subsections))
                 section_name = line[1:-1]
-                subsections = []
             else:
                 tmp = line.split('\t', 1)
                 if len(tmp) == 1:
@@ -50,8 +53,9 @@ def get_sections():
 def get_html_enscript(sections):
     enscript_options = ["enscript", "-E", "--color", "--language=html", "-o", "-", "-t", title]
     filenames = []
+    dir = os.path.dirname(__file__)
     for (_, subsections) in sections:
-        filenames += [code_dir + '/' + filename for (filename, _) in subsections]
+        filenames += [dir + '\\code\\' + filename for (filename, _) in subsections]
     bstr = subprocess.check_output(enscript_options + filenames)
     return bstr.decode('utf-8')
 
