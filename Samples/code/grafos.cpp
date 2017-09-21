@@ -75,8 +75,9 @@ struct Grafo
     ll dijkstra(int s, int d)
     {
         priority_queue<Vertice> fila;
-        bool visitados[n] = {0};
+        bool visitados[n];
 
+        fill(visitados, visitados+n, 0);
         fill(pais.begin(), pais.end(), -1);
 
         fila.push(Vertice(s, 0));
@@ -111,8 +112,9 @@ struct Grafo
     ll busca(int s, int d)
     {
         queue<Vertice> fila;
-        bool visitados[n] = {0};
+        bool visitados[n];
 
+        fill(visitados, visitados+n, 0);
         fill(pais.begin(), pais.end(), -1);
 
         fila.push(Vertice(s, 0));

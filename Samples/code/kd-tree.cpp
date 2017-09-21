@@ -1,6 +1,3 @@
-#include <bits/stdc++.h>
-using namespace std;
-
 typedef pair<int, int> pii;
 typedef vector<pii> vpii;
 
@@ -9,15 +6,18 @@ int tx[maxn];
 int ty[maxn];
 bool divX[maxn];
 
-bool cmpX(const pii &a, const pii &b) {
+bool cmpX(const pii &a, const pii &b)
+{
 	return a.first < b.first;
 }
 
-bool cmpY(const pii &a, const pii &b) {
+bool cmpY(const pii &a, const pii &b)
+{
 	return a.second < b.second;
 }
 
-void buildTree(int left, int right, pii points[]) {
+void buildTree(int left, int right, pii points[])
+{
 	if (left >= right)
 		return;
 	int mid = (left + right) >> 1;
@@ -27,7 +27,8 @@ void buildTree(int left, int right, pii points[]) {
 	int maxx = INT_MIN;
 	int miny = INT_MAX;
 	int maxy = INT_MIN;
-	for (int i = left; i < right; i++) {
+	for (int i = left; i < right; i++)
+	{
 		checkmin(minx, points[i].first);
 		checkmax(maxx, points[i].first);
 		checkmin(miny, points[i].second);
@@ -48,14 +49,16 @@ void buildTree(int left, int right, pii points[]) {
 long long closestDist;
 int closestNode;
 
-void findNearestNeighbour(int left, int right, int x, int y) {
+void findNearestNeighbour(int left, int right, int x, int y)
+{
 	if (left >= right)
 		return;
 	int mid = (left + right) >> 1;
 	int dx = x - tx[mid];
 	int dy = y - ty[mid];
-	long long d = dx * (long long) dx + dy * (long long) dy;
-	if (closestDist > d && d) {
+	long long d = dx * (long long)dx + dy * (long long)dy;
+	if (closestDist > d && d)
+	{
 		closestDist = d;
 		closestNode = mid;
 	}
@@ -63,7 +66,7 @@ void findNearestNeighbour(int left, int right, int x, int y) {
 		return;
 
 	int delta = divX[mid] ? dx : dy;
-	long long delta2 = delta * (long long) delta;
+	long long delta2 = delta * (long long)delta;
 	int l1 = left;
 	int r1 = mid;
 	int l2 = mid + 1;
@@ -76,13 +79,15 @@ void findNearestNeighbour(int left, int right, int x, int y) {
 		findNearestNeighbour(l2, r2, x, y);
 }
 
-int findNearestNeighbour(int n, int x, int y) {
+int findNearestNeighbour(int n, int x, int y)
+{
 	closestDist = LLONG_MAX;
 	findNearestNeighbour(0, n, x, y);
 	return closestNode;
 }
 
-int main() {
+int main()
+{
 	vpii p;
 	p.push_back(make_pair(0, 2));
 	p.push_back(make_pair(0, 3));

@@ -1,0 +1,1909 @@
+
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <style>
+        * {
+            font-family: Segoe UI, sans-serif;
+        }
+
+        .prettyprint span {
+            font-family: Consolas, monospace;
+        }
+
+        ol { 
+            padding: 0;
+            list-style-type: none;
+        }
+
+        #index {
+            font-size: 0.6rem;
+        }
+
+        #index li {
+            cursor: pointer;
+        }
+    </style>
+    <ol id="index"><h2><li>1. First things first</li><ol></h2><ol><h3><li onClick="document.getElementById('includes.cpp').scrollIntoView()">1.1. Includes</li></h3></ol><h2><li>2. Matemática</li><ol></h2><ol><h3><li onClick="document.getElementById('euclides_extended.cpp').scrollIntoView()">2.1. Algoritmo de euclides extendido</li></h3><h3><li onClick="document.getElementById('mdc.cpp').scrollIntoView()">2.2. Máximo divisor comum</li></h3><h3><li onClick="document.getElementById('mmc.cpp').scrollIntoView()">2.3. Mínimo múltiplo comum</li></h3><h3><li onClick="document.getElementById('pollard_rho.cpp').scrollIntoView()">2.4. Algoritmo de Pollard Rho</li></h3><h3><li onClick="document.getElementById('fft.cpp').scrollIntoView()">2.5. Transformada rápida de Fourrier</li></h3><h3><li onClick="document.getElementById('matriz.cpp').scrollIntoView()">2.6. Matrizes</li></h3><h3><li onClick="document.getElementById('prime_factors.cpp').scrollIntoView()">2.7. Fatoração em números primos</li></h3><h3><li onClick="document.getElementById('modpow.cpp').scrollIntoView()">2.8. Modpow</li></h3><h3><li onClick="document.getElementById('gss.cpp').scrollIntoView()">2.9. Máximo e mínimo de funções</li></h3><h3><li onClick="document.getElementById('divisores.cpp').scrollIntoView()">2.10. Todos divisores de um número</li></h3><h3><li onClick="document.getElementById('crivosegmentado.cpp').scrollIntoView()">2.11. Crivo de Eratóstenes segmentado</li></h3></ol><h2><li>3. Grafos</li><ol></h2><ol><h3><li onClick="document.getElementById('grafos.cpp').scrollIntoView()">3.1. Grafos</li></h3><h3><li onClick="document.getElementById('matching_bipartido.cpp').scrollIntoView()">3.2. Matching máximo em grafo bipartido</li></h3><h3><li onClick="document.getElementById('hungaro.cpp').scrollIntoView()">3.3. Algoritmo húngaro</li></h3></ol><h2><li>4. Strings</li><ol></h2><ol><h3><li onClick="document.getElementById('suffixarray.cpp').scrollIntoView()">4.1. Suffix array</li></h3></ol><h2><li>5. Geometria</li><ol></h2><ol><h3><li onClick="document.getElementById('radial_sweep.cpp').scrollIntoView()">5.1. Linha de eventos radial</li></h3><h3><li onClick="document.getElementById('kd-tree.cpp').scrollIntoView()">5.2. KD-Tree para pares mais próximos em O(log(n))</li></h3><h3><li onClick="document.getElementById('geometria_reduzido.cpp').scrollIntoView()">5.3. Geometria (reduzido)</li></h3><h3><li onClick="document.getElementById('geometria.cpp').scrollIntoView()">5.4. Geometria (grande)</li></h3></ol><h2><li>6. Estruturas de dados etc</li><ol></h2><ol><h3><li onClick="document.getElementById('wavelet.cpp').scrollIntoView()">6.1. Wavelet-tree</li></h3><h3><li onClick="document.getElementById('seg_tree.cpp').scrollIntoView()">6.2. Seg-tree</li></h3><h3><li onClick="document.getElementById('mergesort.cpp').scrollIntoView()">6.3. Mergesort</li></h3><h3><li onClick="document.getElementById('mo.cpp').scrollIntoView()">6.4. Algoritmo de MO (queries offline)</li></h3><h3><li onClick="document.getElementById('unionfind.cpp').scrollIntoView()">6.5. Union-find</li></h3></ol></ol><ol><h1><li>1. First things first</li></h1><ol><h2><li id="includes.cpp">1.1. Includes</li></h2><pre class="prettyprint">#include &lt;bits/stdc++.h&gt;
+using namespace std;
+
+#define ll long long
+#define pb push_back
+#define D(x) cout &lt;&lt; #x &quot; = &quot; &lt;&lt; (x) &lt;&lt; endl
+
+typedef vector&lt;int&gt; vi;
+typedef vector&lt;vi&gt; vvi;
+
+typedef pair&lt;int, int&gt; ii;
+typedef vector&lt;ii&gt; vii;</pre></ol><h1><li>2. Matemática</li></h1><ol><h2><li id="euclides_extended.cpp">2.1. Algoritmo de euclides extendido</li></h2><pre class="prettyprint">int xmdc(int a, int b, int &amp;x, int &amp;y)
+{
+    if (b == 0)
+    {
+        x = 1;
+        y = 0;
+        return a;
+    }
+
+    int x1, y1, mdc = xmdc(b, a % b, x1, y1);
+    x = y1;
+    y = x1 - (a / b) * y1;
+    return mdc;
+}</pre><h2><li id="mdc.cpp">2.2. Máximo divisor comum</li></h2><pre class="prettyprint">int mdc(int a, int b)
+{
+    int remainder;
+    while (b != 0)
+    {
+        remainder = a % b;
+        a = b;
+        b = remainder;
+    }
+    return a;
+}</pre><h2><li id="mmc.cpp">2.3. Mínimo múltiplo comum</li></h2><pre class="prettyprint">int mmc(int a, int b)
+{
+    int temp = mdc(a, b);
+
+    return temp ? (a / temp * b) : 0;
+}</pre><h2><li id="pollard_rho.cpp">2.4. Algoritmo de Pollard Rho</li></h2><pre class="prettyprint">int pollard(int number)
+{
+    x_fixed = 2, cycle_size = 2, x = 2, factor = 1;
+
+    while (factor == 1)
+    {
+        for (int count = 1; count &lt;= cycle_size &amp;&amp; factor &lt;= 1; count++)
+        {
+            x = (x * x + 1) % number;
+            factor = mdc(x - x_fixed, number);
+        }
+
+        cycle_size *= 2;
+        x_fixed = x;
+    }
+    return factor;
+}</pre><h2><li id="fft.cpp">2.5. Transformada rápida de Fourrier</li></h2><pre class="prettyprint">// Resolve:
+// - De quantas maneiras conseguimos atingir Y com X tentativas
+// - Dado X tentativas, conseguimos atingir Y?
+// Complexidade:
+// X * Ymax * Ymax(log Ymax)
+
+// TEOREMA DA CONVOLUÇÃO:
+// Podemos fazer a convolução de 2 polinomios utilizando a FFT
+// Reduzindo a complexidade de n^2 para n log n
+// Definimos a convolução como h[i] = sum(a[j] * b[j-i]) para todo j de 0 a i.
+// Exemplo: h[5] = a[5] * b[0] + a[4] * b[1] + a[3] * b[2]...
+// Segundo o teorema da convolução
+// h(f . g) = transformada inversa de (transformada (f) * transformada (g))
+// onde . é o operador de convolução.
+// e * é o operador de multiplicação termo a termo.
+
+#include &lt;bits/stdc++.h&gt;
+
+using namespace std;
+
+// primeira potência de 2 maior que o limite de H
+#define MAX_DIST (262144 * 2)
+
+typedef complex&lt;double&gt; cpx;
+const double pi = acos(-1.0);
+
+int p[MAX_DIST];
+int maxDist;
+
+// in:     vector de entrada
+// out:    vector de saida
+// n:      Tamanho do input/output {DEVE SER DA ORDEM DE 2}
+// type:   1 = Transformada, -1 = Transformada inversa
+void FFT(vector&lt;cpx&gt; &amp;v, vector&lt;cpx&gt; &amp;ans, int n, int type)
+{
+	assert(!(n &amp; (n - 1)));
+	int i, sz, o;
+	p[0] = 0;
+	for (i = 1; i &lt; n; i++)
+		p[i] = (p[i &gt;&gt; 1] &gt;&gt; 1) | ((i &amp; 1) ? (n &gt;&gt; 1) : 0);
+	for (i = 0; i &lt; n; i++)
+		ans[i] = v[p[i]];
+	for (sz = 1; sz &lt; n; sz &lt;&lt;= 1)
+	{
+		const cpx wn(cos(type * pi / sz), sin(type * pi / sz));
+		for (o = 0; o &lt; n; o += (sz &lt;&lt; 1))
+		{
+			cpx w = 1;
+			for (i = 0; i &lt; sz; i++)
+			{
+				const cpx u = ans[o + i], t = w * ans[o + sz + i];
+				ans[o + i] = u + t;
+				ans[o + i + sz] = u - t;
+				w *= wn;
+			}
+		}
+	}
+
+	if (type == -1)
+		for (i = 0; i &lt; n; i++)
+			ans[i] /= n;
+}
+
+// Exemplo:
+// Há um robo que pode disparar bolas em N distâncias diferentes.
+// Queremos saber se ele alcança uma distância M com 1 ou 2 tacadas.
+// Resolução:
+// Podemos definir um vetor distances[MAX_DIST],
+// onde a distances[i] = 1 se ele pode tacar até a distancia i
+// e distances[i] = 0 caso contrario
+// Para ver se o robo acerta com 1 tacada, é trivial.
+// Para ver se o robo acerta com 2 tacadas, podemos fazer a convolução de distances com distances.
+// Ex: Acertar a Pode[10] é igual a: Pode[10] || Pode[9] * Pode[1] || Pode[8] * Pode[2]...
+// Ou seja, H = FFTi(FFT(distances) ** 2);
+
+// Complexidade:
+// 2 * 200k * log(200k) = 8m
+
+int main()
+{
+	int N, d;
+	vector&lt;cpx&gt; distances, fftOut;
+
+	while (cin &gt;&gt; N)
+	{
+		maxDist = 0;
+
+		distances = vector&lt;cpx&gt;(MAX_DIST);
+		fftOut = vector&lt;cpx&gt;(MAX_DIST);
+
+		// Distancia 0 é uma posição de &quot;possível&quot;
+		distances[0] = cpx(1, 0);
+
+		for (int i = 0; i &lt; N; i++)
+		{
+			cin &gt;&gt; d;
+			if (d &gt; maxDist)
+				maxDist = d;
+			distances[d] = cpx(1, 0);
+		}
+
+		int shiftAmount;
+
+		for (shiftAmount = 0; (maxDist &gt;&gt; shiftAmount) != 0; shiftAmount++)
+			;
+
+		maxDist = 1 &lt;&lt; (shiftAmount + 1);
+
+		// fftOut &lt;= transformada de distances
+		FFT(distances, fftOut, maxDist, 1);
+
+		// Multiplicação termo a termo de f e g, no caso, f = g = fftOut
+		// fftOut *= fftOut
+		for (int i = 0; i &lt; maxDist; i++)
+			fftOut[i] = fftOut[i] * fftOut[i];
+
+		// transformada inversa da multiplcação termo a termo.
+		FFT(fftOut, distances, maxDist, -1);
+
+		cin &gt;&gt; N;
+		int total = 0;
+
+		for (int i = 0; i &lt; N; i++)
+		{
+			cin &gt;&gt; d;
+			
+			// Entra a distancia d
+			// e verifica se a parte real da distância[d] é positiva
+			// distância[d] guarda de quantas maneiras conseguimos atingir D
+			if (distances[d].real() &gt; 0.01)
+				total++;
+		}
+
+		cout &lt;&lt; total &lt;&lt; endl;
+	}
+	return 0;
+}</pre><h2><li id="matriz.cpp">2.6. Matrizes</li></h2><pre class="prettyprint">#include &lt;bits/stdc++.h&gt;
+using namespace std;
+
+#define ll long long
+
+typedef vector&lt;ll&gt; vl;
+typedef vector&lt;vl&gt; vvl;
+const int mod = 1000000;
+
+// Retorna a matriz I_n
+vvl matrixUnit(int n) {
+    vvl res(n, vl(n));
+    for (int i = 0; i &lt; n; i++)
+        res[i][i] = 1;
+    return res;
+}
+
+// Retorna a+b
+vvl matrixAdd(const vvl &amp;a, const vvl &amp;b) {
+    int n = a.size();
+    int m = a[0].size();
+    vvl res(n, vl(m));
+    for (int i = 0; i &lt; n; i++)
+        for (int j = 0; j &lt; m; j++)
+            res[i][j] = (a[i][j] + b[i][j]) % mod;
+    return res;
+}
+
+// Retorna a*b
+vvl matrixMul(const vvl &amp;a, const vvl &amp;b) {
+    int n = a.size();
+    int m = a[0].size();
+    int k = b[0].size();
+    vvl res(n, vl(k));
+    for (int i = 0; i &lt; n; i++)
+        for (int j = 0; j &lt; k; j++)
+            for (int p = 0; p &lt; m; p++)
+               res[i][j] = (res[i][j] + ((a[i][p] % mod) * (b[p][j] % mod) % mod)) % mod;
+    return res;
+}
+
+// Retorna a matriz a^p
+vvl matrixPow(const vvl &amp;a, long long p) {
+    if (p == 0)
+        return matrixUnit(a.size());
+    if (p &amp; 1)
+        return matrixMul(a, matrixPow(a, p - 1));
+    return matrixPow(matrixMul(a, a), p / 2);
+}
+
+// Retorna sum^p_i=0 (a^i)
+vvl matrixPowSum(const vvl &amp;a, long long p) {
+    long long n = a.size();
+    if (p == 0)
+        return vvl(n, vl(n));
+    if (p % 2 == 0)
+        return matrixMul(matrixPowSum(a, p / 2), matrixAdd(matrixUnit(n),  matrixPow(a, p / 2)));
+    return matrixAdd(a, matrixMul(matrixPowSum(a, p - 1), a));
+}
+
+int main() {
+	long long n, l, k, i;
+	
+	while(scanf(&quot;%lld %lld %lld&quot;, &amp;n, &amp;l, &amp;k) &gt; 0) {
+		vvl matriz = vvl(2, vl(2));
+		
+		matriz[0][0] = l;
+		matriz[0][1] = k;
+		matriz[1][0] = 1;
+		matriz[1][1] = 0;
+		
+		matriz = matrixPow(matriz, n / 5);
+		
+		printf(&quot;%06lld\n&quot;, matriz[0][0]);
+	}
+}
+</pre><h2><li id="prime_factors.cpp">2.7. Fatoração em números primos</li></h2><pre class="prettyprint">vector&lt;int&gt; primeFactors(int n)
+{
+    vector&lt;int&gt; v;
+    int sqrtn = sqrt(n);
+
+    while (n % 2 == 0)
+    {
+        v.push_back(2);
+        n = n / 2;
+    }
+
+    for (int i = 3; i &lt;= sqrtn; i = i + 2)
+    {
+        while (n % i == 0)
+        {
+            v.push_back(i);
+            n = n / i;
+        }
+    }
+
+    if (n &gt; 2)
+        v.push_back(n);
+
+    return v;
+}</pre><h2><li id="modpow.cpp">2.8. Modpow</li></h2><pre class="prettyprint">int modPow(int a, int b, int m)
+{
+    int res = 1;
+    for (; b &gt; 0; b &gt;&gt;= 1)
+    {
+        if (b &amp; 1)
+            res = (long long)res * a % m;
+        a = (long long)a * a % m;
+    }
+    return res;
+}</pre><h2><li id="gss.cpp">2.9. Máximo e mínimo de funções</li></h2><pre class="prettyprint">double gss(double a, double b, double (*f)(double), double e = 1e-6)
+{
+    double r = (sqrt(5) - 1) / 2; //=.618...=golden ratio-1
+    double x1 = b - r * (b - a), x2 = a + r * (b - a);
+    double f1 = f(x1), f2 = f(x2);
+    while (b - a &gt; e)
+    {
+        if (f1 &lt; f2)
+        { //change to &gt; to find maximum
+            b = x2;
+            x2 = x1;
+            f2 = f1;
+            x1 = b - r * (b - a);
+            f1 = f(x1);
+        }
+        else
+        {
+            a = x1;
+            x1 = x2;
+            f1 = f2;
+            x2 = a + r * (b - a);
+            f2 = f(x2);
+        }
+    }
+    return (b + a) / 2;
+}</pre><h2><li id="divisores.cpp">2.10. Todos divisores de um número</li></h2><pre class="prettyprint">vector&lt;int&gt; divisores(int n)
+{
+    vector&lt;int&gt; div;
+    sqrtn = sqrt(n);
+
+    while(sqrtn * sqrtn &lt; n)
+        sqrtn++;
+
+    for (i = 1; i &lt; sqrtn; i++)
+        if (!(n % i))
+            div.push_back(i), div.push_back(n / i);
+
+    if(sqrtn * sqrtn == n)
+        div.push_back(sqrtn);
+
+    return div;
+}</pre><h2><li id="crivosegmentado.cpp">2.11. Crivo de Eratóstenes segmentado</li></h2><pre class="prettyprint">char nprimo[100001] = {0}; // tamanho = sqrt(maximo)
+std::vector&lt;int&gt; primos;
+
+int main()
+{
+    int n, a, b, i, j;
+
+    nprimo[1] = 1;
+    nprimo[0] = 1;
+
+    for (i = 2; i &lt; 320; i++) // i [2, sqrt(sqrt(maximo))]
+        if (!nprimo[i])
+            for (j = i * i; j &lt; 100001; j += i) // j [i^2, sqrt(maximo)]
+                nprimo[j] = 1;
+
+    for (i = 2; i &lt; 100001; i++)
+        if (!nprimo[i])
+            primos.push_back(i);
+
+    scanf(&quot;%d&quot;, &amp;n);
+
+    while (n--)
+    {
+        scanf(&quot;%d %d&quot;, &amp;a, &amp;b);
+
+        if (a &gt; 100000 &amp;&amp; b &gt; 100000)
+        { // (a &gt; sqrt(N) &amp;&amp; b &gt; sqrt(N))
+            for (i = a; i &lt;= b; i++)
+            {
+                for (j = 0; j &lt; primos.size(); j++)
+                    if (i % primos[j] == 0)
+                        goto ab;
+
+                printf(&quot;%d\n&quot;, i);
+            ab:;
+            }
+        }
+        else if (a &lt; 100001 &amp;&amp; b &lt; 100001)
+        { // (a &lt; sqrt(N) &amp;&amp; b &lt; sqrt(N))
+            for (i = a; i &lt;= b; i++)
+                if (!nprimo[i])
+                    printf(&quot;%d\n&quot;, i);
+        }
+        else
+        {
+            for (i = 0; i &lt; primos.size(); i++)
+                if (primos[i] &gt;= a)
+                    break;
+
+            for (; i &lt; primos.size(); i++)
+                printf(&quot;%d\n&quot;, primos[i]);
+
+            for (; i &lt;= b; i++)
+            {
+                for (j = 0; j &lt; primos.size(); j++)
+                    if (i % primos[j] == 0)
+                        goto ac;
+
+                printf(&quot;%d\n&quot;, i);
+            ac:;
+            }
+        }
+    }
+}</pre></ol><h1><li>3. Grafos</li></h1><ol><h2><li id="grafos.cpp">3.1. Grafos</li></h2><pre class="prettyprint">#include &lt;bits/stdc++.h&gt;
+using namespace std;
+
+#define ll long long
+#define pb push_back
+
+typedef vector&lt;int&gt; vi;
+
+struct Vertice
+{
+    int id, pai;
+    ll dist;
+
+    Vertice(int id, ll dist = 1, int pai = -1) : id(id), dist(dist), pai(pai) {}
+
+    bool operator&lt;(Vertice a) const
+    {
+        return a.dist &lt; dist;
+    }
+};
+
+typedef vector&lt;Vertice&gt; vv;
+typedef vector&lt;vv&gt; vvv;
+
+struct Grafo
+{
+    vvv g;
+    vi pais;
+    int n;
+
+    Grafo(int n) : n(n)
+    {
+        g = vvv(n, vv());
+        pais = vi(n);
+    }
+
+    void operator=(Grafo const &amp;a)
+    {
+        g = a.g;
+        pais = a.pais;
+        n = a.n;
+    }
+
+    void addAresta(int a, int b, ll d = 0)
+    {
+        g[a].pb(Vertice(b, d));
+    }
+
+    void removeAresta(int a, int b)
+    {
+        g[a].erase(remove_if(g[a].begin(), g[a].end(), [b](Vertice v) { return v.id == b; }));
+    }
+
+    ll valAresta(int a, int b)
+    {
+        for (auto it : g[a])
+            if (it.id == b)
+                return it.dist;
+
+        return 0;
+    }
+
+    void modificaAresta(int a, int b, ll dif)
+    {
+        for (auto &amp;it : g[a])
+            if (it.id == b)
+            {
+                it.dist += dif;
+                break;
+            }
+
+        g[a].erase(remove_if(g[a].begin(), g[a].end(), [b](Vertice v) { return v.dist == 0; }));
+    }
+
+    ll dijkstra(int s, int d)
+    {
+        priority_queue&lt;Vertice&gt; fila;
+        bool visitados[n];
+
+        fill(visitados, visitados+n, 0);
+        fill(pais.begin(), pais.end(), -1);
+
+        fila.push(Vertice(s, 0));
+
+        auto top = fila.top();
+
+        while (top.id != d)
+        {
+            if (!visitados[top.id])
+            {
+                for (auto &amp;it : g[top.id])
+                    if (!visitados[it.id])
+                        fila.push(Vertice(it.id, it.dist + top.dist, top.id));
+
+                visitados[top.id] = 1;
+                pais[top.id] = top.pai;
+            }
+
+            fila.pop();
+
+            if (fila.empty())
+                return -1;
+
+            top = fila.top();
+        }
+
+        pais[top.id] = top.pai;
+
+        return top.dist;
+    }
+
+    ll busca(int s, int d)
+    {
+        queue&lt;Vertice&gt; fila;
+        bool visitados[n];
+
+        fill(visitados, visitados+n, 0);
+        fill(pais.begin(), pais.end(), -1);
+
+        fila.push(Vertice(s, 0));
+
+        auto top = fila.front();
+
+        while (top.id != d)
+        {
+            if (!visitados[top.id])
+            {
+                for (auto &amp;it : g[top.id])
+                    if (!visitados[it.id])
+                        fila.push(Vertice(it.id, it.dist + 1, top.id));
+
+                visitados[top.id] = 1;
+                pais[top.id] = top.pai;
+            }
+
+            fila.pop();
+
+            if (fila.empty())
+                return -1;
+
+            top = fila.front();
+        }
+
+        pais[top.id] = top.pai;
+
+        return top.dist;
+    }
+
+    ll fluxo_maximo(int s, int d)
+    {
+        int u, v;
+        ll flow = 0;
+
+        Grafo g2 = *this;
+
+        while (g2.busca(s, d) &gt;= 0)
+        {
+            ll path = 1ll &lt;&lt; 50;
+
+            for (v = d; v != s; v = u)
+            {
+                u = g2.pais[v];
+                path = min(path, valAresta(u, v));
+            }
+
+            for (v = d; v != s; v = u)
+            {
+                u = g2.pais[v];
+                g2.modificaAresta(u, v, -path);
+                g2.modificaAresta(v, u, path);
+            }
+
+            flow += path;
+        }
+
+        return flow;
+    }
+};
+
+int main()
+{
+    Grafo g(20);
+
+    g.addAresta(1, 2, 1);
+    g.addAresta(1, 3, 5);
+    g.addAresta(2, 1, 6);
+    g.addAresta(3, 2, 10);
+
+    g.removeAresta(1, 2);
+
+    for (auto it : g.g[1])
+        cout &lt;&lt; it.id &lt;&lt; endl; // 3
+
+    cout &lt;&lt; g.dijkstra(1, 2) &lt;&lt; endl; // 15
+
+    cout &lt;&lt; g.fluxo_maximo(1, 2) &lt;&lt; endl; // 5
+}</pre><h2><li id="matching_bipartido.cpp">3.2. Matching máximo em grafo bipartido</li></h2><pre class="prettyprint">const int MAXN1 = 50000, MAXN2 = 50000, MAXM = 150000;
+int n1, n2, edges, last[MAXN1], prev[MAXM], head[MAXM], matching[MAXN2], dist[MAXN1], Q[MAXN1], used[MAXN1], vis[MAXN1];
+
+void init(int _n1, int _n2)
+{
+    n1 = _n1;
+    n2 = _n2;
+    edges = 0;
+    fill(last, last + n1, -1);
+}
+
+void addAresta(int u, int v)
+{
+    head[edges] = v;
+    prev[edges] = last[u];
+    last[u] = edges++;
+}
+
+void bfs()
+{
+    fill(dist, dist + n1, -1);
+    int sizeQ = 0;
+    for (int u = 0; u &lt; n1; ++u)
+    {
+        if (!used[u])
+        {
+            Q[sizeQ++] = u;
+            dist[u] = 0;
+        }
+    }
+    for (int i = 0; i &lt; sizeQ; i++)
+    {
+        int u1 = Q[i];
+        for (int e = last[u1]; e &gt;= 0; e = prev[e])
+        {
+            int u2 = matching[head[e]];
+            if (u2 &gt;= 0 &amp;&amp; dist[u2] &lt; 0)
+            {
+                dist[u2] = dist[u1] + 1;
+                Q[sizeQ++] = u2;
+            }
+        }
+    }
+}
+
+bool dfs(int u1)
+{
+    vis[u1] = true;
+    for (int e = last[u1]; e &gt;= 0; e = prev[e])
+    {
+        int v = head[e];
+        int u2 = matching[v];
+        if (u2 &lt; 0 || !vis[u2] &amp;&amp; dist[u2] == dist[u1] + 1 &amp;&amp; dfs(u2))
+        {
+            matching[v] = u1;
+            used[u1] = true;
+            return true;
+        }
+    }
+    return false;
+}
+int maxMatching()
+{
+    fill(used, used + n1, false);
+    fill(matching, matching + n2, -1);
+    for (int res = 0;;)
+    {
+        bfs();
+        fill(vis, vis + n1, false);
+        int f = 0;
+        for (int u = 0; u &lt; n1; ++u)
+            if (!used[u] &amp;&amp; dfs(u))
+                ++f;
+        if (!f)
+            return res;
+        res += f;
+    }
+}</pre><h2><li id="hungaro.cpp">3.3. Algoritmo húngaro</li></h2><pre class="prettyprint">#define N 100
+#define INF 100000000
+
+int cost[N][N], n, max_match, lx[N], ly[N], xy[N], yx[N], slack[N], slackx[N], prev[N];
+bool S[N], T[N];
+
+void init_labels()
+{
+    memset(lx, 0, sizeof(lx));
+    memset(ly, 0, sizeof(ly));
+    for (int x = 0; x &lt; n; x++)
+        for (int y = 0; y &lt; n; y++)
+            lx[x] = max(lx[x], cost[x][y]);
+}
+
+void update_labels()
+{
+    int x, y, delta = INF;
+
+    for (y = 0; y &lt; n; y++)
+        if (!T[y])
+            delta = min(delta, slack[y]);
+    for (x = 0; x &lt; n; x++)
+        if (S[x])
+            lx[x] -= delta;
+    for (y = 0; y &lt; n; y++)
+        if (T[y])
+            ly[y] += delta;
+    for (y = 0; y &lt; n; y++)
+        if (!T[y])
+            slack[y] -= delta;
+}
+
+void add_to_tree(int x, int prevx)
+{
+    S[x] = true;
+    prev[x] = prevx;
+    for (int y = 0; y &lt; n; y++)
+        if (lx[x] + ly[y] - cost[x][y] &lt; slack[y])
+        {
+            slack[y] = lx[x] + ly[y] - cost[x][y];
+            slackx[y] = x;
+        }
+}
+
+void augment()
+{
+    if (max_match == n)
+        return;
+    int x, y, root, q[N], wr = 0, rd = 0;
+    memset(S, false, sizeof(S));
+    memset(T, false, sizeof(T));
+    memset(prev, -1, sizeof(prev));
+
+    for (x = 0; x &lt; n; x++)
+        if (xy[x] == -1)
+        {
+            q[wr++] = root = x;
+            prev[x] = -2;
+            S[x] = true;
+            break;
+        }
+
+    for (y = 0; y &lt; n; y++)
+    {
+        slack[y] = lx[root] + ly[y] - cost[root][y];
+        slackx[y] = root;
+    }
+
+    while (true)
+    {
+        while (rd &lt; wr)
+        {
+            x = q[rd++];
+
+            for (y = 0; y &lt; n; y++)
+                if (cost[x][y] == lx[x] + ly[y] &amp;&amp; !T[y])
+                {
+                    if (yx[y] == -1)
+                        break;
+                    T[y] = true;
+                    q[wr++] = yx[y];
+                    add_to_tree(yx[y], x);
+                }
+
+            if (y &lt; n)
+                break;
+        }
+
+        if (y &lt; n)
+            break;
+
+        update_labels();
+        wr = rd = 0;
+
+        for (y = 0; y &lt; n; y++)
+            if (!T[y] &amp;&amp; slack[y] == 0)
+            {
+                if (yx[y] == -1)
+                {
+                    x = slackx[y];
+                    break;
+                }
+                else
+                {
+                    T[y] = true;
+                    if (!S[yx[y]])
+                    {
+                        q[wr++] = yx[y];
+                        add_to_tree(yx[y], slackx[y]);
+                    }
+                }
+            }
+
+        if (y &lt; n)
+            break;
+    }
+
+    if (y &lt; n)
+    {
+        max_match++;
+        for (int cx = x, cy = y, ty; cx != -2; cx = prev[cx], cy = ty)
+        {
+            ty = xy[cx];
+            yx[cy] = cx;
+            xy[cx] = cy;
+        }
+
+        augment();
+    }
+}
+
+int hungaro()
+{
+    int ret = 0;
+    max_match = 0;
+    memset(xy, -1, sizeof(xy));
+    memset(yx, -1, sizeof(yx));
+    init_labels();
+    augment();
+
+    for (int x = 0; x &lt; n; x++)
+        ret += cost[x][xy[x]];
+
+    return ret;
+}</pre></ol><h1><li>4. Strings</li></h1><ol><h2><li id="suffixarray.cpp">4.1. Suffix array</li></h2><pre class="prettyprint">//Usage:
+// Fill txt with the characters of the txting.
+// Call SuffixSort(n), where n is the length of the txting stored in txt.
+// That&#x27;s it!
+
+//Output:
+// SA = The suffix array.
+// Contains the n suffixes of txt sorted in lexicographical order.
+// Each suffix is represented as a single integer (the SAition of txt where it starts).
+// iSA = The inverse of the suffix array. iSA[i] = the index of the suffix txt[i..n)
+//   in the SA array. (In other words, SA[i] = k &lt;==&gt; iSA[k] = i)
+//   With this array, you can compare two suffixes in O(1): Suffix txt[i..n) is smaller
+//   than txt[j..n) if and only if iSA[i] &lt; iSA[j]
+
+const int MAX = 100010;
+char txt[MAX];           //input
+int iSA[MAX], SA[MAX];   //output
+int cnt[MAX], next[MAX]; //internal
+bool bh[MAX], b2h[MAX];
+
+// Compares two suffixes according to their first characters
+bool smaller_first_char(int a, int b)
+{
+    return txt[a] &lt; txt[b];
+}
+
+void suffixSort(int n)
+{
+    for (int i = 0; i &lt; n; ++i)
+        SA[i] = i;
+
+    sort(SA, SA + n, smaller_first_char);
+
+    for (int i = 0; i &lt; n; ++i)
+    {
+        bh[i] = i == 0 || txt[SA[i]] != txt[SA[i - 1]];
+        b2h[i] = false;
+    }
+
+    for (int h = 1; h &lt; n; h &lt;&lt;= 1)
+    {
+        int buckets = 0;
+
+        for (int i = 0, j; i &lt; n; i = j)
+        {
+            j = i + 1;
+
+            while (j &lt; n &amp;&amp; !bh[j])
+                j++;
+
+            next[i] = j;
+            buckets++;
+        }
+
+        if (buckets == n)
+            break;
+
+        for (int i = 0; i &lt; n; i = next[i])
+        {
+            cnt[i] = 0;
+
+            for (int j = i; j &lt; next[i]; ++j)
+                iSA[SA[j]] = i;
+        }
+
+        cnt[iSA[n - h]]++;
+        b2h[iSA[n - h]] = true;
+
+        for (int i = 0; i &lt; n; i = next[i])
+        {
+            for (int j = i; j &lt; next[i]; ++j)
+            {
+                int s = SA[j] - h;
+
+                if (s &gt;= 0)
+                {
+                    int head = iSA[s];
+                    iSA[s] = head + cnt[head]++;
+                    b2h[iSA[s]] = true;
+                }
+            }
+            for (int j = i; j &lt; next[i]; ++j)
+            {
+                int s = SA[j] - h;
+
+                if (s &gt;= 0 &amp;&amp; b2h[iSA[s]])
+                    for (int k = iSA[s] + 1; !bh[k] &amp;&amp; b2h[k]; k++)
+                        b2h[k] = false;
+            }
+        }
+        for (int i = 0; i &lt; n; ++i)
+        {
+            SA[iSA[i]] = i;
+            bh[i] |= b2h[i];
+        }
+    }
+    for (int i = 0; i &lt; n; ++i)
+    {
+        iSA[SA[i]] = i;
+    }
+}
+// End of suffix array algorithm
+
+// Begin of the O(n) longest common prefix algorithm
+int lcp[MAX];
+// lcp[i] = length of the longest common prefix of suffix SA[i] and suffix SA[i-1]
+// lcp[0] = 0
+void getlcp(int n)
+{
+    for (int i = 0; i &lt; n; ++i)
+        iSA[SA[i]] = i;
+
+    lcp[0] = 0;
+
+    for (int i = 0, h = 0; i &lt; n; ++i)
+    {
+        if (iSA[i] &gt; 0)
+        {
+            int j = SA[iSA[i] - 1];
+
+            while (i + h &lt; n &amp;&amp; j + h &lt; n &amp;&amp; txt[i + h] == txt[j + h])
+                h++;
+
+            lcp[iSA[i]] = h;
+
+            if (h &gt; 0)
+                h--;
+        }
+    }
+}</pre></ol><h1><li>5. Geometria</li></h1><ol><h2><li id="radial_sweep.cpp">5.1. Linha de eventos radial</li></h2><pre class="prettyprint">//  - Radial sweep in Q2 quadrant in nlogn.
+//  - Sorts events using cross product to avoid dealing with
+//    numeric problems.
+#include &lt;bits/stdc++.h&gt;
+using namespace std;
+
+struct Point {
+	Point(int x = 0, int y = 0) : x(x), y(y) {}
+
+	bool operator&lt;(const Point&amp; o) const {
+		// Order points in a quadrant by angle with origin:
+		// Uses anti-clockwise order by returning true when the
+		// cross product between the points is positive.
+		return (x*o.y - y*o.x) &gt; 0;
+	}
+
+	/*
+	bool operator&lt;=(const Point&amp; o) const {
+	return (x*o.y - y*o.x) &gt;= 0;
+	}
+	*/
+	int x, y;
+};
+
+pair&lt;int, int&gt; solve(const vector&lt;Point&gt;&amp; points) {
+	map&lt;Point, pair&lt;int, int&gt; &gt; events;
+
+	Point begin(0, 1);
+	Point end(-1, 0);
+
+	// Add events on the borders to guarantee that we consider them.
+	events[begin];
+	events[end];
+
+	int superior = 0;  // Number of points in Q1 quadrant.
+	int same = 0;      // Number of points in origin.
+	int active = 0;    // Number of current points in Q2 and Q4 quadrant better
+					   // than origin.
+
+	int best_pos = points.size();
+	int worst_pos = 0;
+
+	for (const auto&amp; p : points) {
+		if (p.x &lt; 0 &amp;&amp; p.y &lt; 0) {}
+		else if (p.x &gt; 0 &amp;&amp; p.y &gt; 0) superior++;
+		else if (p.x == 0 &amp;&amp; p.y == 0) same++;
+		else if (p.x &lt;= 0 &amp;&amp; p.y &gt;= 0) {
+			// assert(begin &lt;= Point(p.x, p.y));
+			//assert(Point(p.x, p.y) &lt;= end);
+			events[Point(p.x, p.y)].first++;
+		}
+		else if (p.x &gt;= 0 &amp;&amp; p.y &lt;= 0) {
+			//assert(begin &lt;= Point(-p.x, -p.y));
+			//assert(Point(-p.x, -p.y) &lt;= end);
+			active++;
+			events[Point(-p.x, -p.y)].second++;
+		}
+		else assert(false);
+	}
+
+	for (const auto&amp; e : events) {
+		int tie_best_pos = superior + active - e.second.second;
+		int tie_worst_pos = superior + active + e.second.first + same;
+		active += e.second.first - e.second.second;
+
+		best_pos = min(best_pos, tie_best_pos);
+		worst_pos = max(worst_pos, tie_worst_pos);
+	}
+
+	return make_pair(best_pos + 1, worst_pos + 1);
+}
+
+// Reads the set of points and centers them around Maria&#x27;s product.
+vector&lt;Point&gt; read() {
+	int n, cx, cy;
+	cin &gt;&gt; n &gt;&gt; cx &gt;&gt; cy;
+	vector&lt;Point&gt; points(n - 1);
+	for (Point&amp; p : points) {
+		cin &gt;&gt; p.x &gt;&gt; p.y;
+		p.x -= cx;
+		p.y -= cy;
+	}
+	return points;
+}
+
+int main() {
+	auto input = read();
+	auto solution = solve(input);
+
+	for (auto&amp; i : input)
+		swap(i.x, i.y);
+
+	assert(solution == solve(input));
+
+	cout &lt;&lt; solution.first &lt;&lt; &quot; &quot; &lt;&lt; solution.second &lt;&lt; endl;
+	return 0;
+}
+</pre><h2><li id="kd-tree.cpp">5.2. KD-Tree para pares mais próximos em O(log(n))</li></h2><pre class="prettyprint">typedef pair&lt;int, int&gt; pii;
+typedef vector&lt;pii&gt; vpii;
+
+const int maxn = 100000;
+int tx[maxn];
+int ty[maxn];
+bool divX[maxn];
+
+bool cmpX(const pii &amp;a, const pii &amp;b)
+{
+	return a.first &lt; b.first;
+}
+
+bool cmpY(const pii &amp;a, const pii &amp;b)
+{
+	return a.second &lt; b.second;
+}
+
+void buildTree(int left, int right, pii points[])
+{
+	if (left &gt;= right)
+		return;
+	int mid = (left + right) &gt;&gt; 1;
+
+	//sort(points + left, points + right + 1, divX ? cmpX : cmpY);
+	int minx = INT_MAX;
+	int maxx = INT_MIN;
+	int miny = INT_MAX;
+	int maxy = INT_MIN;
+	for (int i = left; i &lt; right; i++)
+	{
+		checkmin(minx, points[i].first);
+		checkmax(maxx, points[i].first);
+		checkmin(miny, points[i].second);
+		checkmax(maxy, points[i].second);
+	}
+	divX[mid] = (maxx - minx) &gt;= (maxy - miny);
+	nth_element(points + left, points + mid, points + right, divX[mid] ? cmpX : cmpY);
+
+	tx[mid] = points[mid].first;
+	ty[mid] = points[mid].second;
+
+	if (left + 1 == right)
+		return;
+	buildTree(left, mid, points);
+	buildTree(mid + 1, right, points);
+}
+
+long long closestDist;
+int closestNode;
+
+void findNearestNeighbour(int left, int right, int x, int y)
+{
+	if (left &gt;= right)
+		return;
+	int mid = (left + right) &gt;&gt; 1;
+	int dx = x - tx[mid];
+	int dy = y - ty[mid];
+	long long d = dx * (long long)dx + dy * (long long)dy;
+	if (closestDist &gt; d &amp;&amp; d)
+	{
+		closestDist = d;
+		closestNode = mid;
+	}
+	if (left + 1 == right)
+		return;
+
+	int delta = divX[mid] ? dx : dy;
+	long long delta2 = delta * (long long)delta;
+	int l1 = left;
+	int r1 = mid;
+	int l2 = mid + 1;
+	int r2 = right;
+	if (delta &gt; 0)
+		swap(l1, l2), swap(r1, r2);
+
+	findNearestNeighbour(l1, r1, x, y);
+	if (delta2 &lt; closestDist)
+		findNearestNeighbour(l2, r2, x, y);
+}
+
+int findNearestNeighbour(int n, int x, int y)
+{
+	closestDist = LLONG_MAX;
+	findNearestNeighbour(0, n, x, y);
+	return closestNode;
+}
+
+int main()
+{
+	vpii p;
+	p.push_back(make_pair(0, 2));
+	p.push_back(make_pair(0, 3));
+	p.push_back(make_pair(-1, 0));
+
+	p.resize(unique(p.begin(), p.end()) - p.begin());
+
+	int n = p.size();
+	buildTree(1, 0, n - 1, &amp;(vpii(p)[0]));
+	int res = findNearestNeighbour(n, 0, 0);
+
+	cout &lt;&lt; p[res].first &lt;&lt; &quot; &quot; &lt;&lt; p[res].second &lt;&lt; endl;
+
+	return 0;
+}</pre><h2><li id="geometria_reduzido.cpp">5.3. Geometria (reduzido)</li></h2><pre class="prettyprint">typedef pair&lt;double, double&gt; Ponto;
+
+bool cw(Ponto a, Ponto b, Ponto c)
+{
+    return (b.first - a.first) * (c.second - a.second) - (b.second - a.second) * (c.first - a.first) &lt; 0;
+}
+
+// Retorna o casco convexo do conjunto de pontos p
+vector&lt;Ponto&gt; convexHull(vector&lt;Ponto&gt; p)
+{
+    int n = p.size();
+    if (n &lt;= 1)
+        return p;
+    int k = 0;
+    sort(p.begin(), p.end());
+    vector&lt;Ponto&gt; q(n * 2);
+    for (int i = 0; i &lt; n; q[k++] = p[i++])
+        for (; k &gt;= 2 &amp;&amp; !cw(q[k - 2], q[k - 1], p[i]); --k)
+            ;
+    for (int i = n - 2, t = k; i &gt;= 0; q[k++] = p[i--])
+        for (; k &gt; t &amp;&amp; !cw(q[k - 2], q[k - 1], p[i]); --k)
+            ;
+    q.resize(k - 1 - (q[0] == q[1]));
+    return q;
+}
+
+//O dobro da área definida pelo triangulo de pontos pontos a, b e c (sem sinal).
+double uArea2(Ponto a, Ponto b, Ponto c)
+{
+    return abs((b.first - a.first) * (c.second - a.second) - (b.second - a.second) * (c.first - a.first));
+}
+
+//O dobro da área definida pelo triangulo de pontos pontos a, b e c (com sinal).
+double area2(Ponto a, Ponto b, Ponto c)
+{
+    return (b.first - a.first) * (c.second - a.second) - (b.second - a.second) * (c.first - a.first);
+}
+
+//Distância entre os pontos a e b
+double dist(Ponto a, Ponto b)
+{
+    return hypot(a.first - b.first, a.second - b.second);
+}
+
+//Interseção de semi-retas (p1 -&gt; p2), (p3 -&gt; p4)
+bool segIntercept(Ponto p1, Ponto p2, Ponto p3, Ponto p4)
+{
+    return cw(p1, p2, p3) != cw(p1, p2, p4) &amp;&amp; cw(p3, p4, p1) != cw(p3, p4, p2);
+}
+
+//Retorna a área do polígono p
+double polygonArea(vector&lt;Ponto&gt; p)
+{
+    double s = 0.0;
+    for (int i = 0; i &lt; p.size(); i++)
+        s += area2(Ponto(0, 0), p[i], p[(i + 1) % p.size()]);
+    return fabs(s / 2.0);
+}
+
+//Retorna a área do polígono p definido pelos pontos p[i, f]
+double polygonArea2(vector&lt;Ponto&gt; p, int i, int f)
+{
+    double s = 0.0;
+    Ponto primeiro = p[i];
+    for (; i != f; i++)
+        s += area2(Ponto(0, 0), p[i], p[(i + 1)]);
+    s += area2(Ponto(0, 0), p[i], primeiro);
+    return fabs(s / 2.0);
+}
+
+//Retorna a menor largura do conjunto de pontos p
+double raio(vector&lt;Ponto&gt; p)
+{
+    vector&lt;Ponto&gt; h = convexHull(p);
+    int m = h.size();
+    if (m == 1)
+        return 0;
+    if (m == 2)
+        return 0;
+    int k = 1;
+    while (uArea2(h[m - 1], h[0], h[(k + 1) % m]) &gt; uArea2(h[m - 1], h[0], h[k]))
+        ++k;
+    double res = 10000000;
+    for (int i = 0, j = k; i &lt;= k &amp;&amp; j &lt; m; i++)
+    {
+        res = min(res, dist(h[i], h[j]));
+        while (j &lt; m &amp;&amp; uArea2(h[i], h[(i + 1) % m], h[(j + 1) % m]) &gt; uArea2(h[i], h[(i + 1) % m], h[j]))
+        {
+            res = min(res, dist(h[i], h[(j + 1) % m]));
+            ++j;
+        }
+    }
+    return res;
+}
+
+//Retorna a maior largura do conjunto de pontos p
+double diametro(vector&lt;Ponto&gt; p)
+{
+    vector&lt;Ponto&gt; h = convexHull(p);
+    int m = h.size();
+    if (m == 1)
+        return 0;
+    if (m == 2)
+        return dist(h[0], h[1]);
+    int k = 1;
+    while (uArea2(h[m - 1], h[0], h[(k + 1) % m]) &gt; uArea2(h[m - 1], h[0], h[k]))
+        ++k;
+    double res = 0;
+    for (int i = 0, j = k; i &lt;= k &amp;&amp; j &lt; m; i++)
+    {
+        res = max(res, dist(h[i], h[j]));
+        while (j &lt; m &amp;&amp; uArea2(h[i], h[(i + 1) % m], h[(j + 1) % m]) &gt; uArea2(h[i], h[(i + 1) % m], h[j]))
+        {
+            res = max(res, dist(h[i], h[(j + 1) % m]));
+            ++j;
+        }
+    }
+    return res;
+}</pre><h2><li id="geometria.cpp">5.4. Geometria (grande)</li></h2><pre class="prettyprint">#include &lt;bits/stdc++.h&gt;
+
+using namespace std;
+
+const double EPS = 1e-10;
+
+inline int cmp( double x, double y = 0, double tol = EPS ) {
+    return (x &lt;= y + tol ) ? ( x + tol &lt; y ) ? -1 : 0 : 1;
+}
+
+struct Point {
+    double x, y;
+
+    Point( double x = 0, double y = 0 ) : x( x ), y( y ) {}
+
+    Point operator+( Point q ) const {
+        return Point( x + q.x, y + q.y );
+    }
+
+    Point operator-( Point q ) const {
+        return Point( x - q.x, y - q.y );
+    }
+
+    Point operator*( double t ) const {
+        return Point( x * t, y * t );
+    }
+
+    Point operator/( double t ) const {
+        return Point( x / t, y / t );
+    }
+
+    double operator*( Point q )const {
+        return x * q.x + y * q.y;
+    }
+
+    double operator^( Point q ) const {
+        return x * q.y - y * q.x;
+    }
+
+    int cmp( Point q ) const {
+        if ( int t = ::cmp( x, q.x ) ) 
+			return t;
+        return ::cmp( y, q.y );
+    }
+
+    bool operator==( Point q ) const {
+        return cmp( q ) == 0;
+    }
+
+    bool operator!=( Point q ) const {
+        return cmp( q ) != 0;
+    }
+
+    bool operator&lt;( Point q ) const {
+        return cmp( q ) &lt; 0;
+    }
+	
+    static Point pivot;
+};
+
+Point Point::pivot;
+
+typedef vector&lt;Point&gt; Polygon;
+
+inline double abs( Point&amp; p ) {
+    return hypot( p.x, p.y );
+}
+
+inline double arg( Point&amp; p ) {
+    return atan2( p.y, p.x );
+}
+
+//Verifica o sinal do produto vetorial entre os vetores (p-r) e (q - r)
+inline int ccw( Point&amp; p, Point&amp; q, Point&amp; r ) {
+    return cmp( ( p - r ) ^ ( q - r ) );
+}
+
+//calcula o angulo orientado entre os vetores (p-q) e (r - q)
+inline double angle( Point&amp; p, Point &amp;q, Point&amp; r ) {
+    Point u = p - q, w = r - q;
+    return atan2( u ^ w, u * w );
+}
+
+//Decide se o ponto p esta sobre a reta que passa por p1p2.
+bool pointoSobreReta( Point&amp; p1, Point &amp;p, Point&amp; p2 ) {
+    return ccw( p1, p2, p ) == 0;
+}
+
+//Decide de p esta sobre o segmento p1p2
+bool between( Point&amp; p1, Point &amp;p, Point&amp; p2 ) {
+    return ccw( p1, p2, p ) == 0 &amp;&amp; cmp( ( p1 - p ) * ( p2 - p ) ) &lt;= 0;
+}
+
+//Calcula a distancia do ponto p a reta que passa por p1p2
+double retaDistance( Point&amp; p1, Point&amp; p2, Point &amp;p ) {
+    Point A = p1 - p, B = p2 - p1;
+    return fabs( A ^ B ) / sqrt( B * B );
+}
+
+//Calcula a distancia do ponto p ao segmento de reta que passa por p1p2
+double segDistance( Point&amp; p1, Point&amp; p2, Point &amp;p ) {
+    Point A = p1 - p, B = p1 - p2, C = p2 - p;
+    double a = A * A, b = B * B, c = C * C;
+    if ( cmp( a, b + c ) &gt;= 0 ) return sqrt( c );
+    if ( cmp( c, a + b ) &gt;= 0 )return sqrt( a );
+    return fabs( A ^ C ) / sqrt( b );
+
+}
+//Calcula a area orientada do poligono T.
+double polygonArea( Polygon&amp; T ) {
+    double s = 0.0;
+    int n = T.size( );
+    for ( int i = 0; i &lt; n; i++ )
+    {
+        s += T[i] ^ T[( i + 1 ) % n];
+    }
+    return s / 2.0; //Retorna a area com sinal
+}
+//Classifica o ponto p em relacao ao poligono T dependendo se ele está
+//na fronteira (-1) no exterior (0) ou no interior (1).
+int inpoly( Point&amp; p, Polygon&amp; T ) {
+    //-1 sobre, 0 fora, 1 dentro
+    double a = 0.0;
+    int n = T.size( );
+    for ( int i = 0; i &lt; n; i++ )
+    {
+        if ( between( T[i], p, T[( i + 1 ) % n] ) ) return -1;
+        a += angle( T[i], p, T[( i + 1 ) % n] );
+    }
+    return cmp( a ) != 0;
+}
+//Ordenacao radial.
+bool radialSort( Point p, Point q ) {
+    Point P = p - Point::pivot, Q = q - Point::pivot;
+    double R = P ^ Q;
+    if ( cmp( R ) ) return R &gt; 0;
+    return cmp( P * P, Q * Q ) &lt; 0;
+}
+
+//Determina o convex hull de T. ATENCAO. A lista de pontos T e destruida.
+Polygon convexHull( vector&lt;Point&gt;&amp; T ) {
+    int j = 0, k, n = T.size( );
+    Polygon U( n );
+    Point::pivot = *min_element( T.begin( ), T.end( ) );
+    sort( T.begin( ), T.end( ), radialSort );
+
+    for ( k = n - 2; k &gt;= 0 &amp;&amp; ccw( T[0], T[n - 1], T[k] ) == 0; k-- );
+    reverse( ( k + 1 ) + T.begin( ), T.end( ) );
+
+    for ( int i = 0; i &lt; n; i++ )
+    {
+        // troque o &gt;= por &gt; para manter pontos colineares
+        while (j &gt; 1 &amp;&amp; ccw( U[j - 1], U[j - 2], T[i] ) &gt;= 0) j--;
+        U[j++] = T[i];
+    }
+    U.resize( j );
+    return U;
+}
+//Interseção de semi-retas (p1 -&gt; p2), (p3 -&gt; p4)
+bool segIntercept(Point p1, Point p2, Point p3, Point p4) {
+	return ccw(p1, p2, p3) != ccw(p1, p2, p4) &amp;&amp; ccw(p3, p4, p1) != ccw(p3, p4, p2);
+}
+
+</pre></ol><h1><li>6. Estruturas de dados etc</li></h1><ol><h2><li id="wavelet.cpp">6.1. Wavelet-tree</li></h2><pre class="prettyprint">#include &lt;bits/stdc++.h&gt;
+using namespace std;
+
+const int N = 10000;
+
+struct KthSmallest
+{
+	struct Seg
+	{
+		int l, r, mid;
+
+		void set(int _l, int _r)
+		{
+			l = _l;
+			r = _r;
+			mid = l + r &gt;&gt; 1;
+		}
+	} seg[N &lt;&lt; 2];
+
+	int b[25][N], left[25][N], sorted[N];
+
+	void init(int *a, int n)
+	{
+		for (int i = 0; i &lt; n; i++)
+			b[0][i] = sorted[i] = a[i];
+
+		sort(sorted, sorted + n);
+		build(0, n, 0, 1);
+	}
+
+	void build(int l, int r, int d, int idx)
+	{
+		seg[idx].set(l, r);
+
+		if (l + 1 == r)
+			return;
+
+		int mid = seg[idx].mid;
+		int lsame = mid - l;
+
+		for (int i = l; i &lt; r; i++)
+			if (b[d][i] &lt; sorted[mid])
+				lsame--;
+
+		int lpos = l, rpos = mid, same = 0;
+
+		for (int i = l; i &lt; r; ++i)
+		{
+			left[d][i] = (i != l ? left[d][i - 1] : 0);
+
+			if (b[d][i] &lt; sorted[mid])
+			{
+				left[d][i]++;
+				b[d + 1][lpos++] = b[d][i];
+			}
+			else if (b[d][i] &gt; sorted[mid])
+				b[d + 1][rpos++] = b[d][i];
+			else
+			{
+				if (same &lt; lsame)
+				{
+					same++;
+					left[d][i]++;
+					b[d + 1][lpos++] = b[d][i];
+				}
+				else
+				{
+					b[d + 1][rpos++] = b[d][i];
+				}
+			}
+		}
+
+		build(l, mid, d + 1, idx &lt;&lt; 1);
+		build(mid, r, d + 1, idx &lt;&lt; 1 | 1);
+	}
+
+	//Quando ordernarmos [l, r), qual é o k-ésimo termo?
+	int kth(int l, int r, int k, int d = 0, int idx = 1)
+	{ // k : 1-origin!!!
+		if (l + 1 == r)
+			return b[d][l];
+
+		int ltl = (l != seg[idx].l ? left[d][l - 1] : 0);
+		int tl = left[d][r - 1] - ltl;
+
+		if (tl &gt;= k)
+		{
+			int newl = seg[idx].l + ltl;
+			int newr = seg[idx].l + ltl + tl;
+
+			return kth(newl, newr, k, d + 1, idx &lt;&lt; 1);
+		}
+		else
+		{
+			int mid = seg[idx].mid;
+			int tr = r - l - tl;
+			int ltr = l - seg[idx].l - ltl;
+			int newl = mid + ltr;
+			int newr = mid + ltr + tr;
+
+			return kth(newl, newr, k - tl, d + 1, idx &lt;&lt; 1 | 1);
+		}
+	}
+
+	//When sorting [l, r), what number will x come in?
+	//If there are two or more x&#x27;s, return the rank of the last one.
+	//If there is no x, return the rank of the largest but less than x.
+	//When there is no less than x, 0 is returned.
+	int rank(int l, int r, int x, int d = 0, int idx = 1)
+	{
+		if (seg[idx].l + 1 == seg[idx].r)
+			return l + 1 == r &amp;&amp; sorted[l] &lt;= x;
+
+		int ltl = (l != seg[idx].l ? left[d][l - 1] : 0);
+		int tl = left[d][r - 1] - ltl;
+		int mid = seg[idx].mid;
+
+		if (x &lt; sorted[mid])
+		{
+			int newl = seg[idx].l + ltl;
+			int newr = seg[idx].l + ltl + tl;
+
+			return rank(newl, newr, x, d + 1, idx &lt;&lt; 1);
+		}
+		else
+		{
+			int tr = r - l - tl;
+			int ltr = l - seg[idx].l - ltl;
+			int newl = mid + ltr;
+			int newr = mid + ltr + tr;
+
+			return tl + rank(newl, newr, x, d + 1, idx &lt;&lt; 1 | 1);
+		}
+	}
+
+	// Quantos x existem entre [l,r)
+	int freq(int l, int r, int x)
+	{
+		return rank(l, r, x) - rank(l, r, x - 1);
+	}
+} kth;
+
+int main()
+{
+	int a[8] = {6, 12, 5, 17, 10, 2, 7, 3};
+
+	kth.init(a, 8);
+	
+	cout &lt;&lt; kth.kth(2, 7, 3) &lt;&lt; endl;  // 7
+	cout &lt;&lt; kth.rank(2, 7, 7) &lt;&lt; endl; // 3
+}</pre><h2><li id="seg_tree.cpp">6.2. Seg-tree</li></h2><pre class="prettyprint">#include &lt;algorithm&gt;
+
+using namespace std;
+
+#define MAX 1000000 // O valor aqui tem que ser &gt;= 2 * tamanho do maior n
+#define INF 1 &lt;&lt; 28
+
+// Não necessáriamente é um int, pode ser uma segtree de struct etc;
+int init[MAX], tree[MAX], lazy[MAX];
+
+void build_tree(int node, int a, int b)
+{
+	if (a &gt; b)
+		return;
+
+	// Se folha
+	if (a == b)
+	{
+		tree[node] = init[a];
+		lazy[node] = 0;
+		return;
+	}
+
+	build_tree(node * 2, a, (a + b) / 2);
+	build_tree(node * 2 + 1, 1 + (a + b) / 2, b);
+
+	// Se nó
+	tree[node] = tree[node * 2] + tree[node * 2 + 1];
+	lazy[node] = 0;
+}
+
+void update_tree(int node, int a, int b, int i, int j, int value)
+{
+	// Se fora do intervalo - retorna
+	if (a &gt; b || a &gt; j || b &lt; i)
+		return;
+
+	if (lazy[node] != 0)
+	{
+		//Atualização atrasada.
+		tree[node] += lazy[node];
+
+		// Passa lazy para filhos
+		if (a != b)
+		{
+			lazy[node * 2] += lazy[node];
+			lazy[node * 2 + 1] += lazy[node];
+		}
+
+		//Reseta o nó
+		lazy[node] = 0;
+	}
+
+	// Se o nó atual cobre todo o intervalo
+	if (a &gt;= i &amp;&amp; b &lt;= j)
+	{
+		tree[node] += value;
+
+		if (a != b)
+		{
+			lazy[node * 2] += value;
+			lazy[node * 2 + 1] += value;
+		}
+
+		return;
+	}
+
+	// Se tem um pedaço em cada filho.
+
+	// Atualiza os filhos.
+	update_tree(node * 2, a, (a + b) / 2, i, j, value);
+	update_tree(1 + node * 2, 1 + (a + b) / 2, b, i, j, value);
+
+	// Atualiza o pai.
+	tree[node] = tree[node * 2] + tree[node * 2 + 1];
+}
+
+int query_tree(int node, int a, int b, int i, int j)
+{
+	// Se fora do intervalo
+	if (a &gt; b || a &gt; j || b &lt; i)
+	{
+		//Aqui deverá ser retornado o elemento neutro para a operação desejada
+		return 0;
+	}
+
+	if (lazy[node] != 0)
+	{
+		//Atualização atrasada.
+		tree[node] += lazy[node];
+
+		//Se não folha, passa lazy pros filhos
+		if (a != b)
+		{
+			lazy[node * 2] += lazy[node];
+			lazy[node * 2 + 1] += lazy[node];
+		}
+
+		//Reseta o nó
+		lazy[node] = 0;
+	}
+
+	// Se o nó cobre o intervalo
+	if (a &gt;= i &amp;&amp; b &lt;= j)
+		return tree[node];
+
+	
+	// Se o intervalo está um pedaço em cada filho.
+	int q1 = query_tree(node * 2, a, (a + b) / 2, i, j);
+	int q2 = query_tree(1 + node * 2, 1 + (a + b) / 2, b, i, j);
+
+	// Retorna a combinação dos intervalos.
+	return q1 + q2;
+}
+
+/* 
+
+Uso:
+
+Assumindo que &quot;n&quot; é o numero de termos que o segmento tem
+Inicialize &quot;init&quot; com os valores iniciais:
+
+*	for(i = 0; i &lt; n; scanf(&quot;%d&quot;, val), i++)
+*      init[i] = val;
+
+E mande construir a arvore:
+
+*   build_tree(1, 0, n-1);
+
+Para atualizar a arvore:
+ 
+*   update_tree(1, 0, n-1, inicio, fim, val);
+*   Onde inicio é a posição inicial do segmento desejado e fim é a posição final do mesmo
+*	e val é o quanto você quer alterar os valores desse seguimento
+
+Para fazer queries
+
+*   query_tree(1, 0, n-1, inicio, fim);
+*	Onde inicio é a posição inicial do segmento desejado e fim é a posição final do mesmo
+*	o retorno terá o mesmo tipo que os dados guardados na arvore e será o resultado do segmento pesquisado
+
+*/</pre><h2><li id="mergesort.cpp">6.3. Mergesort</li></h2><pre class="prettyprint">typedef vector&lt;int&gt;::iterator vec_it;
+
+void merge(vec_it left, vec_it left_end, vec_it right, vec_it right_end, vec_it numbers)
+{
+    while (left != left_end)
+    {
+        if (*left &lt; *right || right == right_end)
+        {
+            *numbers = *left;
+            ++left;
+        }
+        else
+        {
+            *numbers = *right;
+            ++right;
+        }
+
+        ++numbers;
+    }
+
+    while (right != right_end)
+    {
+        *numbers = *right;
+        ++right;
+        ++numbers;
+    }
+}
+
+void merge_sort(vector&lt;int&gt; &amp;numbers)
+{
+    if (numbers.size() &lt;= 1)
+        return;
+
+    vector&lt;int&gt;::size_type middle = numbers.size() / 2;
+    vector&lt;int&gt; left(numbers.begin(), numbers.begin() + middle);
+    vector&lt;int&gt; right(numbers.begin() + middle, numbers.end());
+
+    merge_sort(left);
+    merge_sort(right);
+
+    merge(left.begin(), left.end(), right.begin(), right.end(), numbers.begin());
+}</pre><h2><li id="mo.cpp">6.4. Algoritmo de MO (queries offline)</li></h2><pre class="prettyprint">#define N 311111
+#define A 1111111
+#define BLOCK 555 // ~sqrt(N)
+
+int cnt[A], a[N], ans[N], answer = 0;
+
+struct node
+{
+	int L, R, i;
+} q[N];
+
+bool cmp(node x, node y)
+{
+	if (x.L / BLOCK != y.L / BLOCK)
+	{
+		// different blocks, so sort by block.
+		return x.L / BLOCK &lt; y.L / BLOCK;
+	}
+	// same block, so sort by R value
+	return x.R &lt; y.R;
+}
+
+void add(int position)
+{
+	cnt[a[position]]++;
+	if (cnt[a[position]] == 1)
+	{
+		answer++; // Verifica se é resposta aqui!!!
+	}
+}
+
+void remove(int position)
+{
+	cnt[a[position]]--;
+	if (cnt[a[position]] == 0)
+	{
+		answer--; // Verifica se é resposta aqui!!!
+	}
+}
+
+int main()
+{
+	int n;
+	scanf(&quot;%d&quot;, &amp;n);
+	for (int i = 0; i &lt; n; i++)
+		scanf(&quot;%d&quot;, &amp;a[i]);
+
+	int m;
+	scanf(&quot;%d&quot;, &amp;m);
+	for (int i = 0; i &lt; m; i++)
+	{
+		scanf(&quot;%d%d&quot;, &amp;q[i].L, &amp;q[i].R);
+		q[i].L--;
+		q[i].R--;
+		q[i].i = i;
+	}
+
+	sort(q, q + m, cmp);
+
+	int currentL = 0, currentR = 0;
+	for (int i = 0; i &lt; m; i++)
+	{
+		int L = q[i].L, R = q[i].R;
+		while (currentL &lt; L)
+		{
+			remove(currentL);
+			currentL++;
+		}
+
+		while (currentL &gt; L)
+		{
+			add(currentL - 1);
+			currentL--;
+		}
+		while (currentR &lt;= R)
+		{
+			add(currentR);
+			currentR++;
+		}
+		while (currentR &gt; R + 1)
+		{
+			remove(currentR - 1);
+			currentR--;
+		}
+		ans[q[i].i] = answer;
+	}
+
+	for (int i = 0; i &lt; m; i++)
+		printf(&quot;%d\n&quot;, ans[i]);
+}
+</pre><h2><li id="unionfind.cpp">6.5. Union-find</li></h2><pre class="prettyprint">// Tamanho máximo de n
+const int maxn = 200000;
+int Rank[maxn], p[maxn], n;
+
+void init(int _n)
+{
+    n = _n;
+    fill(Rank, Rank + n, 0);
+    for (int i = 0; i &lt; n; i++)
+        p[i] = i;
+}
+
+int find(int x)
+{
+    return x == p[x] ? x : (p[x] = find(p[x]));
+}
+
+void unir(int a, int b)
+{
+    a = find(a);
+    b = find(b);
+    if (a == b)
+        return;
+    if (Rank[a] &lt; Rank[b])
+        swap(a, b);
+    if (Rank[a] == Rank[b])
+        ++Rank[a];
+    p[b] = a;
+}</pre></ol></ol>

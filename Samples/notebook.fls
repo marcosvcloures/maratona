@@ -94,6 +94,7 @@ INPUT C:/Program Files/MiKTeX 2.9/tex/latex/droid/t1fdm.fd
 INPUT notebook.aux
 INPUT notebook.aux
 OUTPUT notebook.aux
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-t1.tfm
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/hyperref/nameref.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/hyperref/nameref.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/gettitlestring.sty
@@ -112,9 +113,9 @@ INPUT C:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/epstopdf-base.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/epstopdf-base.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/grfext.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/grfext.sty
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/jknappen/ec/ecrm1728.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/jknappen/ec/ecrm1440.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/jknappen/ec/ecrm1200.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-t1.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-t1.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-t1.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr12.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr8.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr6.tfm
@@ -124,16 +125,21 @@ INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmmi6.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmsy10.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmsy8.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmsy6.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/jknappen/ec/ecbx1440.tfm
 INPUT notebook.toc
 INPUT notebook.toc
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/jknappen/ec/ecbx0800.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/jknappen/ec/ecbx1000.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/jknappen/ec/ecrm0800.tfm
 OUTPUT notebook.toc
 INPUT contents.tex
+INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/public/droid/DroidSansMono-t1.vf
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-01.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-02.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-03.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-04.tfm
 INPUT C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/jknappen/ec/ecbx1200.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/public/droid/DroidSansMono-t1.vf
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-01.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-02.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-03.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-04.tfm
 INPUT code/includes.cpp
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/listings/lstlang1.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/listings/lstlang1.sty
@@ -149,6 +155,23 @@ INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-01.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-02.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-03.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-04.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/public/droid/DroidSansMono-t1.vf
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-01.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-02.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-03.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-04.tfm
+INPUT code/euclides_extended.cpp
+INPUT code/euclides_extended.cpp
+INPUT code/euclides_extended.cpp
+INPUT code/mdc.cpp
+INPUT code/mdc.cpp
+INPUT code/mdc.cpp
+INPUT code/mmc.cpp
+INPUT code/mmc.cpp
+INPUT code/mmc.cpp
+INPUT code/pollard_rho.cpp
+INPUT code/pollard_rho.cpp
+INPUT code/pollard_rho.cpp
 INPUT code/fft.cpp
 INPUT code/fft.cpp
 INPUT code/fft.cpp
@@ -161,38 +184,65 @@ INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-Slanted-0
 INPUT code/matriz.cpp
 INPUT code/matriz.cpp
 INPUT code/matriz.cpp
-INPUT code/radial_sweep.cpp
-INPUT code/radial_sweep.cpp
-INPUT code/radial_sweep.cpp
+INPUT code/prime_factors.cpp
+INPUT code/prime_factors.cpp
+INPUT code/prime_factors.cpp
+INPUT code/modpow.cpp
+INPUT code/modpow.cpp
+INPUT code/modpow.cpp
+INPUT code/gss.cpp
+INPUT code/gss.cpp
+INPUT code/gss.cpp
+INPUT code/divisores.cpp
+INPUT code/divisores.cpp
+INPUT code/divisores.cpp
+INPUT code/crivosegmentado.cpp
+INPUT code/crivosegmentado.cpp
+INPUT code/crivosegmentado.cpp
 INPUT code/grafos.cpp
 INPUT code/grafos.cpp
 INPUT code/grafos.cpp
+INPUT code/matching_bipartido.cpp
+INPUT code/matching_bipartido.cpp
+INPUT code/matching_bipartido.cpp
+INPUT code/hungaro.cpp
+INPUT code/hungaro.cpp
+INPUT code/hungaro.cpp
+INPUT code/suffixarray.cpp
+INPUT code/suffixarray.cpp
+INPUT code/suffixarray.cpp
+INPUT code/radial_sweep.cpp
+INPUT code/radial_sweep.cpp
+INPUT code/radial_sweep.cpp
+INPUT code/kd-tree.cpp
+INPUT code/kd-tree.cpp
+INPUT code/kd-tree.cpp
+INPUT code/geometria_reduzido.cpp
+INPUT code/geometria_reduzido.cpp
+INPUT code/geometria_reduzido.cpp
+INPUT code/geometria.cpp
+INPUT code/geometria.cpp
+INPUT code/geometria.cpp
 INPUT code/wavelet.cpp
 INPUT code/wavelet.cpp
 INPUT code/wavelet.cpp
 INPUT code/seg_tree.cpp
 INPUT code/seg_tree.cpp
 INPUT code/seg_tree.cpp
-INPUT code/geometria.cpp
-INPUT code/geometria.cpp
-INPUT code/geometria.cpp
+INPUT code/mergesort.cpp
+INPUT code/mergesort.cpp
+INPUT code/mergesort.cpp
+INPUT code/mo.cpp
+INPUT code/mo.cpp
+INPUT code/mo.cpp
+INPUT code/unionfind.cpp
+INPUT code/unionfind.cpp
+INPUT code/unionfind.cpp
 INPUT notebook.aux
 INPUT ./notebook.out
 INPUT ./notebook.out
 INPUT C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/droid/droid-03.enc
 INPUT C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/droid/droid-01.enc
-INPUT C:/Users/Marcos Loures/AppData/Local/MiKTeX/2.9/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk
-INPUT C:/Users/Marcos Loures/AppData/Local/MiKTeX/2.9/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk
-INPUT C:/Users/Marcos Loures/AppData/Local/MiKTeX/2.9/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0800.pk
-INPUT C:/Users/Marcos Loures/AppData/Local/MiKTeX/2.9/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0800.pk
-INPUT C:/Users/Marcos Loures/AppData/Local/MiKTeX/2.9/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx0800.pk
-INPUT C:/Users/Marcos Loures/AppData/Local/MiKTeX/2.9/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx0800.pk
-INPUT C:/Users/Marcos Loures/AppData/Local/MiKTeX/2.9/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1440.pk
-INPUT C:/Users/Marcos Loures/AppData/Local/MiKTeX/2.9/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1440.pk
-INPUT C:/Users/Marcos Loures/AppData/Local/MiKTeX/2.9/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1440.pk
-INPUT C:/Users/Marcos Loures/AppData/Local/MiKTeX/2.9/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1440.pk
-INPUT C:/Users/Marcos Loures/AppData/Local/MiKTeX/2.9/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1000.pk
-INPUT C:/Users/Marcos Loures/AppData/Local/MiKTeX/2.9/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1000.pk
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/droid/DroidSansMono.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/droid/DroidSansMono.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/droid/DroidSansMono.pfb

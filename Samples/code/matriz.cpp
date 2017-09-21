@@ -35,7 +35,7 @@ vvl matrixMul(const vvl &a, const vvl &b) {
     for (int i = 0; i < n; i++)
         for (int j = 0; j < k; j++)
             for (int p = 0; p < m; p++)
-               res[i][j] = (res[i][j] + (long long) ((a[i][p] % mod) * (b[p][j] % mod) % mod)) % mod;
+               res[i][j] = (res[i][j] + ((a[i][p] % mod) * (b[p][j] % mod) % mod)) % mod;
     return res;
 }
 

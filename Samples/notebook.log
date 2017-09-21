@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.15)  19 SEP 2017 12:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.15)  21 SEP 2017 16:19
 entering extended mode
 **./notebook.tex
 (notebook.tex
@@ -685,20 +685,20 @@ File: t1fdm.fd 2011/09/11 Fontinst v1.933 font definitions for T1/fdm.
 ) (notebook.aux)
 \openout1 = `notebook.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 164.
+LaTeX Font Info:    ... okay on input line 164.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 164.
+LaTeX Font Info:    ... okay on input line 164.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 164.
+LaTeX Font Info:    ... okay on input line 164.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 164.
+LaTeX Font Info:    ... okay on input line 164.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 164.
+LaTeX Font Info:    ... okay on input line 164.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 164.
+LaTeX Font Info:    ... okay on input line 164.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 164.
+LaTeX Font Info:    ... okay on input line 164.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -735,7 +735,7 @@ LaTeX Font Info:    ... okay on input line 172.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box55
-Package hyperref Info: Link coloring OFF on input line 172.
+Package hyperref Info: Link coloring OFF on input line 164.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -744,9 +744,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count120
 )
-LaTeX Info: Redefining \ref on input line 172.
-LaTeX Info: Redefining \pageref on input line 172.
-LaTeX Info: Redefining \nameref on input line 172.
+LaTeX Info: Redefining \ref on input line 164.
+LaTeX Info: Redefining \pageref on input line 164.
+LaTeX Info: Redefining \nameref on input line 164.
 
 (notebook.out) (notebook.out)
 \@outlinefile=\write3
@@ -781,22 +781,36 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 177.
+(Font)              <12> on input line 169.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 177.
+(Font)              <8> on input line 169.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 177.
- (notebook.toc
+(Font)              <6> on input line 169.
+
+
+LaTeX Font Warning: Font shape `T1/fdm/bx/n' undefined
+(Font)              using `T1/fdm/m/n' instead on input line 170.
+
+(notebook.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 1.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 1.
+
+Overfull \hbox (0.99994pt too wide) detected at line 13
+\T1/fdm/bx/n/10 2.10 
+ []
+
+
+Overfull \hbox (0.99994pt too wide) detected at line 14
+\T1/fdm/bx/n/10 2.11 
+ []
+
 )
 \tf@toc=\write4
 \openout4 = `notebook.toc'.
 
-
-(contents.tex [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
+ (contents.tex [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 ]
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
@@ -811,64 +825,64 @@ File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 3.
 
-(code/includes.cpp
+(code/includes.cpp) [2
 
-LaTeX Font Warning: Font shape `T1/fdm/bx/n' undefined
-(Font)              using `T1/fdm/m/n' instead on input line 1.
-
-) [2
-
-] (code/fft.cpp
+] (code/euclides_extended.cpp) (code/mdc.cpp)
+(code/mmc.cpp) (code/pollard_rho.cpp) (code/fft.cpp
 LaTeX Font Info:    Font shape `T1/fdm/m/it' in size <8> not available
 (Font)              Font shape `T1/fdm/m/sl' tried instead on input line 1.
  [3
 
 
-]) (code/matriz.cpp [4]) [5] (code/radial_sweep.cpp
-[6
+] [4]) (code/matriz.cpp
+[5]) (code/prime_factors.cpp) (code/modpow.cpp [6]) (code/gss.cpp)
+(code/divisores.cpp) (code/crivosegmentado.cpp [7]) [8] (code/grafos.cpp
+[9
 
 
-]) [7] (code/grafos.cpp [8
+] [10]) (code/matching_bipartido.cpp [11]) (code/hungaro.cpp [12] [13])
+[14] (code/suffixarray.cpp [15
 
 
-] [9]) (code/wavelet.cpp [10] [11])
-(code/seg_tree.cpp [12] [13]) (code/geometria.cpp [14] [15]) [16])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 185.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 185.
+]) [16] (code/radial_sweep.cpp [17
 
-(notebook.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 185.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 185.
+
+])
+(code/kd-tree.cpp [18]) (code/geometria_reduzido.cpp [19] [20])
+(code/geometria.cpp [21]) [22] [23] (code/wavelet.cpp [24
+
+
+]) (code/seg_tree.cpp
+[25] [26]) (code/mergesort.cpp [27]) (code/mo.cpp [28]) (code/unionfind.cpp)
+[29])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 177.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 177.
+ (notebook.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 177.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 177.
 Package rerunfilecheck Info: File `notebook.out' has not changed.
-(rerunfilecheck)             Checksum: 002BC64D6F8307D81569CB0AA3174982;714.
+(rerunfilecheck)             Checksum: E1F62967DCFFF2E792D26BB8CBD9070B;2132.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 185.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 177.
  ) 
 Here is how much of TeX's memory you used:
- 10546 strings out of 493323
- 145715 string characters out of 3139040
- 491076 words of memory out of 3000000
- 12929 multiletter control sequences out of 15000+200000
- 16241 words of font info for 42 fonts, out of 3000000 for 9000
+ 11884 strings out of 493323
+ 165939 string characters out of 3139040
+ 584109 words of memory out of 3000000
+ 13231 multiletter control sequences out of 15000+200000
+ 14533 words of font info for 50 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,12n,68p,248b,1884s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,12n,68p,256b,1884s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/droid/droid-03.enc}{C:/Program F
-iles/MiKTeX 2.9/fonts/enc/dvips/droid/droid-01.enc} <C:\Users\Marcos Loures\App
-Data\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users
-\Marcos Loures\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm
-0800.pk> <C:\Users\Marcos Loures\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknap
-pen\ec\dpi600\ecbx0800.pk> <C:\Users\Marcos Loures\AppData\Local\MiKTeX\2.9\fon
-ts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\Marcos Loures\AppData\Lo
-cal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk> <C:\Users\Marcos
- Loures\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/droid/DroidSansMono.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/droid/DroidSansMono.pfb>
-Output written on notebook.pdf (16 pages, 255511 bytes).
+iles/MiKTeX 2.9/fonts/enc/dvips/droid/droid-01.enc}<C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/droid/DroidSansMono.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/droid/DroidSansMono.pfb>
+Output written on notebook.pdf (29 pages, 368286 bytes).
 PDF statistics:
- 1497 PDF objects out of 1728 (max. 8388607)
- 1009 named destinations out of 1200 (max. 500000)
- 97 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2625 PDF objects out of 2984 (max. 8388607)
+ 1990 named destinations out of 2073 (max. 500000)
+ 249 words of extra memory for PDF output out of 10000 (max. 10000000)
 

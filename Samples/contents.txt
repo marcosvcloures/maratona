@@ -7,14 +7,35 @@
 includes.cpp	Includes
 
 [Matemática]
+euclides_extended.cpp	Algoritmo de euclides extendido
+mdc.cpp	Máximo divisor comum
+mmc.cpp	Mínimo múltiplo comum
+pollard_rho.cpp	Algoritmo de Pollard Rho
 fft.cpp	Transformada rápida de Fourrier
 matriz.cpp	Matrizes
+prime_factors.cpp	Fatoração em números primos
+modpow.cpp	Modpow
+gss.cpp	Máximo e mínimo de funções
+divisores.cpp	Todos divisores de um número
+crivosegmentado.cpp	Crivo de Eratóstenes segmentado
+
+[Grafos]
+grafos.cpp	Grafos
+matching_bipartido.cpp	Matching máximo em grafo bipartido
+hungaro.cpp	Algoritmo húngaro
+
+[Strings]
+suffixarray.cpp	Suffix array
 
 [Geometria]
 radial_sweep.cpp	Linha de eventos radial
+kd-tree.cpp	KD-Tree para pares mais próximos em O(log(n))
+geometria_reduzido.cpp	Geometria (reduzido)
+geometria.cpp	Geometria (grande)
 
-[Estruturas de dados]
-grafos.cpp	Grafos
+[Estruturas de dados etc]
 wavelet.cpp	Wavelet-tree
 seg_tree.cpp	Seg-tree
-geometria.cpp	Geometria
+mergesort.cpp	Mergesort
+mo.cpp	Algoritmo de MO (queries offline)
+unionfind.cpp	Union-find
