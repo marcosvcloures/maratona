@@ -202,6 +202,9 @@ INPUT code/crivosegmentado.cpp
 INPUT code/grafos.cpp
 INPUT code/grafos.cpp
 INPUT code/grafos.cpp
+INPUT code/bridges.cpp
+INPUT code/bridges.cpp
+INPUT code/bridges.cpp
 INPUT code/matching_bipartido.cpp
 INPUT code/matching_bipartido.cpp
 INPUT code/matching_bipartido.cpp

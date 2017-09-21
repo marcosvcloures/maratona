@@ -1,6 +1,6 @@
 #!/usr/bin/python
 from html import escape  # python 3.x
-import subprocess
+import os
 code_dir = "code"
 title = "#include <bits/stdc++.h>"
 
@@ -98,3 +98,4 @@ if __name__ == "__main__":
     html = get_html(sections)
     with open('index.html', 'w') as f:
         f.write(html)
+    os.system('copy index.html /A /Y ..\docs\index.html')

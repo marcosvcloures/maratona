@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1506021570 "notebook.tex" "notebook.pdf" "notebook" 1506021574
+["pdflatex"] 1506022933 "notebook.tex" "notebook.pdf" "notebook" 1506022938
   "C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/droid/droid-01.enc" 1315763728 3208 774a845f3c996f69f4af73dfaa7ec993 ""
   "C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/droid/droid-03.enc" 1315763728 3575 a615c75e8351765beee0ecafb2d78daa ""
   "C:/Program Files/MiKTeX 2.9/fonts/tfm/jknappen/ec/ecrm1000.tfm" 993062122 3148 7e594c8240c71e432203f65ab5f95a51 ""
@@ -77,6 +77,7 @@
   "C:/Program Files/MiKTeX 2.9/tex/latex/xcolor/xcolor.sty" 1463135581 57049 34128738f682d033422ca125f82e5d62 ""
   "C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map" 1505835208 132204 73081d7b12f5f1afd767c489494acde0 ""
   "C:/Users/Marcos Loures/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt" 1505506589 4060085 78590f45519d84de53c3828ddf8dce2d ""
+  "code/bridges.cpp" 1506022065 3717 45728e3220fa154f03d31d71a782b853 ""
   "code/crivosegmentado.cpp" 1506021126 1595 4a42992524c6b42b8a5251f2908be92d ""
   "code/divisores.cpp" 1506020994 319 aee0cc564ae0e1d8ea15ab12ad6b6522 ""
   "code/euclides_extended.cpp" 1506020092 233 0224a099adad82964eb56055cb063111 ""
@@ -102,11 +103,11 @@
   "code/suffixarray.cpp" 1506021076 3228 1113e69bf36bdaafe018820599029e77 ""
   "code/unionfind.cpp" 1506021360 490 ae9a986505339d491f55a51fcb017096 ""
   "code/wavelet.cpp" 1505825550 3019 fe478e2b324f3afcbcfef90800e0cf2a ""
-  "contents.tex" 1506021564 2962 a4d5d2179edc89060dad858df9e583f1 ""
-  "notebook.aux" 1506021574 6222 0687e9636238a0eda8fce989eae246e2 ""
-  "notebook.out" 1506021574 2132 59baba7d84563b4400ac0243924b4821 ""
+  "contents.tex" 1506022927 3076 687523907c5ebe4483aabcccdd86f6b5 ""
+  "notebook.aux" 1506022938 6418 3eb06426f62aac9821f03e4a43a0484b ""
+  "notebook.out" 1506022938 2210 9008a3f31aae738f484753b97dc001b8 ""
   "notebook.tex" 1505878524 3804 ea5d3a81f0b05385573a3542c2f85d3a ""
-  "notebook.toc" 1506021574 2745 4efe9c86eec8acb8ba8d398bd2e26b9a ""
+  "notebook.toc" 1506022938 2839 3fcc5da66e05f97316a68907db770bc6 ""
   (generated)
   "notebook.aux"
   "notebook.log"

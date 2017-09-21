@@ -14,18 +14,19 @@
 \BOOKMARK [2][-]{subsection.2.11}{Crivo de Erat\363stenes segmentado}{section.2}% 14
 \BOOKMARK [1][-]{section.3}{Grafos}{}% 15
 \BOOKMARK [2][-]{subsection.3.1}{Grafos}{section.3}% 16
-\BOOKMARK [2][-]{subsection.3.2}{Matching m\341ximo em grafo bipartido}{section.3}% 17
-\BOOKMARK [2][-]{subsection.3.3}{Algoritmo h\372ngaro}{section.3}% 18
-\BOOKMARK [1][-]{section.4}{Strings}{}% 19
-\BOOKMARK [2][-]{subsection.4.1}{Suffix array}{section.4}% 20
-\BOOKMARK [1][-]{section.5}{Geometria}{}% 21
-\BOOKMARK [2][-]{subsection.5.1}{Linha de eventos radial}{section.5}% 22
-\BOOKMARK [2][-]{subsection.5.2}{KD-Tree para pares mais pr\363ximos em O\(log\(n\)\)}{section.5}% 23
-\BOOKMARK [2][-]{subsection.5.3}{Geometria \(reduzido\)}{section.5}% 24
-\BOOKMARK [2][-]{subsection.5.4}{Geometria \(grande\)}{section.5}% 25
-\BOOKMARK [1][-]{section.6}{Estruturas de dados etc}{}% 26
-\BOOKMARK [2][-]{subsection.6.1}{Wavelet-tree}{section.6}% 27
-\BOOKMARK [2][-]{subsection.6.2}{Seg-tree}{section.6}% 28
-\BOOKMARK [2][-]{subsection.6.3}{Mergesort}{section.6}% 29
-\BOOKMARK [2][-]{subsection.6.4}{Algoritmo de MO \(queries offline\)}{section.6}% 30
-\BOOKMARK [2][-]{subsection.6.5}{Union-find}{section.6}% 31
+\BOOKMARK [2][-]{subsection.3.2}{Todas as pontes de um grafo}{section.3}% 17
+\BOOKMARK [2][-]{subsection.3.3}{Matching m\341ximo em grafo bipartido}{section.3}% 18
+\BOOKMARK [2][-]{subsection.3.4}{Algoritmo h\372ngaro}{section.3}% 19
+\BOOKMARK [1][-]{section.4}{Strings}{}% 20
+\BOOKMARK [2][-]{subsection.4.1}{Suffix array}{section.4}% 21
+\BOOKMARK [1][-]{section.5}{Geometria}{}% 22
+\BOOKMARK [2][-]{subsection.5.1}{Linha de eventos radial}{section.5}% 23
+\BOOKMARK [2][-]{subsection.5.2}{KD-Tree para pares mais pr\363ximos em O\(log\(n\)\)}{section.5}% 24
+\BOOKMARK [2][-]{subsection.5.3}{Geometria \(reduzido\)}{section.5}% 25
+\BOOKMARK [2][-]{subsection.5.4}{Geometria \(grande\)}{section.5}% 26
+\BOOKMARK [1][-]{section.6}{Estruturas de dados etc}{}% 27
+\BOOKMARK [2][-]{subsection.6.1}{Wavelet-tree}{section.6}% 28
+\BOOKMARK [2][-]{subsection.6.2}{Seg-tree}{section.6}% 29
+\BOOKMARK [2][-]{subsection.6.3}{Mergesort}{section.6}% 30
+\BOOKMARK [2][-]{subsection.6.4}{Algoritmo de MO \(queries offline\)}{section.6}% 31
+\BOOKMARK [2][-]{subsection.6.5}{Union-find}{section.6}% 32

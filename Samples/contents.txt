@@ -21,6 +21,7 @@ crivosegmentado.cpp	Crivo de Eratóstenes segmentado
 
 [Grafos]
 grafos.cpp	Grafos
+bridges.cpp	Todas as pontes de um grafo
 matching_bipartido.cpp	Matching máximo em grafo bipartido
 hungaro.cpp	Algoritmo húngaro
 
