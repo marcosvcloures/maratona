@@ -1,25 +1,17 @@
-//Usage:
-// Fill txt with the characters of the txting.
-// Call SuffixSort(n), where n is the length of the txting stored in txt.
-// That's it!
+#include <bits/stdc++.h>
 
-//Output:
-// SA = The suffix array.
-// Contains the n suffixes of txt sorted in lexicographical order.
-// Each suffix is represented as a single integer (the SAition of txt where it starts).
-// iSA = The inverse of the suffix array. iSA[i] = the index of the suffix txt[i..n)
-//   in the SA array. (In other words, SA[i] = k <==> iSA[k] = i)
-//   With this array, you can compare two suffixes in O(1): Suffix txt[i..n) is smaller
-//   than txt[j..n) if and only if iSA[i] < iSA[j]
+using namespace std;
 
-const int MAX = 100010;
+#define D(x) //cout << #x " = " << x << endl
+
+const int MAX = 101000;
 char txt[MAX];           //input
-int iSA[MAX], SA[MAX];   //output
+int iSA[MAX], SA[MAX], sum[MAX];   //output
 int cnt[MAX], prox[MAX]; //internal
-bool bh[MAX], b2h[MAX];
+bool bh[MAX], b2h[MAX], possiveis[2600100] = {0};
 
 // Compares two suffixes according to their first characters
-bool smaller_first_char(int a, int b)
+inline bool smaller_first_char(int a, int b)
 {
     return txt[a] < txt[b];
 }
@@ -127,4 +119,40 @@ void getlcp(int n)
                 h--;
         }
     }
+}
+
+int main()
+{
+    int tam, i, j, r = 0, count, val;
+
+    tam = strlen(fgets(txt, sizeof(txt), stdin)) - 1;
+
+    suffixSort(tam);
+
+    for (i = 0; i < tam; i++)
+        txt[i] = txt[i] - 'a' + 1;
+
+    getlcp(tam);
+
+    sum[0] = 0;
+
+    for (i = 0; i < tam; i++)
+    {
+        count = lcp[i];
+
+        for (j = SA[i] + lcp[i]; j < tam; j++)
+        {
+            count++;
+            
+            val = sum[count] = sum[count - 1] + txt[j];
+
+            if (!possiveis[val])
+            {
+                r++;
+                possiveis[val] = 1;
+            }
+        }
+    }
+
+    printf("%d\n", r);
 }
