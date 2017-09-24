@@ -41,6 +41,9 @@ int despojado(long long e)
         }
     }
 
+    if(e != 1)
+        count++;
+
     return count >= 2;
 }
 
@@ -48,7 +51,7 @@ int main()
 {
     long long i, j, n, qtd = 0, resp = 0;
     bool crivo[LIM] = {0};
-    set<long long> divisores;
+    vector<long long> divisores;
 
     fill(pd, pd + LIM, -1);
 
@@ -68,14 +71,16 @@ int main()
     for (i = 1; i < sqrtn; i++)
     {
         if (n % i == 0)
-            divisores.insert(i), divisores.insert(n / i);
+            divisores.pb(i), divisores.pb(n / i);
     }
 
-    for (auto &it : divisores)
+    resp = despojado(divisores[0]);
+    for(int i = 1; i < divisores.size(); i++)
     {
         //D(it);
         //D(despojado(it));
-        resp += despojado(it);
+        if(divisores[i] != divisores[i-1])
+            resp += despojado(divisores[i]);
     }
 
     printf("%lld\n", resp);

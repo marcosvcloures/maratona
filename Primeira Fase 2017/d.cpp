@@ -32,8 +32,11 @@ int main() {
             while(n % it == 0) 
                 n /= it;
         }
-        else if(it > n) 
+        else if(it > n)
             break;
+
+    if(n != 1)
+        qtd++;
     
     long long pascal[qtd+3][qtd+3];
 
@@ -45,8 +48,8 @@ int main() {
         for(j = 1; j <= qtd+2; j++) 
             pascal[i][j] = pascal[i-1][j] + pascal[i-1][j-1];
 
-    for(i = 3; i <= qtd + 2; i++)
-        resp += pascal[qtd+1][i];
+    for(i = 2; i <= qtd; i++)
+        resp += pascal[qtd+1][i+1];
 
     printf("%lld\n", resp);
 }

@@ -13,8 +13,10 @@ mmc.cpp	Mínimo múltiplo comum
 pollard_rho.cpp	Algoritmo de Pollard Rho
 fft.cpp	Transformada rápida de Fourrier
 matriz.cpp	Matrizes
+qtdPrimos.cpp	Quantidade de fatores primos de um número
 prime_factors.cpp	Fatoração em números primos
 modpow.cpp	Modpow
+eulerPhi.cpp	Quantidade de coprimos.
 gss.cpp	Máximo e mínimo de funções
 divisores.cpp	Todos divisores de um número
 crivosegmentado.cpp	Crivo de Eratóstenes segmentado
