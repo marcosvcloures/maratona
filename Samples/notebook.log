@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.15)  21 SEP 2017 16:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.15)  27 SEP 2017 08:46
 entering extended mode
 **./notebook.tex
 (notebook.tex
@@ -806,6 +806,16 @@ Overfull \hbox (0.99994pt too wide) detected at line 14
 \T1/fdm/bx/n/10 2.11 
  []
 
+
+Overfull \hbox (0.99994pt too wide) detected at line 15
+\T1/fdm/bx/n/10 2.12 
+ []
+
+
+Overfull \hbox (0.99994pt too wide) detected at line 16
+\T1/fdm/bx/n/10 2.13 
+ []
+
 )
 \tf@toc=\write4
 \openout4 = `notebook.toc'.
@@ -835,33 +845,35 @@ LaTeX Font Info:    Font shape `T1/fdm/m/it' in size <8> not available
 
 
 ] [4]) (code/matriz.cpp
-[5]) (code/prime_factors.cpp) (code/modpow.cpp [6]) (code/gss.cpp)
-(code/divisores.cpp) (code/crivosegmentado.cpp [7]) [8] (code/grafos.cpp
-[9
+[5]) (code/qtdPrimos.cpp) [6] (code/prime_factors.cpp) (code/modpow.cpp)
+(code/eulerPhi.cpp [7]) (code/gss.cpp) (code/divisores.cpp)
+(code/crivosegmentado.cpp [8]) [9] (code/grafos.cpp [10
 
 
-] [10]) (code/bridges.cpp [11]) [12] (code/matching_bipartido.cpp [13])
-(code/hungaro.cpp [14]) [15] (code/suffixarray.cpp [16
+] [11])
+(code/bridges.cpp [12]) [13] (code/isomorfismo_tree.cpp [14])
+(code/matching_bipartido.cpp [15]) (code/hungaro.cpp [16] [17]) [18]
+(code/suffixarray.cpp [19
 
 
-]) [17]
-(code/radial_sweep.cpp [18
+]) [20] (code/radial_sweep.cpp [21
 
 
-]) (code/kd-tree.cpp [19])
-(code/geometria_reduzido.cpp [20] [21]) (code/geometria.cpp [22]) [23] [24]
-(code/wavelet.cpp [25
+]) (code/kd-tree.cpp [22]) (code/geometria_reduzido.cpp [23] [24]) (code/geomet
+ria.cpp [25])
+[26] [27] (code/wavelet.cpp [28
 
 
-]) (code/seg_tree.cpp [26] [27]) (code/mergesort.cpp
-[28]) (code/mo.cpp [29]) (code/unionfind.cpp) [30])
+]) (code/seg_tree.cpp [29] [30])
+(code/mergesort.cpp [31]) (code/mo.cpp [32]) (code/unionfind.cpp) [33])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 177.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 177.
- (notebook.aux)
+
+(notebook.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 177.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 177.
 Package rerunfilecheck Info: File `notebook.out' has not changed.
-(rerunfilecheck)             Checksum: 7F58CED583A1D14EA5384CBD43528FE7;2210.
+(rerunfilecheck)             Checksum: AC800FA4EC8E550CD6C22AE57634D3A5;2457.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -869,10 +881,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 177.
  ) 
 Here is how much of TeX's memory you used:
- 12060 strings out of 493323
- 168546 string characters out of 3139040
+ 12349 strings out of 493323
+ 172958 string characters out of 3139040
  584109 words of memory out of 3000000
- 13265 multiletter control sequences out of 15000+200000
+ 13312 multiletter control sequences out of 15000+200000
  14533 words of font info for 50 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,12n,68p,256b,1884s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -880,9 +892,9 @@ Here is how much of TeX's memory you used:
 iles/MiKTeX 2.9/fonts/enc/dvips/droid/droid-01.enc}<C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/droid/DroidSansMono.pfb><C:/Program Files/MiKTeX 2.9/fonts/
 type1/public/droid/DroidSansMono.pfb>
-Output written on notebook.pdf (30 pages, 390497 bytes).
+Output written on notebook.pdf (33 pages, 427344 bytes).
 PDF statistics:
- 2798 PDF objects out of 2984 (max. 8388607)
- 2129 named destinations out of 2487 (max. 500000)
- 257 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3099 PDF objects out of 3580 (max. 8388607)
+ 2362 named destinations out of 2487 (max. 500000)
+ 281 words of extra memory for PDF output out of 10000 (max. 10000000)
 
