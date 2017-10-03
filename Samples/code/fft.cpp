@@ -19,7 +19,7 @@
 using namespace std;
 
 // primeira potência de 2 maior que o limite de H
-#define MAX_DIST (262144 * 2)
+const int MAX_DIST = 262144 * 2;
 
 typedef complex<double> cpx;
 const double pi = acos(-1.0);
@@ -33,7 +33,6 @@ int maxDist;
 // type:   1 = Transformada, -1 = Transformada inversa
 void FFT(vector<cpx> &v, vector<cpx> &ans, int n, int type)
 {
-	assert(!(n & (n - 1)));
 	int i, sz, o;
 	p[0] = 0;
 	for (i = 1; i < n; i++)
@@ -78,6 +77,9 @@ void FFT(vector<cpx> &v, vector<cpx> &ans, int n, int type)
 
 int main()
 {
+	ios::sync_with_stdio(false);
+	cin.tie(0);
+	
 	int N, d;
 	vector<cpx> distances, fftOut;
 
@@ -133,5 +135,4 @@ int main()
 
 		cout << total << endl;
 	}
-	return 0;
 }
