@@ -1,12 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#define D(x) cout << #x << " = " << x << endl
+#define D(x) cout << #x " = " << x << endl
 
 //INT_MAX, UINT_MAX, LLONG_MAX, ULLONG_MAX, INFINITY
 
 // Mudar para double dependendo do exercício
-typedef long double Double;
+typedef double Double;
 
 static const Double EPS = 1e-10;
 
@@ -127,6 +127,25 @@ struct Vec3 {
 };
 
 //------------------------------------------------------------------- AUXILIARES
+// Retorna se os pontos a, b, c estão em sentido horário
+bool cw(Vec3 a, Vec3 b, Vec3 c) {
+    return cmp((b.x - a.x) * (c.y - a.y) - (b.y - a.y) * (c.x - a.x)) < 0;
+}
+
+//O dobro da área definida pelo triângulo de pontos pontos a, b e c (com sinal).
+Double area2(Vec3 a, Vec3 b, Vec3 c) {
+    return (b.x - a.x) * (c.y - a.y) - (b.y - a.y) * (c.x - a.x);
+}
+
+//Retorna a área do polígono p
+Double areaPoligono(vector<Vec3>& p) {
+    Double s = 0.0;
+    for (unsigned int i = 0; i < p.size(); i++)
+        s += area2(Vec3(), p[i], p[(i + 1) % p.size()]);
+        
+    return fabs(s / 2.0);
+}
+
 // Retorna a projeção de u em v
 Vec3 projecao(const Vec3& u, const Vec3& v) {
     assert(v.x || v.y || v.z);
@@ -146,9 +165,7 @@ Double distPontoSegmento(const Vec3 &p, const Vec3 &a, const Vec3 &b) {
     Double t = (u * v) / (u * u);
     if(cmp(t) == -1) t = 0.0;
     if(cmp(t, 1.0) == 1) t = 1.0;
-    // q o ponto contido em ab mais próximo de p
-    Vec3 q = a + u * t;
-    return (q - p).norma();
+    return (p - Vec3(a + u * t)).norma();
 }
 
 // Retorna a menor distância entre um ponto qualquer de a1b1 com um ponto qualquer de a2b2
@@ -209,5 +226,33 @@ Double distPontoTriangulo(const Vec3 &p, const Vec3 &t1, const Vec3 &t2, const V
         ans = min(ans, distPontoSegmento(p, t3, t1));
         return ans;
     }
+}
+//------------------------------------------------------------------------------
+//---------------------------------------------------------------- CASCO CONVEXO
+// Retorna o casco convexo do conjunto de pontos p em sentido ANTI-HORÁRIO
+vector<Vec3> convexHull(vector<Vec3>& p) {
+    int n = p.size();
+    
+    if (n <= 1)
+        return p;
+
+    int k = 0;
+
+    // CUIDADO COM O OPERADOR <
+    sort(p.begin(), p.end());
+
+    vector<Vec3> q(n * 2);
+
+    for (int i = 0; i < n; q[k++] = p[i++])
+        for (; k >= 2 && cw(q[k - 2], q[k - 1], p[i]); --k)
+            ;
+
+    for (int i = n - 2, t = k; i >= 0; q[k++] = p[i--])
+        for (; k > t && cw(q[k - 2], q[k - 1], p[i]); --k)
+            ;
+
+    q.resize(k - 1 - (q[0] == q[1]));
+    
+    return q;
 }
 //------------------------------------------------------------------------------
