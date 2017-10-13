@@ -235,9 +235,15 @@ INPUT code/geometria_reduzido.cpp
 INPUT code/geometria.cpp
 INPUT code/geometria.cpp
 INPUT code/geometria.cpp
+INPUT code/geometria_marcelo.cpp
+INPUT code/geometria_marcelo.cpp
+INPUT code/geometria_marcelo.cpp
 INPUT code/wavelet.cpp
 INPUT code/wavelet.cpp
 INPUT code/wavelet.cpp
+INPUT code/segtree2d.cpp
+INPUT code/segtree2d.cpp
+INPUT code/segtree2d.cpp
 INPUT code/seg_tree.cpp
 INPUT code/seg_tree.cpp
 INPUT code/seg_tree.cpp

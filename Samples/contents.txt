@@ -36,9 +36,11 @@ radial_sweep.cpp	Linha de eventos radial
 kd-tree.cpp	KD-Tree para pares mais próximos em O(log(n))
 geometria_reduzido.cpp	Geometria (reduzido)
 geometria.cpp	Geometria (grande)
+geometria_marcelo.cpp	Geometria (Marcelo)
 
 [Estruturas de dados etc]
 wavelet.cpp	Wavelet-tree
+segtree2d.cpp	Seg-tree 2D 
 seg_tree.cpp	Seg-tree
 mergesort.cpp	Mergesort
 mo.cpp	Algoritmo de MO (queries offline)

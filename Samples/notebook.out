@@ -27,9 +27,11 @@
 \BOOKMARK [2][-]{subsection.5.2}{KD-Tree para pares mais pr\363ximos em O\(log\(n\)\)}{section.5}% 27
 \BOOKMARK [2][-]{subsection.5.3}{Geometria \(reduzido\)}{section.5}% 28
 \BOOKMARK [2][-]{subsection.5.4}{Geometria \(grande\)}{section.5}% 29
-\BOOKMARK [1][-]{section.6}{Estruturas de dados etc}{}% 30
-\BOOKMARK [2][-]{subsection.6.1}{Wavelet-tree}{section.6}% 31
-\BOOKMARK [2][-]{subsection.6.2}{Seg-tree}{section.6}% 32
-\BOOKMARK [2][-]{subsection.6.3}{Mergesort}{section.6}% 33
-\BOOKMARK [2][-]{subsection.6.4}{Algoritmo de MO \(queries offline\)}{section.6}% 34
-\BOOKMARK [2][-]{subsection.6.5}{Union-find}{section.6}% 35
+\BOOKMARK [2][-]{subsection.5.5}{Geometria \(Marcelo\)}{section.5}% 30
+\BOOKMARK [1][-]{section.6}{Estruturas de dados etc}{}% 31
+\BOOKMARK [2][-]{subsection.6.1}{Wavelet-tree}{section.6}% 32
+\BOOKMARK [2][-]{subsection.6.2}{Seg-tree 2D}{section.6}% 33
+\BOOKMARK [2][-]{subsection.6.3}{Seg-tree}{section.6}% 34
+\BOOKMARK [2][-]{subsection.6.4}{Mergesort}{section.6}% 35
+\BOOKMARK [2][-]{subsection.6.5}{Algoritmo de MO \(queries offline\)}{section.6}% 36
+\BOOKMARK [2][-]{subsection.6.6}{Union-find}{section.6}% 37

@@ -18,6 +18,8 @@ vector<Ponto> convexHull(vector<Ponto> p)
 
     int k = 0;
 
+    sort(p.begin(), p.end());
+
     vector<Ponto> q(n * 2);
 
     for (int i = 0; i < n; q[k++] = p[i++])
@@ -30,41 +32,28 @@ vector<Ponto> convexHull(vector<Ponto> p)
 
     q.resize(k - 1 - (q[0] == q[1]));
 
-    sort(q.begin(), q.end());
-
     return q;
 }
 
 int main()
 {
-    int n, a, b, count;
+    int n;
+    double resp;
 
     while (scanf("%d", &n) && n)
     {
-        count = 0;
+        vector<Ponto> entrada(n);
 
-        set<Ponto> entrada;
+        for (auto &it : entrada)
+            scanf("%lf %lf", &it.first, &it.second);
 
-        for (int i = 0; i < n; i++)
-            scanf("%d %d", &a, &b),
-            entrada.insert({a, b});
+        auto casco = convexHull(entrada);
 
-        vector<Ponto> cebola;
+        resp = hypot(casco.rbegin()->first - casco.begin()->first, casco.rbegin()->second - casco.begin()->second);
 
-        for(auto &it : entrada)
-            cebola.push_back(it);
+        for(int i = 1; i < casco.size(); i++)
+            resp += hypot(casco[i].first - casco[i-1].first, casco[i].second - casco[i-1].second);
 
-        while(cebola.size()) 
-        {
-            auto casco = convexHull(cebola);
-
-            auto fim = set_difference(cebola.begin(), cebola.end(), casco.begin(), casco.end(), cebola.begin());
-
-            cebola.resize(fim - cebola.begin());
-
-            count++;
-        }
-
-        printf("%s\n", count % 2 ? "Take this onion to the lab!" : "Do not take this onion to the lab!");
+        printf("Tera que comprar uma fita de tamanho %.2lf.\n", resp);
     }
 }

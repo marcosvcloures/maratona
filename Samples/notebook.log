@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.15)  27 SEP 2017 08:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.15)  13 OCT 2017 09:51
 entering extended mode
 **./notebook.tex
 (notebook.tex
@@ -859,13 +859,14 @@ LaTeX Font Info:    Font shape `T1/fdm/m/it' in size <8> not available
 ]) [20] (code/radial_sweep.cpp [21
 
 
-]) (code/kd-tree.cpp [22]) (code/geometria_reduzido.cpp [23] [24]) (code/geomet
-ria.cpp [25])
-[26] [27] (code/wavelet.cpp [28
+]) (code/kd-tree.cpp [22] [23]) (code/geometria_reduzido.cpp [24]) [25] (code/g
+eometria.cpp
+[26]) [27] (code/geometria_marcelo.cpp [28] [29] [30]) [31] (code/wavelet.cpp
+[32
 
 
-]) (code/seg_tree.cpp [29] [30])
-(code/mergesort.cpp [31]) (code/mo.cpp [32]) (code/unionfind.cpp) [33])
+]) (code/segtree2d.cpp [33] [34]) [35] (code/seg_tree.cpp [36])
+(code/mergesort.cpp [37]) (code/mo.cpp [38]) (code/unionfind.cpp) [39])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 177.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 177.
 
@@ -873,7 +874,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 177.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 177.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 177.
 Package rerunfilecheck Info: File `notebook.out' has not changed.
-(rerunfilecheck)             Checksum: AC800FA4EC8E550CD6C22AE57634D3A5;2457.
+(rerunfilecheck)             Checksum: A272BA63C551F489E917CD764EC4A222;2591.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -881,10 +882,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 177.
  ) 
 Here is how much of TeX's memory you used:
- 12349 strings out of 493323
- 172958 string characters out of 3139040
- 584109 words of memory out of 3000000
- 13312 multiletter control sequences out of 15000+200000
+ 12993 strings out of 493323
+ 182957 string characters out of 3139040
+ 597109 words of memory out of 3000000
+ 13416 multiletter control sequences out of 15000+200000
  14533 words of font info for 50 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,12n,68p,256b,1884s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -892,9 +893,9 @@ Here is how much of TeX's memory you used:
 iles/MiKTeX 2.9/fonts/enc/dvips/droid/droid-01.enc}<C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/droid/DroidSansMono.pfb><C:/Program Files/MiKTeX 2.9/fonts/
 type1/public/droid/DroidSansMono.pfb>
-Output written on notebook.pdf (33 pages, 427344 bytes).
+Output written on notebook.pdf (39 pages, 514778 bytes).
 PDF statistics:
- 3099 PDF objects out of 3580 (max. 8388607)
- 2362 named destinations out of 2487 (max. 500000)
- 281 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3770 PDF objects out of 4296 (max. 8388607)
+ 2896 named destinations out of 2984 (max. 500000)
+ 297 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -2,6 +2,9 @@
 
 using namespace std;
 
+typedef pair<int, int> pii;
+typedef vector<pii> vpii;
+
 typedef long long ntype;
 const ntype sentry = numeric_limits<ntype>::max();
 
