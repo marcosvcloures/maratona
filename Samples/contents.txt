@@ -30,6 +30,7 @@ hungaro.cpp	Algoritmo húngaro
 
 [Strings]
 suffixarray.cpp	Suffix array
+z.cpp	Algoritmo Z
 
 [Geometria]
 radial_sweep.cpp	Linha de eventos radial
@@ -45,3 +46,5 @@ seg_tree.cpp	Seg-tree
 mergesort.cpp	Mergesort
 mo.cpp	Algoritmo de MO (queries offline)
 unionfind.cpp	Union-find
+k_th_tree.cpp	Arvore para achar o K-esimo termo
+inversao.cpp	Indice de inversao (n log n)

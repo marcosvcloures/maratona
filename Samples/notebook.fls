@@ -223,6 +223,9 @@ INPUT code/hungaro.cpp
 INPUT code/suffixarray.cpp
 INPUT code/suffixarray.cpp
 INPUT code/suffixarray.cpp
+INPUT code/z.cpp
+INPUT code/z.cpp
+INPUT code/z.cpp
 INPUT code/radial_sweep.cpp
 INPUT code/radial_sweep.cpp
 INPUT code/radial_sweep.cpp
@@ -256,6 +259,12 @@ INPUT code/mo.cpp
 INPUT code/unionfind.cpp
 INPUT code/unionfind.cpp
 INPUT code/unionfind.cpp
+INPUT code/k_th_tree.cpp
+INPUT code/k_th_tree.cpp
+INPUT code/k_th_tree.cpp
+INPUT code/inversao.cpp
+INPUT code/inversao.cpp
+INPUT code/inversao.cpp
 INPUT notebook.aux
 INPUT ./notebook.out
 INPUT ./notebook.out

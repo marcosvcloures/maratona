@@ -19,11 +19,12 @@
 using namespace std;
 
 // primeira potência de 2 maior que o limite de H
-const int MAX_DIST = 1 << 23;
+const int MAX_DIST = 1 << 24;
 
 typedef complex<double> cpx;
 const double pi = acos(-1.0);
 
+char txt[100000];
 int p[MAX_DIST];
 int maxDist;
 
@@ -76,38 +77,29 @@ void FFT(vector<cpx> &v, vector<cpx> &ans, int n, int type)
 // 2 * 200k * log(200k) = 8m
 
 int main()
-{
-	ios::sync_with_stdio(false);
-	cin.tie(0);
-	
-	string palavra;
-	int soma = 0, acc = 0;
+{	
+	int soma = 0, acc = 0, tam = 0, c;
     vector<cpx> fftEsq(MAX_DIST), fftDir(MAX_DIST), fftOut(MAX_DIST);
 
-	cin >> palavra;
-
-	for(auto &it : palavra) 
-	{
-		it -= 'a' - 1;
-		soma += it;
-
+	while((c = getchar()) >= 'a') {
+		soma += txt[tam++] = c - 96;
 		fftEsq[soma] = cpx(1, 0);
 	}
 
 	fftDir[soma] = cpx(1, 0);
 
-	for(auto &it : palavra) {
-		acc += it;
+	for(int i = 0; i < tam; i++) {
+		acc += txt[i];
 
 		fftDir[soma - acc] = cpx(1, 0);
 	}
 
-	int shiftAmount;
+	int shiftAmount, lim = 2 * soma;
 
-	for (shiftAmount = 0; (soma >> shiftAmount) != 0; shiftAmount++)
+	for (shiftAmount = 0; (lim >> shiftAmount) != 0; shiftAmount++)
 		;
 
-	maxDist = 1 << (shiftAmount + 1);
+	maxDist = 1 << shiftAmount;
 
 	FFT(fftEsq, fftOut, maxDist, 1);
 	FFT(fftDir, fftEsq, maxDist, 1);
@@ -119,13 +111,13 @@ int main()
 
 	int total = 0;
 
-	assert(2 * soma < maxDist);
+	assert(lim < maxDist);
 
-	for (int i = soma + 1; i <= 2 * soma; i++)
+	for (int i = soma + 1; i <= lim; i++)
 	{
 		if (fftEsq[i].real() > 0.5)
 			total++;
 	}
 
-	cout << total << endl;
+	printf("%d\n", total);
 }
