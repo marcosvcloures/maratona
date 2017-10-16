@@ -1,179 +1,334 @@
 #include <bits/stdc++.h>
-
-#define pb push_back
-
 using namespace std;
 
+#define ll long long
+#define pb push_back
+
 typedef vector<int> vi;
-typedef vector<vi> vvi;
 
-int main()
+struct Vertice
 {
-    int n, i, a, b, count, atual;
+    int id, pai;
+    ll dist;
 
-    while (scanf("%d", &n) > 0)
+    Vertice(int id, ll dist = 1, int pai = -1) : id(id), dist(dist), pai(pai) {}
+
+    bool operator<(Vertice a) const
     {
-        vector<map<multiset<int>, int>> mapas(n);
-        vector<vvi> grafos(n);
-        vvi valores(n), pais(n);
-        vector<set<int>> centros(n);
+        return a.dist < dist;
+    }
+};
 
-        for (i = 0; i < n; i++)
+typedef vector<Vertice> vv;
+typedef vector<vv> vvv;
+
+struct Grafo
+{
+    vvv g;
+    vi pais;
+    int n;
+
+    Grafo(int n) : n(n)
+    {
+        g = vvv(n, vv());
+        pais = vi(n);
+    }
+
+    void operator=(Grafo const &a)
+    {
+        g = a.g;
+        pais = a.pais;
+        n = a.n;
+    }
+
+    void addAresta(int a, int b, ll d = 0)
+    {
+        g[a].pb(Vertice(b, d));
+    }
+
+    void removeAresta(int a, int b)
+    {
+        g[a].erase(remove_if(g[a].begin(), g[a].end(), [b](Vertice v) { return v.id == b; }));
+    }
+
+    ll valAresta(int a, int b)
+    {
+        for (auto it : g[a])
+            if (it.id == b)
+                return it.dist;
+
+        return 0;
+    }
+
+    void modificaAresta(int a, int b, ll dif)
+    {
+        for (auto &it : g[a])
+            if (it.id == b)
+            {
+                it.dist += dif;
+                break;
+            }
+
+        g[a].erase(remove_if(g[a].begin(), g[a].end(), [b](Vertice v) { return v.dist == 0; }));
+    }
+
+    ll dijkstra(int s, int d)
+    {
+        priority_queue<Vertice> fila;
+        bool visitados[n];
+
+        fill(visitados, visitados + n, 0);
+        fill(pais.begin(), pais.end(), -1);
+
+        fila.push(Vertice(s, 0));
+
+        auto top = fila.top();
+
+        while (top.id != d)
         {
-            scanf("%d", &m);
+            if (!visitados[top.id])
+            {
+                for (auto &it : g[top.id])
+                    if (!visitados[it.id])
+                        fila.push(Vertice(it.id, it.dist + top.dist, top.id));
 
-            grafos[i] = vvi(m);
-            valores[i] = vi(m);
-            pais[i] = vi(m);
+                visitados[top.id] = 1;
+                pais[top.id] = top.pai;
+            }
 
-            while (--m)
-                scanf("%d %d", &a, &b), grafo[i][a - 1].pb(b - 1), grafo[i][b - 1].pb(a - 1),
-                    centros[i].insert(i);
-            centros[i].insert(i);
+            fila.pop();
+
+            if (fila.empty())
+                return -1;
+
+            top = fila.top();
         }
 
-        for (i = 0; i < n; i++)
+        pais[top.id] = top.pai;
+
+        return top.dist;
+    }
+
+    ll busca(int s, int d)
+    {
+        queue<Vertice> fila;
+        bool visitados[n];
+
+        fill(visitados, visitados + n, 0);
+        fill(pais.begin(), pais.end(), -1);
+
+        fila.push(Vertice(s, 0));
+
+        auto top = fila.front();
+
+        while (top.id != d)
         {
-            atual = count = 0;
-
-            while (centros[i].size() > 2)
+            if (!visitados[top.id])
             {
-                vi a_remover;
+                for (auto &it : g[top.id])
+                    if (!visitados[it.id])
+                        fila.push(Vertice(it.id, it.dist + 1, top.id));
 
-                for (auto &linha : centros[i])
+                visitados[top.id] = 1;
+                pais[top.id] = top.pai;
+            }
+
+            fila.pop();
+
+            if (fila.empty())
+                return -1;
+
+            top = fila.front();
+        }
+
+        pais[top.id] = top.pai;
+
+        return top.dist;
+    }
+
+    ll fluxo_maximo(int s, int d)
+    {
+        int u, v;
+        ll flow = 0;
+
+        Grafo g2 = *this;
+
+        while (g2.busca(s, d) >= 0)
+        {
+            ll path = 1ll << 50;
+
+            for (v = d; v != s; v = u)
+            {
+                u = g2.pais[v];
+                path = min(path, valAresta(u, v));
+            }
+
+            for (v = d; v != s; v = u)
+            {
+                u = g2.pais[v];
+                g2.modificaAresta(u, v, -path);
+                g2.modificaAresta(v, u, path);
+            }
+
+            flow += path;
+        }
+
+        return flow;
+    }
+
+    bool isomorfismo(Grafo &grafo)
+    {
+        if (this->n != grafo.n)
+            return false;
+
+        map<multiset<int>, int> mapa;
+        vi valores_esq(n), valores_dir(n), pais_esq(n, -1), pais_dir(n, -1);
+        set<int> centros_esq, centros_dir;
+        int atual = 0, count = 0, i;
+
+        for (i = 0; i < n; i++)
+            centros_esq.insert(i), centros_dir.insert(i);
+
+        while (centros_esq.size() > 2)
+        {
+            vi a_remover;
+
+            for (auto &linha : centros_esq)
+            {
+                int count = 0, pai;
+
+                for (auto &it : this->g[linha])
+                    if (centros_esq.count(it.id))
+                        count++, pai = it.id;
+
+                if (count == 1)
                 {
-                    int count = 0, pai;
-
-                    for (auto &it : grafo[i][linha])
-                        if (centros[i].count(it))
-                            count++, pai = it;
-
-                    if (count == 1)
-                    {
-                        pais[i][linha] = pai;
-                        a_remover.pb(linha);
-                    }
-                }
-
-                for (auto &it : a_remover)
-                {
-                    multiset<int> valores;
-
-                    for (auto &it2 : grafo[i][it])
-                        if (pais[i][it2] == it)
-                            valores.insert(valores[i][it2]);
-
-                    if (mapa.count(valores))
-                        valores[i][it] = mapa[valores];
-                    else
-                        valores[i][it] = mapa[valores] = atual++;
-
-                    centros[i].erase(it);
+                    pais_esq[linha] = pai;
+                    a_remover.pb(linha);
                 }
             }
 
-            for (auto &it : centros[i])
+            for (auto &it : a_remover)
             {
                 multiset<int> valores;
 
-                for (auto &it2 : grafo[i][it])
-                    if (pais[i][it2] == it)
-                        valores.insert(valores[i][it2]);
+                for (auto &it2 : this->g[it])
+                    if (pais_esq[it2.id] == it)
+                        valores.insert(valores_esq[it2.id]);
 
                 if (mapa.count(valores))
-                    valores[i][it] = mapa[valores];
+                    valores_esq[it] = mapa[valores];
                 else
-                    valores[i][it] = mapa[valores] = atual++;
+                    valores_esq[it] = mapa[valores] = atual++;
+
+                centros_esq.erase(it);
             }
         }
 
-        vi marcadas(n, 0);
-        int resp = 0;
-        for (i = 0; i < n; i++)
+        for (auto &it : centros_esq)
         {
-            vi valor;
+            multiset<int> valores;
 
-            if (marcada[i])
-                continue;
+            for (auto &it2 : this->g[it])
+                if (pais_esq[it2.id] == it)
+                    valores.insert(valores_esq[it2.id]);
 
-            for (int j = i + 1; j < n; j++)
+            if (mapa.count(valores))
+                valores_esq[it] = mapa[valores];
+            else
+                valores_esq[it] = mapa[valores] = atual++;
+        }
+
+        while (centros_dir.size() > 2)
+        {
+            vi a_remover;
+
+            for (auto &linha : centros_dir)
             {
-                if (marcada[j])
-                    continue;
+                int count = 0, pai;
 
-                if (grafos[i].size() != grafos[j].size())
-                    continue;
+                for (auto &it : grafo.g[linha])
+                    if (centros_dir.count(it.id))
+                        count++, pai = it.id;
 
-                set<int> centro;
-
-                for (int k = 0; k < grafos[i].size(); k++)
-                    centro.insert(k);
-
-                atual = count = 0;
-
-                while (centro.size() > 2)
+                if (count == 1)
                 {
-                    vi a_remover;
-
-                    for (auto &linha : centro)
-                    {
-                        int count = 0, pai;
-
-                        for (auto &it : grafo[i][linha])
-                            if (centro.count(it))
-                                count++, pai = it;
-
-                        if (count == 1)
-                        {
-                            paes[linha] = pai;
-                            a_remover.pb(linha);
-                        }
-                    }
-
-                    for (auto &it : a_remover)
-                    {
-                        multiset<int> valores;
-
-                        for (auto &it2 : grafo[i][it])
-                            if (paes[it2] == it)
-                                valores.insert(valores[i][it2]);
-
-                        if (mapa.count(valores))
-                            valores[i][it] = mapa[valores];
-                        else
-                            valores[i][it] = mapa[valores] = atual++;
-
-                        centros[i].erase(it);
-                    }
-                }
-
-                for (auto &it : centros[i])
-                {
-                    multiset<int> valores;
-
-                    for (auto &it2 : grafo[i][it])
-                        if (pais[i][it2] == it)
-                            valores.insert(valores[i][it2]);
-
-                    if (mapa.count(valores))
-                        valores[i][it] = mapa[valores];
-                    else
-                        valores[i][it] = mapa[valores] = atual++;
+                    pais_dir[linha] = pai;
+                    a_remover.pb(linha);
                 }
             }
+
+            for (auto &it : a_remover)
+            {
+                multiset<int> valores;
+
+                for (auto &it2 : grafo.g[it])
+                    if (pais_dir[it2.id] == it)
+                        valores.insert(valores_dir[it2.id]);
+
+                if (mapa.count(valores))
+                    valores_dir[it] = mapa[valores];
+                else
+                    valores_dir[it] = mapa[valores] = atual++;
+
+                centros_dir.erase(it);
+            }
         }
+
+        for (auto &it : centros_dir)
+        {
+            multiset<int> valores;
+
+            for (auto &it2 : grafo.g[it])
+                if (pais_dir[it2.id] == it)
+                    valores.insert(valores_dir[it2.id]);
+
+            if (mapa.count(valores))
+                valores_dir[it] = mapa[valores];
+            else
+                valores_dir[it] = mapa[valores] = atual++;
+        }
+
         sort(valores_dir.begin(), valores_dir.end());
         sort(valores_esq.begin(), valores_esq.end());
 
         for (i = 0; i < valores_dir.size(); i++)
             if (valores_esq[i] != valores_dir[i])
-            {
-                puts("N");
-                goto proximo;
-            }
+                return false;
 
-        puts("S");
-
-    proximo:;
+        return true;
     }
+};
+
+int main()
+{
+    int n, a, i, j, resp = 0;
+
+    scanf("%*d");
+
+    vector<Grafo> arvores;
+
+    while (scanf("%d", &n) > 0)
+    {
+        Grafo g(n);
+
+        for (int i = 1; i < n; i++)
+            scanf("%d", &a),
+            g.addAresta(i, a - 1),
+            g.addAresta(a - 1, i);
+
+        arvores.push_back(g);
+    }
+
+    for(i = 0; i < arvores.size(); i++) {
+        for(j = i + 1; j < arvores.size(); j++) {
+            if(arvores[i].isomorfismo(arvores[j]))
+                break;
+        }
+        
+        if(j == arvores.size())
+            resp++;
+    }
+
+    printf("%d\n", resp);
 }

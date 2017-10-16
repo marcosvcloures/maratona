@@ -20,21 +20,22 @@
 \BOOKMARK [2][-]{subsection.3.3}{Isomorfismo de \341rvores}{section.3}% 20
 \BOOKMARK [2][-]{subsection.3.4}{Matching m\341ximo em grafo bipartido}{section.3}% 21
 \BOOKMARK [2][-]{subsection.3.5}{Algoritmo h\372ngaro}{section.3}% 22
-\BOOKMARK [1][-]{section.4}{Strings}{}% 23
-\BOOKMARK [2][-]{subsection.4.1}{Suffix array}{section.4}% 24
-\BOOKMARK [2][-]{subsection.4.2}{Algoritmo Z}{section.4}% 25
-\BOOKMARK [1][-]{section.5}{Geometria}{}% 26
-\BOOKMARK [2][-]{subsection.5.1}{Linha de eventos radial}{section.5}% 27
-\BOOKMARK [2][-]{subsection.5.2}{KD-Tree para pares mais pr\363ximos em O\(log\(n\)\)}{section.5}% 28
-\BOOKMARK [2][-]{subsection.5.3}{Geometria \(reduzido\)}{section.5}% 29
-\BOOKMARK [2][-]{subsection.5.4}{Geometria \(grande\)}{section.5}% 30
-\BOOKMARK [2][-]{subsection.5.5}{Geometria \(Marcelo\)}{section.5}% 31
-\BOOKMARK [1][-]{section.6}{Estruturas de dados etc}{}% 32
-\BOOKMARK [2][-]{subsection.6.1}{Wavelet-tree}{section.6}% 33
-\BOOKMARK [2][-]{subsection.6.2}{Seg-tree 2D}{section.6}% 34
-\BOOKMARK [2][-]{subsection.6.3}{Seg-tree}{section.6}% 35
-\BOOKMARK [2][-]{subsection.6.4}{Mergesort}{section.6}% 36
-\BOOKMARK [2][-]{subsection.6.5}{Algoritmo de MO \(queries offline\)}{section.6}% 37
-\BOOKMARK [2][-]{subsection.6.6}{Union-find}{section.6}% 38
-\BOOKMARK [2][-]{subsection.6.7}{Arvore para achar o K-esimo termo}{section.6}% 39
-\BOOKMARK [2][-]{subsection.6.8}{Indice de inversao \(n log n\)}{section.6}% 40
+\BOOKMARK [2][-]{subsection.3.6}{Isomorfismo de \341rvores para a biblioteca de grafos.}{section.3}% 23
+\BOOKMARK [1][-]{section.4}{Strings}{}% 24
+\BOOKMARK [2][-]{subsection.4.1}{Suffix array}{section.4}% 25
+\BOOKMARK [2][-]{subsection.4.2}{Algoritmo Z}{section.4}% 26
+\BOOKMARK [1][-]{section.5}{Geometria}{}% 27
+\BOOKMARK [2][-]{subsection.5.1}{Linha de eventos radial}{section.5}% 28
+\BOOKMARK [2][-]{subsection.5.2}{KD-Tree para pares mais pr\363ximos em O\(log\(n\)\)}{section.5}% 29
+\BOOKMARK [2][-]{subsection.5.3}{Geometria \(reduzido\)}{section.5}% 30
+\BOOKMARK [2][-]{subsection.5.4}{Geometria \(grande\)}{section.5}% 31
+\BOOKMARK [2][-]{subsection.5.5}{Geometria \(Marcelo\)}{section.5}% 32
+\BOOKMARK [1][-]{section.6}{Estruturas de dados etc}{}% 33
+\BOOKMARK [2][-]{subsection.6.1}{Wavelet-tree}{section.6}% 34
+\BOOKMARK [2][-]{subsection.6.2}{Seg-tree 2D}{section.6}% 35
+\BOOKMARK [2][-]{subsection.6.3}{Seg-tree}{section.6}% 36
+\BOOKMARK [2][-]{subsection.6.4}{Mergesort}{section.6}% 37
+\BOOKMARK [2][-]{subsection.6.5}{Algoritmo de MO \(queries offline\)}{section.6}% 38
+\BOOKMARK [2][-]{subsection.6.6}{Union-find}{section.6}% 39
+\BOOKMARK [2][-]{subsection.6.7}{Arvore para achar o K-esimo termo}{section.6}% 40
+\BOOKMARK [2][-]{subsection.6.8}{Indice de inversao \(n log n\)}{section.6}% 41

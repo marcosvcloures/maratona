@@ -220,6 +220,9 @@ INPUT code/matching_bipartido.cpp
 INPUT code/hungaro.cpp
 INPUT code/hungaro.cpp
 INPUT code/hungaro.cpp
+INPUT code/isomorfismo_p_grafo.cpp
+INPUT code/isomorfismo_p_grafo.cpp
+INPUT code/isomorfismo_p_grafo.cpp
 INPUT code/suffixarray.cpp
 INPUT code/suffixarray.cpp
 INPUT code/suffixarray.cpp
