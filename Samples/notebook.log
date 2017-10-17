@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.15)  16 OCT 2017 15:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.15)  17 OCT 2017 10:41
 entering extended mode
 **./notebook.tex
 (notebook.tex
@@ -673,32 +673,72 @@ LaTeX Info: Redefining \slshape on input line 45.
 LaTeX Info: Redefining \itshape on input line 55.
 LaTeX Info: Redefining \scshape on input line 65.
 ))
+("C:\Program Files\MiKTeX 2.9\tex\latex\iwona\iwona.sty"
+Package: iwona 2005/10/03 v.1.2 Iwona package (MW)
+\c@mv@iwona=\count120
+\c@mv@iwonabold=\count121
+LaTeX Font Info:    Overwriting symbol font `operators' in version `iwona'
+(Font)                  OT1/cmr/m/n --> OT1/iwonam/m/n on input line 58.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `iwona'
+(Font)                  OML/cmm/m/it --> OML/iwona/m/it on input line 59.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `iwona'
+(Font)                  OMS/cmsy/m/n --> OMS/iwona/m/n on input line 60.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `iwona'
+(Font)                  OMX/cmex/m/n --> OMX/iwona/m/n on input line 61.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `iwonabold'
+(Font)                  OT1/cmr/m/n --> OT1/iwonam/b/n on input line 62.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `iwonabold'
+(Font)                  OML/cmm/m/it --> OML/iwona/b/it on input line 63.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `iwonabold'
+(Font)                  OMS/cmsy/m/n --> OMS/iwona/b/n on input line 64.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `iwonabol
+d'
+(Font)                  OMX/cmex/m/n --> OMX/iwona/b/n on input line 65.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `iwona'
+(Font)                  OT1/cmr/bx/n --> OT1/iwona/bx/n on input line 67.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `iwona'
+(Font)                  OT1/cmss/m/n --> OT1/iwona/m/n on input line 68.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `iwona'
+(Font)                  OT1/cmr/m/it --> OT1/iwona/m/it on input line 69.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `iwona'
+(Font)                  OT1/cmtt/m/n --> OT1/iwona/m/n on input line 70.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `iwonabold'
+(Font)                  OT1/cmss/m/n --> OT1/iwona/bx/n on input line 71.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `iwonabold'
+(Font)                  OT1/cmr/m/it --> OT1/iwona/bx/it on input line 72.
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
 Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.def"
 File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+)
+LaTeX Font Info:    Try loading font information for T1+iwona on input line 105
+.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\iwona\t1iwona.fd"
+File: t1iwona.fd 2008/07/22 v0.995 font definition file for T1/iwona (MW)
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\droid\t1fdm.fd"
 File: t1fdm.fd 2011/09/11 Fontinst v1.933 font definitions for T1/fdm.
 ) (notebook.aux)
 \openout1 = `notebook.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 164.
-LaTeX Font Info:    ... okay on input line 164.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 164.
-LaTeX Font Info:    ... okay on input line 164.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 164.
-LaTeX Font Info:    ... okay on input line 164.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 164.
-LaTeX Font Info:    ... okay on input line 164.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 164.
-LaTeX Font Info:    ... okay on input line 164.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 164.
-LaTeX Font Info:    ... okay on input line 164.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 164.
-LaTeX Font Info:    ... okay on input line 164.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 153.
+LaTeX Font Info:    ... okay on input line 153.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 153.
+LaTeX Font Info:    ... okay on input line 153.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 153.
+LaTeX Font Info:    ... okay on input line 153.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 153.
+LaTeX Font Info:    ... okay on input line 153.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 153.
+LaTeX Font Info:    ... okay on input line 153.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 153.
+LaTeX Font Info:    ... okay on input line 153.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 153.
+LaTeX Font Info:    ... okay on input line 153.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -735,37 +775,37 @@ LaTeX Font Info:    ... okay on input line 164.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box55
-Package hyperref Info: Link coloring OFF on input line 164.
+Package hyperref Info: Link coloring OFF on input line 153.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count120
+\c@section@level=\count122
 )
-LaTeX Info: Redefining \ref on input line 164.
-LaTeX Info: Redefining \pageref on input line 164.
-LaTeX Info: Redefining \nameref on input line 164.
+LaTeX Info: Redefining \ref on input line 153.
+LaTeX Info: Redefining \pageref on input line 153.
+LaTeX Info: Redefining \nameref on input line 153.
 
 (notebook.out) (notebook.out)
 \@outlinefile=\write3
 \openout3 = `notebook.out'.
 
-\c@lstlisting=\count121
+\c@lstlisting=\count123
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count122
+\scratchcounter=\count124
 \scratchdimen=\dimen133
 \scratchbox=\box56
-\nofMPsegments=\count123
-\nofMParguments=\count124
+\nofMPsegments=\count125
+\nofMParguments=\count126
 \everyMPshowfont=\toks20
-\MPscratchCnt=\count125
+\MPscratchCnt=\count127
 \MPscratchDim=\dimen134
-\MPnumerator=\count126
-\makeMPintoPDFobject=\count127
+\MPnumerator=\count128
+\makeMPintoPDFobject=\count129
 \everyMPtoPDFconversion=\toks21
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -780,49 +820,37 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 169.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 169.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 169.
+LaTeX Font Info:    Try loading font information for OT1+iwonam on input line 1
+58.
 
-
-LaTeX Font Warning: Font shape `T1/fdm/bx/n' undefined
-(Font)              using `T1/fdm/m/n' instead on input line 170.
-
-(notebook.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 1.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 1.
-
-Overfull \hbox (0.99994pt too wide) detected at line 13
-\T1/fdm/bx/n/10 2.10 
- []
-
-
-Overfull \hbox (0.99994pt too wide) detected at line 14
-\T1/fdm/bx/n/10 2.11 
- []
-
-
-Overfull \hbox (0.99994pt too wide) detected at line 15
-\T1/fdm/bx/n/10 2.12 
- []
-
-
-Overfull \hbox (0.99994pt too wide) detected at line 16
-\T1/fdm/bx/n/10 2.13 
- []
-
+("C:\Program Files\MiKTeX 2.9\tex\latex\iwona\ot1iwonam.fd"
+File: ot1iwonam.fd 2005/10/05 v1.2 font definition file for OT1/iwonam (MW)
 )
+LaTeX Font Info:    Try loading font information for OML+iwona on input line 15
+8.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\iwona\omliwona.fd"
+File: omliwona.fd 2008/07/22 v0.995 font definition file for OML/iwona (MW)
+)
+LaTeX Font Info:    Try loading font information for OMS+iwona on input line 15
+8.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\iwona\omsiwona.fd"
+File: omsiwona.fd 2008/07/22 v0.995 font definition file for OMS/iwona (MW)
+)
+LaTeX Font Info:    Try loading font information for OMX+iwona on input line 15
+8.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\iwona\omxiwona.fd"
+File: omxiwona.fd 2008/07/22 v0.995 font definition file for OMX/iwona (MW)
+) (notebook.toc)
 \tf@toc=\write4
 \openout4 = `notebook.toc'.
 
- (contents.tex [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
-]
+(contents.tex [1
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
@@ -835,68 +863,75 @@ File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 3.
 
-(code/includes.cpp) [2
+(code/includes.cpp
 
-] (code/euclides_extended.cpp) (code/mdc.cpp)
-(code/mmc.cpp) (code/pollard_rho.cpp) (code/fft.cpp
+LaTeX Font Warning: Font shape `T1/fdm/b/n' undefined
+(Font)              using `T1/fdm/m/n' instead on input line 1.
+
+) [2
+
+] (code/euclides_extended.cpp) (code/mdc.cpp) (code/mmc.cpp)
+(code/pollard_rho.cpp) (code/fft.cpp
 LaTeX Font Info:    Font shape `T1/fdm/m/it' in size <8> not available
 (Font)              Font shape `T1/fdm/m/sl' tried instead on input line 1.
  [3
 
 
-] [4]) (code/matriz.cpp
-[5]) (code/qtdPrimos.cpp [6]) (code/prime_factors.cpp) (code/modpow.cpp)
+] [4]) (code/matriz.cpp [5])
+(code/qtdPrimos.cpp [6]) (code/prime_factors.cpp) (code/modpow.cpp)
 (code/eulerPhi.cpp [7]) (code/gss.cpp) (code/divisores.cpp)
-(code/crivosegmentado.cpp [8]) [9] (code/grafos.cpp [10
+(code/crivosegmentado.cpp [8]) (code/gss.cpp [9]) [10] (code/grafos.cpp
+[11
 
 
-] [11])
-(code/bridges.cpp [12]) [13] (code/isomorfismo_tree.cpp [14])
-(code/matching_bipartido.cpp [15]) (code/hungaro.cpp [16] [17])
-(code/isomorfismo_p_grafo.cpp [18] [19]) [20] (code/suffixarray.cpp [21
+] [12]) (code/bridges.cpp [13]) [14] (code/isomorfismo_tree.cpp [15])
+(code/matching_bipartido.cpp [16]) (code/hungaro.cpp [17] [18])
+(code/isomorfismo_p_grafo.cpp [19] [20]) [21] (code/suffixarray.cpp [22
 
 
 ])
-(code/z.cpp [22]) [23] (code/radial_sweep.cpp [24
+(code/z.cpp [23]) [24] (code/radial_sweep.cpp [25
 
 
-]) (code/kd-tree.cpp [25]
-[26]) (code/geometria_reduzido.cpp [27]) [28] (code/geometria.cpp [29])
-[30] (code/geometria_marcelo.cpp [31] [32] [33]) [34] (code/wavelet.cpp
-[35
+]) (code/kd-tree.cpp [26]
+[27]) (code/geometria_reduzido.cpp [28]) [29] (code/geometria.cpp [30])
+[31] (code/geometria_marcelo.cpp [32] [33] [34]) [35] (code/wavelet.cpp
+[36
 
 
-]) (code/segtree2d.cpp [36] [37]) [38] (code/seg_tree.cpp [39])
-(code/mergesort.cpp [40]) (code/mo.cpp [41]) (code/unionfind.cpp)
-(code/k_th_tree.cpp [42]) (code/inversao.cpp [43]) [44])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 177.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 177.
+]) (code/segtree2d.cpp [37] [38]) [39] (code/seg_tree.cpp [40])
+(code/mergesort.cpp [41]) (code/mo.cpp [42]) (code/unionfind.cpp)
+(code/k_th_tree.cpp [43]) (code/inversao.cpp [44]) [45])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 165.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 165.
  (notebook.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 177.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 177.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 165.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 165.
 Package rerunfilecheck Info: File `notebook.out' has not changed.
-(rerunfilecheck)             Checksum: 1BB02E6D0F33B88D7C3922400F8CF1D4;2923.
+(rerunfilecheck)             Checksum: B13B45DF5B0628B8BF1471D707E54C37;2989.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 177.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 165.
  ) 
 Here is how much of TeX's memory you used:
- 13487 strings out of 493323
- 190504 string characters out of 3139040
- 597109 words of memory out of 3000000
- 13496 multiletter control sequences out of 15000+200000
- 14533 words of font info for 50 fonts, out of 3000000 for 9000
+ 13815 strings out of 493323
+ 195824 string characters out of 3139040
+ 596825 words of memory out of 3000000
+ 13746 multiletter control sequences out of 15000+200000
+ 55423 words of font info for 56 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,12n,68p,256b,1884s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,6n,68p,249b,1882s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/droid/droid-03.enc}{C:/Program F
-iles/MiKTeX 2.9/fonts/enc/dvips/droid/droid-01.enc}<C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/droid/DroidSansMono.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/droid/DroidSansMono.pfb>
-Output written on notebook.pdf (44 pages, 580218 bytes).
+iles/MiKTeX 2.9/fonts/enc/dvips/droid/droid-01.enc}{C:/Program Files/MiKTeX 2.9
+/fonts/enc/dvips/iwona/ec-iwona.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/droid/DroidSansMono.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/dr
+oid/DroidSansMono.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/nowacki/iwona/iw
+onab.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/nowacki/iwona/iwonar.pfb>
+Output written on notebook.pdf (45 pages, 647955 bytes).
 PDF statistics:
- 4284 PDF objects out of 4296 (max. 8388607)
- 3298 named destinations out of 3580 (max. 500000)
- 329 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4386 PDF objects out of 5155 (max. 8388607)
+ 3370 named destinations out of 3580 (max. 500000)
+ 337 words of extra memory for PDF output out of 10000 (max. 10000000)
 

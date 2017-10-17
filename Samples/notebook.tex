@@ -11,7 +11,8 @@
 \usepackage[utf8]{inputenc}
 
 \usepackage[defaultmono]{droidmono}
-\renewcommand*\familydefault{\ttdefault} %% Only if the base font of the document is to be typewriter style
+%\renewcommand*\familydefault{\ttdefault} %% Only if the base font of the document is to be typewriter style
+\usepackage[math]{iwona}
 \usepackage[T1]{fontenc}
 \makeatletter
 \input droid/t1fdm.fd
@@ -145,18 +146,6 @@
 }
 \lstset{escapechar=@}
 
-\pagestyle{fancy}
-\fancyhead[L]{}
-\fancyhead[R]{}
-\fancyfoot[R]{\thepage}
-\fancyfoot[C]{}
-
-\fancypagestyle{plain}
-{
-\fancyhead[R]{\thepage}
-\fancyfoot[C]{}
-}
-
 \title{\vspace{-4ex}\Large{Capybara dreaming}}
 \author{}
 \date{}
@@ -168,7 +157,6 @@
 \maketitle
 \vspace{-13ex}
 \tableofcontents
-\pagestyle{fancy}
 
 \input contents.tex
 

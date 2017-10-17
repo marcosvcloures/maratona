@@ -14,28 +14,29 @@
 \BOOKMARK [2][-]{subsection.2.11}{M\341ximo e m\355nimo de fun\347\365es}{section.2}% 14
 \BOOKMARK [2][-]{subsection.2.12}{Todos divisores de um n\372mero}{section.2}% 15
 \BOOKMARK [2][-]{subsection.2.13}{Crivo de Erat\363stenes segmentado}{section.2}% 16
-\BOOKMARK [1][-]{section.3}{Grafos}{}% 17
-\BOOKMARK [2][-]{subsection.3.1}{Grafos}{section.3}% 18
-\BOOKMARK [2][-]{subsection.3.2}{Todas as pontes de um grafo}{section.3}% 19
-\BOOKMARK [2][-]{subsection.3.3}{Isomorfismo de \341rvores}{section.3}% 20
-\BOOKMARK [2][-]{subsection.3.4}{Matching m\341ximo em grafo bipartido}{section.3}% 21
-\BOOKMARK [2][-]{subsection.3.5}{Algoritmo h\372ngaro}{section.3}% 22
-\BOOKMARK [2][-]{subsection.3.6}{Isomorfismo de \341rvores para a biblioteca de grafos.}{section.3}% 23
-\BOOKMARK [1][-]{section.4}{Strings}{}% 24
-\BOOKMARK [2][-]{subsection.4.1}{Suffix array}{section.4}% 25
-\BOOKMARK [2][-]{subsection.4.2}{Algoritmo Z}{section.4}% 26
-\BOOKMARK [1][-]{section.5}{Geometria}{}% 27
-\BOOKMARK [2][-]{subsection.5.1}{Linha de eventos radial}{section.5}% 28
-\BOOKMARK [2][-]{subsection.5.2}{KD-Tree para pares mais pr\363ximos em O\(log\(n\)\)}{section.5}% 29
-\BOOKMARK [2][-]{subsection.5.3}{Geometria \(reduzido\)}{section.5}% 30
-\BOOKMARK [2][-]{subsection.5.4}{Geometria \(grande\)}{section.5}% 31
-\BOOKMARK [2][-]{subsection.5.5}{Geometria \(Marcelo\)}{section.5}% 32
-\BOOKMARK [1][-]{section.6}{Estruturas de dados etc}{}% 33
-\BOOKMARK [2][-]{subsection.6.1}{Wavelet-tree}{section.6}% 34
-\BOOKMARK [2][-]{subsection.6.2}{Seg-tree 2D}{section.6}% 35
-\BOOKMARK [2][-]{subsection.6.3}{Seg-tree}{section.6}% 36
-\BOOKMARK [2][-]{subsection.6.4}{Mergesort}{section.6}% 37
-\BOOKMARK [2][-]{subsection.6.5}{Algoritmo de MO \(queries offline\)}{section.6}% 38
-\BOOKMARK [2][-]{subsection.6.6}{Union-find}{section.6}% 39
-\BOOKMARK [2][-]{subsection.6.7}{Arvore para achar o K-esimo termo}{section.6}% 40
-\BOOKMARK [2][-]{subsection.6.8}{Indice de inversao \(n log n\)}{section.6}% 41
+\BOOKMARK [2][-]{subsection.2.14}{Busca ternaria}{section.2}% 17
+\BOOKMARK [1][-]{section.3}{Grafos}{}% 18
+\BOOKMARK [2][-]{subsection.3.1}{Grafos}{section.3}% 19
+\BOOKMARK [2][-]{subsection.3.2}{Todas as pontes de um grafo}{section.3}% 20
+\BOOKMARK [2][-]{subsection.3.3}{Isomorfismo de \341rvores}{section.3}% 21
+\BOOKMARK [2][-]{subsection.3.4}{Matching m\341ximo em grafo bipartido}{section.3}% 22
+\BOOKMARK [2][-]{subsection.3.5}{Algoritmo h\372ngaro}{section.3}% 23
+\BOOKMARK [2][-]{subsection.3.6}{Isomorfismo de \341rvores para a biblioteca de grafos.}{section.3}% 24
+\BOOKMARK [1][-]{section.4}{Strings}{}% 25
+\BOOKMARK [2][-]{subsection.4.1}{Suffix array}{section.4}% 26
+\BOOKMARK [2][-]{subsection.4.2}{Algoritmo Z}{section.4}% 27
+\BOOKMARK [1][-]{section.5}{Geometria}{}% 28
+\BOOKMARK [2][-]{subsection.5.1}{Linha de eventos radial}{section.5}% 29
+\BOOKMARK [2][-]{subsection.5.2}{KD-Tree para pares mais pr\363ximos em O\(log\(n\)\)}{section.5}% 30
+\BOOKMARK [2][-]{subsection.5.3}{Geometria \(reduzido\)}{section.5}% 31
+\BOOKMARK [2][-]{subsection.5.4}{Geometria \(grande\)}{section.5}% 32
+\BOOKMARK [2][-]{subsection.5.5}{Geometria \(Marcelo\)}{section.5}% 33
+\BOOKMARK [1][-]{section.6}{Estruturas de dados etc}{}% 34
+\BOOKMARK [2][-]{subsection.6.1}{Wavelet-tree}{section.6}% 35
+\BOOKMARK [2][-]{subsection.6.2}{Seg-tree 2D}{section.6}% 36
+\BOOKMARK [2][-]{subsection.6.3}{Seg-tree}{section.6}% 37
+\BOOKMARK [2][-]{subsection.6.4}{Mergesort}{section.6}% 38
+\BOOKMARK [2][-]{subsection.6.5}{Algoritmo de MO \(queries offline\)}{section.6}% 39
+\BOOKMARK [2][-]{subsection.6.6}{Union-find}{section.6}% 40
+\BOOKMARK [2][-]{subsection.6.7}{Arvore para achar o K-esimo termo}{section.6}% 41
+\BOOKMARK [2][-]{subsection.6.8}{Indice de inversao \(n log n\)}{section.6}% 42

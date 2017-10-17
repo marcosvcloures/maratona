@@ -85,16 +85,19 @@ INPUT C:/Program Files/MiKTeX 2.9/tex/latex/slantsc/slantsc.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/slantsc/slantsc.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/ifthen.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/ifthen.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/iwona/iwona.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/iwona/iwona.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/fontenc.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/fontenc.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/t1enc.def
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/t1enc.def
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/jknappen/ec/ecrm1000.tfm
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/iwona/t1iwona.fd
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/iwona/t1iwona.fd
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/nowacki/iwona/ec-iwonar.tfm
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/droid/t1fdm.fd
 INPUT notebook.aux
 INPUT notebook.aux
 OUTPUT notebook.aux
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-t1.tfm
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/hyperref/nameref.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/hyperref/nameref.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/gettitlestring.sty
@@ -113,33 +116,49 @@ INPUT C:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/epstopdf-base.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/epstopdf-base.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/grfext.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/grfext.sty
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-t1.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-t1.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-t1.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr12.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr8.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr6.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmmi12.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmmi8.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmmi6.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmsy10.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmsy8.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmsy6.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/nowacki/iwona/ec-iwonar.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/nowacki/iwona/ec-iwonar.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/nowacki/iwona/ec-iwonar.tfm
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/iwona/ot1iwonam.fd
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/iwona/ot1iwonam.fd
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/nowacki/iwona/rm-iwonar.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/nowacki/iwona/rm-iwonar.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/nowacki/iwona/rm-iwonar.tfm
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/iwona/omliwona.fd
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/iwona/omliwona.fd
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/nowacki/iwona/mi-iwonari.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/nowacki/iwona/mi-iwonari.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/nowacki/iwona/mi-iwonari.tfm
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/iwona/omsiwona.fd
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/iwona/omsiwona.fd
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/nowacki/iwona/sy-iwonarz.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/nowacki/iwona/sy-iwonarz.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/nowacki/iwona/sy-iwonarz.tfm
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/iwona/omxiwona.fd
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/iwona/omxiwona.fd
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/nowacki/iwona/ex-iwonar.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/nowacki/iwona/ex-iwonar.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/nowacki/iwona/ex-iwonar.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/nowacki/iwona/ec-iwonab.tfm
 INPUT notebook.toc
 INPUT notebook.toc
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/nowacki/iwona/ec-iwonab.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/nowacki/iwona/rm-iwonar.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/nowacki/iwona/rm-iwonar.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/nowacki/iwona/rm-iwonar.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/nowacki/iwona/mi-iwonari.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/nowacki/iwona/mi-iwonari.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/nowacki/iwona/mi-iwonari.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/nowacki/iwona/sy-iwonarz.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/nowacki/iwona/sy-iwonarz.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/nowacki/iwona/sy-iwonarz.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/nowacki/iwona/ex-iwonar.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/nowacki/iwona/ex-iwonar.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/nowacki/iwona/ex-iwonar.tfm
 OUTPUT notebook.toc
 INPUT contents.tex
-INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/public/droid/DroidSansMono-t1.vf
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-01.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-02.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-03.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-04.tfm
 INPUT C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map
-INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/public/droid/DroidSansMono-t1.vf
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-01.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-02.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-03.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-04.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/nowacki/iwona/ec-iwonab.tfm
 INPUT code/includes.cpp
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/listings/lstlang1.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/listings/lstlang1.sty
@@ -150,11 +169,6 @@ INPUT C:/Program Files/MiKTeX 2.9/tex/latex/listings/lstmisc.sty
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-t1.tfm
 INPUT code/includes.cpp
 INPUT code/includes.cpp
-INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/public/droid/DroidSansMono-t1.vf
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-01.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-02.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-03.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-04.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/public/droid/DroidSansMono-t1.vf
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-01.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-02.tfm
@@ -176,6 +190,7 @@ INPUT code/fft.cpp
 INPUT code/fft.cpp
 INPUT code/fft.cpp
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-Slanted-t1.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/nowacki/iwona/ec-iwonar.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/public/droid/DroidSansMono-Slanted-t1.vf
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-Slanted-01.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-Slanted-02.tfm
@@ -205,6 +220,9 @@ INPUT code/divisores.cpp
 INPUT code/crivosegmentado.cpp
 INPUT code/crivosegmentado.cpp
 INPUT code/crivosegmentado.cpp
+INPUT code/gss.cpp
+INPUT code/gss.cpp
+INPUT code/gss.cpp
 INPUT code/grafos.cpp
 INPUT code/grafos.cpp
 INPUT code/grafos.cpp
@@ -273,7 +291,12 @@ INPUT ./notebook.out
 INPUT ./notebook.out
 INPUT C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/droid/droid-03.enc
 INPUT C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/droid/droid-01.enc
+INPUT C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/iwona/ec-iwona.enc
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/droid/DroidSansMono.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/droid/DroidSansMono.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/droid/DroidSansMono.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/droid/DroidSansMono.pfb
+INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/nowacki/iwona/iwonab.pfb
+INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/nowacki/iwona/iwonab.pfb
+INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/nowacki/iwona/iwonar.pfb
+INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/nowacki/iwona/iwonar.pfb

@@ -17,7 +17,7 @@ qtdPrimos.cpp	Quantidade de fatores primos de um número
 prime_factors.cpp	Fatoração em números primos
 modpow.cpp	Modpow
 eulerPhi.cpp	Quantidade de coprimos.
-gss.cpp	Máximo e mínimo de funções
+gss.cpp	Máximo e mínimo de funções (Busca ternaria)
 divisores.cpp	Todos divisores de um número
 crivosegmentado.cpp	Crivo de Eratóstenes segmentado
 
