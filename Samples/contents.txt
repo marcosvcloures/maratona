@@ -53,3 +53,4 @@ inversao.cpp	Indice de inversao (n log n)
 [Python]
 matrizes.py	Matrizes
 modpow.py	Modpow
+busca_binaria.py	Busca binaria

@@ -28,7 +28,7 @@ def matrixPow(a, p):
     if (p % 2 == 1):
         return matrixMul(a, matrixPow(a, p - 1))
 
-    return matrixPow(matrixMul(a, a), p / 2)
+    return matrixPow(matrixMul(a, a), p >> 1)
 
 # Retorna sum^p_i=0 (a^i)
 def matrixPowSum(a, p):
@@ -38,7 +38,7 @@ def matrixPowSum(a, p):
         return [[0 for j in range(n)] for i in range(n)]
 
     if (p % 2 == 0):
-        return matrixMul(matrixPowSum(a, p / 2), matrixAdd(matrixUnit(n),  matrixPow(a, p / 2)))
+        return matrixMul(matrixPowSum(a, p >> 1), matrixAdd(matrixUnit(n),  matrixPow(a, p >> 1)))
 
     return matrixAdd(a, matrixMul(matrixPowSum(a, p - 1), a))
 
