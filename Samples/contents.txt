@@ -49,3 +49,7 @@ mo.cpp	Algoritmo de MO (queries offline)
 unionfind.cpp	Union-find
 k_th_tree.cpp	Arvore para achar o K-esimo termo
 inversao.cpp	Indice de inversao (n log n)
+
+[Python]
+matrizes.py	Matrizes
+modpow.py	Modpow

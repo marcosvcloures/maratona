@@ -220,9 +220,6 @@ INPUT code/divisores.cpp
 INPUT code/crivosegmentado.cpp
 INPUT code/crivosegmentado.cpp
 INPUT code/crivosegmentado.cpp
-INPUT code/gss.cpp
-INPUT code/gss.cpp
-INPUT code/gss.cpp
 INPUT code/grafos.cpp
 INPUT code/grafos.cpp
 INPUT code/grafos.cpp
@@ -286,6 +283,14 @@ INPUT code/k_th_tree.cpp
 INPUT code/inversao.cpp
 INPUT code/inversao.cpp
 INPUT code/inversao.cpp
+INPUT code/matrizes.py
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/listings/lstlang1.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/listings/lstlang1.sty
+INPUT code/matrizes.py
+INPUT code/matrizes.py
+INPUT code/modpow.py
+INPUT code/modpow.py
+INPUT code/modpow.py
 INPUT notebook.aux
 INPUT ./notebook.out
 INPUT ./notebook.out

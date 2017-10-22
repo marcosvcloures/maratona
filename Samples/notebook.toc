@@ -11,32 +11,34 @@
 \contentsline {subsection}{\numberline {2.8}Fatora\IeC {\c c}\IeC {\~a}o em n\IeC {\'u}meros primos}{7}{subsection.2.8}
 \contentsline {subsection}{\numberline {2.9}Modpow}{7}{subsection.2.9}
 \contentsline {subsection}{\numberline {2.10}Quantidade de coprimos.}{7}{subsection.2.10}
-\contentsline {subsection}{\numberline {2.11}M\IeC {\'a}ximo e m\IeC {\'\i }nimo de fun\IeC {\c c}\IeC {\~o}es}{8}{subsection.2.11}
+\contentsline {subsection}{\numberline {2.11}M\IeC {\'a}ximo e m\IeC {\'\i }nimo de fun\IeC {\c c}\IeC {\~o}es (Busca ternaria)}{8}{subsection.2.11}
 \contentsline {subsection}{\numberline {2.12}Todos divisores de um n\IeC {\'u}mero}{8}{subsection.2.12}
 \contentsline {subsection}{\numberline {2.13}Crivo de Erat\IeC {\'o}stenes segmentado}{8}{subsection.2.13}
-\contentsline {subsection}{\numberline {2.14}Busca ternaria}{9}{subsection.2.14}
-\contentsline {section}{\numberline {3}Grafos}{11}{section.3}
-\contentsline {subsection}{\numberline {3.1}Grafos}{11}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Todas as pontes de um grafo}{13}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Isomorfismo de \IeC {\'a}rvores}{15}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Matching m\IeC {\'a}ximo em grafo bipartido}{16}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}Algoritmo h\IeC {\'u}ngaro}{17}{subsection.3.5}
-\contentsline {subsection}{\numberline {3.6}Isomorfismo de \IeC {\'a}rvores para a biblioteca de grafos.}{19}{subsection.3.6}
-\contentsline {section}{\numberline {4}Strings}{22}{section.4}
-\contentsline {subsection}{\numberline {4.1}Suffix array}{22}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Algoritmo Z}{23}{subsection.4.2}
-\contentsline {section}{\numberline {5}Geometria}{25}{section.5}
-\contentsline {subsection}{\numberline {5.1}Linha de eventos radial}{25}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}KD-Tree para pares mais pr\IeC {\'o}ximos em O(log(n))}{26}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Geometria (reduzido)}{28}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}Geometria (grande)}{30}{subsection.5.4}
-\contentsline {subsection}{\numberline {5.5}Geometria (Marcelo)}{32}{subsection.5.5}
-\contentsline {section}{\numberline {6}Estruturas de dados etc}{36}{section.6}
-\contentsline {subsection}{\numberline {6.1}Wavelet-tree}{36}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Seg-tree 2D}{37}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Seg-tree}{40}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}Mergesort}{41}{subsection.6.4}
-\contentsline {subsection}{\numberline {6.5}Algoritmo de MO (queries offline)}{42}{subsection.6.5}
-\contentsline {subsection}{\numberline {6.6}Union-find}{43}{subsection.6.6}
-\contentsline {subsection}{\numberline {6.7}Arvore para achar o K-esimo termo}{43}{subsection.6.7}
-\contentsline {subsection}{\numberline {6.8}Indice de inversao (n log n)}{44}{subsection.6.8}
+\contentsline {section}{\numberline {3}Grafos}{10}{section.3}
+\contentsline {subsection}{\numberline {3.1}Grafos}{10}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Todas as pontes de um grafo}{12}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Isomorfismo de \IeC {\'a}rvores}{14}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Matching m\IeC {\'a}ximo em grafo bipartido}{15}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Algoritmo h\IeC {\'u}ngaro}{16}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}Isomorfismo de \IeC {\'a}rvores para a biblioteca de grafos.}{18}{subsection.3.6}
+\contentsline {section}{\numberline {4}Strings}{21}{section.4}
+\contentsline {subsection}{\numberline {4.1}Suffix array}{21}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Algoritmo Z}{22}{subsection.4.2}
+\contentsline {section}{\numberline {5}Geometria}{24}{section.5}
+\contentsline {subsection}{\numberline {5.1}Linha de eventos radial}{24}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}KD-Tree para pares mais pr\IeC {\'o}ximos em O(log(n))}{25}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Geometria (reduzido)}{27}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Geometria (grande)}{29}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Geometria (Marcelo)}{31}{subsection.5.5}
+\contentsline {section}{\numberline {6}Estruturas de dados etc}{35}{section.6}
+\contentsline {subsection}{\numberline {6.1}Wavelet-tree}{35}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Seg-tree 2D}{36}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Seg-tree}{39}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Mergesort}{40}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}Algoritmo de MO (queries offline)}{41}{subsection.6.5}
+\contentsline {subsection}{\numberline {6.6}Union-find}{42}{subsection.6.6}
+\contentsline {subsection}{\numberline {6.7}Arvore para achar o K-esimo termo}{42}{subsection.6.7}
+\contentsline {subsection}{\numberline {6.8}Indice de inversao (n log n)}{43}{subsection.6.8}
+\contentsline {section}{\numberline {7}Python}{45}{section.7}
+\contentsline {subsection}{\numberline {7.1}Matrizes}{45}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Modpow}{45}{subsection.7.2}

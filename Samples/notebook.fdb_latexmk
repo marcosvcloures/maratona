@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1508244067 "notebook.tex" "notebook.pdf" "notebook" 1508244073
+["pdflatex"] 1508698710 "notebook.tex" "notebook.pdf" "notebook" 1508698723
   "C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/droid/droid-01.enc" 1315767328 3208 774a845f3c996f69f4af73dfaa7ec993 ""
   "C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/droid/droid-03.enc" 1315767328 3575 a615c75e8351765beee0ecafb2d78daa ""
   "C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/iwona/ec-iwona.enc" 1280855956 2027 f8708480c25b8150843bb94b8b39c93f ""
@@ -102,11 +102,13 @@
   "code/kd-tree.cpp" 1507568010 5667 7a0ffe0bf198a5713dc56bc0d94d43c0 ""
   "code/matching_bipartido.cpp" 1506024320 1699 2da1708da9d3bb1b7f27bc451ff49cbf ""
   "code/matriz.cpp" 1505881728 1851 0fa6f6fd3b8a76f6e74172a8152b20e5 ""
+  "code/matrizes.py" 1508698573 1478 37b63ad32bd8f06c5738228e399eec8e ""
   "code/mdc.cpp" 1506023799 164 73b01ac3314c7af3f8c4dcc2e84e59db ""
   "code/mergesort.cpp" 1506024478 948 ba83ba396c19b543c1ad9bbe370c2624 ""
   "code/mmc.cpp" 1506024069 95 d45a9ffec07460e9b7b2bd356cc76b71 ""
   "code/mo.cpp" 1506024828 1400 c0bbac46ede4a0365812431084f9a6fa ""
   "code/modpow.cpp" 1506024353 212 d3c5b6e1bfdc92eb9d13228c552ce4c3 ""
+  "code/modpow.py" 1508698664 287 1a66cb694f73f0d215549f47892a161c ""
   "code/pollard_rho.cpp" 1506024024 376 69bd4c81dd6fe7b7ed6abd4419694fe1 ""
   "code/prime_factors.cpp" 1506024185 391 61c2d7133b2ab81651cb60eb37b46c9e ""
   "code/qtdPrimos.cpp" 1506281853 657 e95d812330470766501fdc5a5b873ff1 ""
@@ -117,11 +119,11 @@
   "code/unionfind.cpp" 1506024960 490 ae9a986505339d491f55a51fcb017096 ""
   "code/wavelet.cpp" 1505829150 3019 fe478e2b324f3afcbcfef90800e0cf2a ""
   "code/z.cpp" 1507903739 2545 a426863864974a5ef109057b7357555a ""
-  "contents.tex" 1508244067 4231 794269f7d607cf81a1dc4dfa1ed07294 ""
-  "notebook.aux" 1508244072 8510 40287acd3f1fbadfb056d506fad87ef6 ""
-  "notebook.out" 1508244072 2989 cfbd7505d1cf5992feffa0c11b4f7e4e ""
+  "contents.tex" 1508698697 4365 bdf368e91530554abef08dbd1ee8faa0 ""
+  "notebook.aux" 1508698722 8779 750d46e4416e6bab09f03a706fcbb2cc ""
+  "notebook.out" 1508698722 3101 6c0d1bce980b165f042478388744156e ""
   "notebook.tex" 1508244012 3653 3c14bb4a44b3fc559a0768439ed0cf47 ""
-  "notebook.toc" 1508244072 3794 189c791ca69deeef0a99468a6ed32250 ""
+  "notebook.toc" 1508698722 3940 3061853fc668aed22ee18409969b3120 ""
   (generated)
   "notebook.aux"
   "notebook.log"
