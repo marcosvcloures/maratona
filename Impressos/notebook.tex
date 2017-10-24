@@ -1,0 +1,165 @@
+\documentclass[10pt]{article}
+\usepackage[left=0.4in,right=0.4in,top=0.7in,bottom=0.7in]{geometry}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{tocloft}
+\usepackage{pdflscape}
+\usepackage{multicol}
+\usepackage{titlesec}
+\usepackage[utf8]{inputenc}
+
+\usepackage[defaultmono]{droidmono}
+%\renewcommand*\familydefault{\ttdefault} %% Only if the base font of the document is to be typewriter style
+\usepackage[math]{iwona}
+\usepackage[T1]{fontenc}
+\makeatletter
+\input droid/t1fdm.fd
+\makeatother
+
+\newcommand{\sectionbreak}{\clearpage}
+
+\lstdefinestyle{shared}{
+    belowcaptionskip=1\baselineskip,
+    breaklines=true,
+    xleftmargin=\parindent,
+    showstringspaces=false,
+    basicstyle=\fontsize{8}{5}\ttfamily,
+    literate={á}{{\'a}}1
+        {Á}{{\'A}}1
+        {ã}{{\~a}}1
+        {Ã}{{\~A}}1
+        {â}{{\^a}}1
+        {Â}{{\^A}}1
+        {é}{{\'e}}1
+        {É}{{\'E}}1
+        {ê}{{\^e}}1
+        {Ê}{{\^E}}1
+        {ó}{{\'o}}1
+        {Ó}{{\'O}}1
+        {õ}{{\~o}}1
+        {Õ}{{\~O}}1
+        {í}{{\'i}}1
+        {Í}{{\'I}}1
+        {ç}{{c}}1
+        {Ç}{{c}}1
+}
+\lstdefinestyle{cpp}{
+	style=shared,
+    language=C++,
+    keywordstyle=\bfseries\color{green!40!black},
+    commentstyle=\itshape\color{red!80!black},
+    identifierstyle=\color{blue},
+    stringstyle=\color{purple!40!black},
+    literate={á}{{\'a}}1
+        {Á}{{\'A}}1
+        {ã}{{\~a}}1
+        {Ã}{{\~A}}1
+        {â}{{\^a}}1
+        {Â}{{\^A}}1
+        {é}{{\'e}}1
+        {É}{{\'E}}1
+        {ê}{{\^e}}1
+        {Ê}{{\^E}}1
+        {ó}{{\'o}}1
+        {Ó}{{\'O}}1
+        {õ}{{\~o}}1
+        {Õ}{{\~O}}1
+        {í}{{\'i}}1
+        {Í}{{\'I}}1
+        {ç}{{c}}1
+        {Ç}{{c}}1
+}
+\lstdefinestyle{java}{
+    style=shared,
+    language=Java,
+    keywordstyle=\bfseries\color{green!40!black},
+    commentstyle=\itshape\color{purple!40!black},
+    identifierstyle=\color{blue},
+    stringstyle=\color{orange},
+    literate={á}{{\'a}}1
+        {Á}{{\'A}}1
+        {ã}{{\~a}}1
+        {Ã}{{\~A}}1
+        {â}{{\^a}}1
+        {Â}{{\^A}}1
+        {é}{{\'e}}1
+        {É}{{\'E}}1
+        {ê}{{\^e}}1
+        {Ê}{{\^E}}1
+        {ó}{{\'o}}1
+        {Ó}{{\'O}}1
+        {õ}{{\~o}}1
+        {Õ}{{\~O}}1
+        {í}{{\'i}}1
+        {Í}{{\'I}}1
+        {ç}{{c}}1
+        {Ç}{{c}}1
+}
+\lstdefinestyle{py}{
+    style=shared,
+    language=Python,
+    keywordstyle=\bfseries\color{green!40!black},
+    commentstyle=\itshape\color{purple!40!black},
+    identifierstyle=\color{blue},
+    stringstyle=\color{orange},
+    literate={á}{{\'a}}1
+        {Á}{{\'A}}1
+        {ã}{{\~a}}1
+        {Ã}{{\~A}}1
+        {â}{{\^a}}1
+        {Â}{{\^A}}1
+        {é}{{\'e}}1
+        {É}{{\'E}}1
+        {ê}{{\^e}}1
+        {Ê}{{\^E}}1
+        {ó}{{\'o}}1
+        {Ó}{{\'O}}1
+        {õ}{{\~o}}1
+        {Õ}{{\~O}}1
+        {í}{{\'i}}1
+        {Í}{{\'I}}1
+        {ç}{{c}}1
+        {Ç}{{c}}1
+}
+\lstdefinestyle{txt}{
+    style=shared,
+    literate={á}{{\'a}}1
+        {Á}{{\'A}}1
+        {ã}{{\~a}}1
+        {Ã}{{\~A}}1
+        {â}{{\^a}}1
+        {Â}{{\^A}}1
+        {é}{{\'e}}1
+        {É}{{\'E}}1
+        {ê}{{\^e}}1
+        {Ê}{{\^E}}1
+        {ó}{{\'o}}1
+        {Ó}{{\'O}}1
+        {õ}{{\~o}}1
+        {Õ}{{\~O}}1
+        {í}{{\'i}}1
+        {Í}{{\'I}}1
+        {ç}{{c}}1
+        {Ç}{{c}}1
+}
+\lstset{escapechar=@}
+
+\title{\vspace{-4ex}\Large{Capybara dreaming}}
+\author{}
+\date{}
+
+\begin{document}
+%\begin{landscape}
+%\begin{multicols}{2}
+
+\maketitle
+\vspace{-13ex}
+\tableofcontents
+
+\input contents.tex
+
+%\end{multicols}
+%\end{landscape}
+\end{document}

@@ -42,3 +42,4 @@
 \contentsline {section}{\numberline {7}Python}{45}{section.7}
 \contentsline {subsection}{\numberline {7.1}Matrizes}{45}{subsection.7.1}
 \contentsline {subsection}{\numberline {7.2}Modpow}{45}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Busca binaria}{46}{subsection.7.3}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.15)  24 OCT 2017 13:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.15)  24 OCT 2017 13:19
 entering extended mode
 **./notebook.tex
 (notebook.tex
@@ -863,89 +863,57 @@ File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 3.
 
-(code/includes.cpp
+(code/coloracao_galaxy_collision.cpp
 
 LaTeX Font Warning: Font shape `T1/fdm/b/n' undefined
 (Font)              using `T1/fdm/m/n' instead on input line 1.
 
-) [2
+[2
 
-] (code/euclides_extended.cpp) (code/mdc.cpp) (code/mmc.cpp)
-(code/pollard_rho.cpp) (code/fft.cpp
+]) (code/eliminacao_gauss_xor_loteria.cpp [3])
+(code/fft_laboratorio_biotecnologia.cpp
 LaTeX Font Info:    Font shape `T1/fdm/m/it' in size <8> not available
-(Font)              Font shape `T1/fdm/m/sl' tried instead on input line 1.
- [3
-
-
-] [4]) (code/matriz.cpp [5])
-(code/qtdPrimos.cpp [6]) (code/prime_factors.cpp) (code/modpow.cpp)
-(code/eulerPhi.cpp [7]) (code/gss.cpp) (code/divisores.cpp)
-(code/crivosegmentado.cpp [8]) [9] (code/grafos.cpp [10
-
-
-] [11])
-(code/bridges.cpp [12]) [13] (code/isomorfismo_tree.cpp [14])
-(code/matching_bipartido.cpp [15]) (code/hungaro.cpp [16] [17])
-(code/isomorfismo_p_grafo.cpp [18] [19]) [20] (code/suffixarray.cpp [21
-
-
-])
-(code/z.cpp [22]) [23] (code/radial_sweep.cpp [24
-
-
-]) (code/kd-tree.cpp [25]
-[26]) (code/geometria_reduzido.cpp [27]) [28] (code/geometria.cpp [29])
-[30] (code/geometria_marcelo.cpp [31] [32] [33]) [34] (code/wavelet.cpp
-[35
-
-
-]) (code/segtree2d.cpp [36] [37]) [38] (code/seg_tree.cpp [39])
-(code/mergesort.cpp [40]) (code/mo.cpp [41]) (code/unionfind.cpp)
-(code/k_th_tree.cpp [42]) (code/inversao.cpp [43]) [44]
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
-File: lstlang1.sty 2015/06/04 1.6 listings language file
-)
-(code/matrizes.py) (code/modpow.py) [45
-
-
-] (code/busca_binaria.py) [46])
+(Font)              Font shape `T1/fdm/m/sl' tried instead on input line 13.
+ [4])
+(code/line_sweep_k_th_fence_fail.cpp [5]) (code/pd_digitos_digits_counting.cpp
+[6]) (code/pd_garcom_internet_trouble.cpp [7]) [8]
+(code/pd_intervalos_hiperatcive.cpp) (code/pd_minmax_bottomup_cartoes.cpp
+[9]) (code/pd_segtree_keep_it_energized.cpp [10])
+(code/pd_string_guardioes_curiosos.cpp [11]) (code/pd_string_palindromo.cpp)
+(code/segtree_acordes_intergalaticos.cpp [12] [13] [14])
+(code/segtree_homem_elefante_rato.cpp [15]) [16]
+(code/suffix_array_growing_strings.cpp [17] [18])
+(code/trie_cellphone_typing.cpp) [19])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 165.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 165.
-
-(notebook.aux)
+ (notebook.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 165.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 165.
+Package rerunfilecheck Info: File `notebook.out' has not changed.
+(rerunfilecheck)             Checksum: 92C13B377AD299B911184E515B100115;1202.
 
-
-Package rerunfilecheck Warning: File `notebook.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `notebook.out':
-(rerunfilecheck)             Before: 6D6B2F56F0EE32D6C77776D67320A124;3101
-(rerunfilecheck)             After:  0593218F353E3F315BE92E7B6D2265D0;3165.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 165.
  ) 
 Here is how much of TeX's memory you used:
- 14024 strings out of 493323
- 198495 string characters out of 3139040
- 597011 words of memory out of 3000000
- 13877 multiletter control sequences out of 15000+200000
+ 11424 strings out of 493323
+ 160591 string characters out of 3139040
+ 482999 words of memory out of 3000000
+ 13245 multiletter control sequences out of 15000+200000
  55423 words of font info for 56 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,6n,68p,249b,1882s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,6n,68p,264b,1994s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/droid/droid-03.enc}{C:/Program F
 iles/MiKTeX 2.9/fonts/enc/dvips/droid/droid-01.enc}{C:/Program Files/MiKTeX 2.9
 /fonts/enc/dvips/iwona/ec-iwona.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/pu
 blic/droid/DroidSansMono.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/dr
 oid/DroidSansMono.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/nowacki/iwona/iw
 onab.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/nowacki/iwona/iwonar.pfb>
-Output written on notebook.pdf (46 pages, 661520 bytes).
+Output written on notebook.pdf (19 pages, 329943 bytes).
 PDF statistics:
- 4482 PDF objects out of 5155 (max. 8388607)
- 3439 named destinations out of 3580 (max. 500000)
- 353 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2005 PDF objects out of 2073 (max. 8388607)
+ 1542 named destinations out of 1728 (max. 500000)
+ 129 words of extra memory for PDF output out of 10000 (max. 10000000)
 

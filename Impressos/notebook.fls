@@ -1,4 +1,4 @@
-PWD D:/Documents/Faculdade/Maratona/Samples
+PWD D:/Documents/Faculdade/Maratona/Impressos
 INPUT C:/Users/Marcos Loures/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt
 INPUT notebook.tex
 OUTPUT notebook.log
@@ -159,7 +159,7 @@ OUTPUT notebook.toc
 INPUT contents.tex
 INPUT C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/nowacki/iwona/ec-iwonab.tfm
-INPUT code/includes.cpp
+INPUT code/coloracao_galaxy_collision.cpp
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/listings/lstlang1.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/listings/lstlang1.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/listings/lstlang1.sty
@@ -167,133 +167,62 @@ INPUT C:/Program Files/MiKTeX 2.9/tex/latex/listings/lstlang1.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/listings/lstmisc.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/listings/lstmisc.sty
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-t1.tfm
-INPUT code/includes.cpp
-INPUT code/includes.cpp
+INPUT code/coloracao_galaxy_collision.cpp
+INPUT code/coloracao_galaxy_collision.cpp
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/nowacki/iwona/ec-iwonar.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/public/droid/DroidSansMono-t1.vf
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-01.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-02.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-03.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-04.tfm
-INPUT code/euclides_extended.cpp
-INPUT code/euclides_extended.cpp
-INPUT code/euclides_extended.cpp
-INPUT code/mdc.cpp
-INPUT code/mdc.cpp
-INPUT code/mdc.cpp
-INPUT code/mmc.cpp
-INPUT code/mmc.cpp
-INPUT code/mmc.cpp
-INPUT code/pollard_rho.cpp
-INPUT code/pollard_rho.cpp
-INPUT code/pollard_rho.cpp
-INPUT code/fft.cpp
-INPUT code/fft.cpp
-INPUT code/fft.cpp
+INPUT code/eliminacao_gauss_xor_loteria.cpp
+INPUT code/eliminacao_gauss_xor_loteria.cpp
+INPUT code/eliminacao_gauss_xor_loteria.cpp
+INPUT code/fft_laboratorio_biotecnologia.cpp
+INPUT code/fft_laboratorio_biotecnologia.cpp
+INPUT code/fft_laboratorio_biotecnologia.cpp
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-Slanted-t1.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/nowacki/iwona/ec-iwonar.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/public/droid/DroidSansMono-Slanted-t1.vf
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-Slanted-01.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-Slanted-02.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-Slanted-03.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-Slanted-04.tfm
-INPUT code/matriz.cpp
-INPUT code/matriz.cpp
-INPUT code/matriz.cpp
-INPUT code/qtdPrimos.cpp
-INPUT code/qtdPrimos.cpp
-INPUT code/qtdPrimos.cpp
-INPUT code/prime_factors.cpp
-INPUT code/prime_factors.cpp
-INPUT code/prime_factors.cpp
-INPUT code/modpow.cpp
-INPUT code/modpow.cpp
-INPUT code/modpow.cpp
-INPUT code/eulerPhi.cpp
-INPUT code/eulerPhi.cpp
-INPUT code/eulerPhi.cpp
-INPUT code/gss.cpp
-INPUT code/gss.cpp
-INPUT code/gss.cpp
-INPUT code/divisores.cpp
-INPUT code/divisores.cpp
-INPUT code/divisores.cpp
-INPUT code/crivosegmentado.cpp
-INPUT code/crivosegmentado.cpp
-INPUT code/crivosegmentado.cpp
-INPUT code/grafos.cpp
-INPUT code/grafos.cpp
-INPUT code/grafos.cpp
-INPUT code/bridges.cpp
-INPUT code/bridges.cpp
-INPUT code/bridges.cpp
-INPUT code/isomorfismo_tree.cpp
-INPUT code/isomorfismo_tree.cpp
-INPUT code/isomorfismo_tree.cpp
-INPUT code/matching_bipartido.cpp
-INPUT code/matching_bipartido.cpp
-INPUT code/matching_bipartido.cpp
-INPUT code/hungaro.cpp
-INPUT code/hungaro.cpp
-INPUT code/hungaro.cpp
-INPUT code/isomorfismo_p_grafo.cpp
-INPUT code/isomorfismo_p_grafo.cpp
-INPUT code/isomorfismo_p_grafo.cpp
-INPUT code/suffixarray.cpp
-INPUT code/suffixarray.cpp
-INPUT code/suffixarray.cpp
-INPUT code/z.cpp
-INPUT code/z.cpp
-INPUT code/z.cpp
-INPUT code/radial_sweep.cpp
-INPUT code/radial_sweep.cpp
-INPUT code/radial_sweep.cpp
-INPUT code/kd-tree.cpp
-INPUT code/kd-tree.cpp
-INPUT code/kd-tree.cpp
-INPUT code/geometria_reduzido.cpp
-INPUT code/geometria_reduzido.cpp
-INPUT code/geometria_reduzido.cpp
-INPUT code/geometria.cpp
-INPUT code/geometria.cpp
-INPUT code/geometria.cpp
-INPUT code/geometria_marcelo.cpp
-INPUT code/geometria_marcelo.cpp
-INPUT code/geometria_marcelo.cpp
-INPUT code/wavelet.cpp
-INPUT code/wavelet.cpp
-INPUT code/wavelet.cpp
-INPUT code/segtree2d.cpp
-INPUT code/segtree2d.cpp
-INPUT code/segtree2d.cpp
-INPUT code/seg_tree.cpp
-INPUT code/seg_tree.cpp
-INPUT code/seg_tree.cpp
-INPUT code/mergesort.cpp
-INPUT code/mergesort.cpp
-INPUT code/mergesort.cpp
-INPUT code/mo.cpp
-INPUT code/mo.cpp
-INPUT code/mo.cpp
-INPUT code/unionfind.cpp
-INPUT code/unionfind.cpp
-INPUT code/unionfind.cpp
-INPUT code/k_th_tree.cpp
-INPUT code/k_th_tree.cpp
-INPUT code/k_th_tree.cpp
-INPUT code/inversao.cpp
-INPUT code/inversao.cpp
-INPUT code/inversao.cpp
-INPUT code/matrizes.py
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/listings/lstlang1.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/listings/lstlang1.sty
-INPUT code/matrizes.py
-INPUT code/matrizes.py
-INPUT code/modpow.py
-INPUT code/modpow.py
-INPUT code/modpow.py
-INPUT code/busca_binaria.py
-INPUT code/busca_binaria.py
-INPUT code/busca_binaria.py
+INPUT code/line_sweep_k_th_fence_fail.cpp
+INPUT code/line_sweep_k_th_fence_fail.cpp
+INPUT code/line_sweep_k_th_fence_fail.cpp
+INPUT code/pd_digitos_digits_counting.cpp
+INPUT code/pd_digitos_digits_counting.cpp
+INPUT code/pd_digitos_digits_counting.cpp
+INPUT code/pd_garcom_internet_trouble.cpp
+INPUT code/pd_garcom_internet_trouble.cpp
+INPUT code/pd_garcom_internet_trouble.cpp
+INPUT code/pd_intervalos_hiperatcive.cpp
+INPUT code/pd_intervalos_hiperatcive.cpp
+INPUT code/pd_intervalos_hiperatcive.cpp
+INPUT code/pd_minmax_bottomup_cartoes.cpp
+INPUT code/pd_minmax_bottomup_cartoes.cpp
+INPUT code/pd_minmax_bottomup_cartoes.cpp
+INPUT code/pd_segtree_keep_it_energized.cpp
+INPUT code/pd_segtree_keep_it_energized.cpp
+INPUT code/pd_segtree_keep_it_energized.cpp
+INPUT code/pd_string_guardioes_curiosos.cpp
+INPUT code/pd_string_guardioes_curiosos.cpp
+INPUT code/pd_string_guardioes_curiosos.cpp
+INPUT code/pd_string_palindromo.cpp
+INPUT code/pd_string_palindromo.cpp
+INPUT code/pd_string_palindromo.cpp
+INPUT code/segtree_acordes_intergalaticos.cpp
+INPUT code/segtree_acordes_intergalaticos.cpp
+INPUT code/segtree_acordes_intergalaticos.cpp
+INPUT code/segtree_homem_elefante_rato.cpp
+INPUT code/segtree_homem_elefante_rato.cpp
+INPUT code/segtree_homem_elefante_rato.cpp
+INPUT code/suffix_array_growing_strings.cpp
+INPUT code/suffix_array_growing_strings.cpp
+INPUT code/suffix_array_growing_strings.cpp
+INPUT code/trie_cellphone_typing.cpp
+INPUT code/trie_cellphone_typing.cpp
+INPUT code/trie_cellphone_typing.cpp
 INPUT notebook.aux
 INPUT ./notebook.out
 INPUT ./notebook.out
