@@ -62,14 +62,16 @@ struct Grafo
 
     void modificaAresta(int a, int b, ll dif)
     {
-        for (auto &it : g[a])
-            if (it.id == b)
+        for (auto it = g[a].begin(); it != g[a].end(); it++)
+        {
+            if (it->id == b)
             {
-                it.dist += dif;
+                it->dist += dif;
+                if (it->dist == 0)
+                    g[a].erase(it);
                 break;
             }
-
-        g[a].erase(remove_if(g[a].begin(), g[a].end(), [b](Vertice v) { return v.dist == 0; }));
+        }
     }
 
     ll dijkstra(int s, int d)
