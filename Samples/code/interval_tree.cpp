@@ -40,25 +40,27 @@ template <class Const_Node_Iterator,
           class Allocator>
 struct intervals_node_update
 {
-  public:
+public:
     // The metadata that each node stores is the largest endpoint of an
     // interval in its subtree. In this case, this is an unsigned int.
     typedef unsigned int metadata_type;
 
-    interval find(const int &pos) {
+    interval find(const int &pos)
+    {
         auto no = node_begin(), fim = node_end();
 
-        while(no != fim) {
+        while(no != fim)
+        {
             if(no->first >= pos && pos <= no->second)
                 return *no;
-            
+
             auto filho_esq = no.get_l_child();
             auto max_esq = filho_esq != fim ? filho_esq.get_metadata() : 0;
 
             auto filho_dir = no.get_r_child();
 
             if(filho_esq->first )
-        }
+            }
     }
 
     // Checks whether a set of intervals contains at least one interval
@@ -73,7 +75,7 @@ struct intervals_node_update
         {
             // Check whether r_interval overlaps the current interval.
             if (r_interval.second >= (*nd_it)->first &&
-                r_interval.first <= (*nd_it)->second)
+                    r_interval.first <= (*nd_it)->second)
                 return true;
 
             // Get the const node iterator of the node's left child.
@@ -94,7 +96,7 @@ struct intervals_node_update
         return false;
     }
 
-  protected:
+protected:
     // Update predicate: nd_it is a node iterator to the node currently
     // updated; end_nd_it is a const node iterator to a just-after leaf
     // node.
@@ -158,12 +160,12 @@ void some_op_sequence(Cntnr r_c)
 int main()
 {
     // Test a red-black tree.
-    some_op_sequence(tree<
+    some_op_sequence(tree <
                      interval,
                      null_type,
                      less<interval>,
                      rb_tree_tag,
-                     intervals_node_update>());
+                     intervals_node_update > ());
 
     return 0;
 }

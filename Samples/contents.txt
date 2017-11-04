@@ -33,6 +33,9 @@ max_flow_min_cost.cpp	Fluxo maximo de custo minimo
 [Strings]
 suffixarray.cpp	Suffix array
 z.cpp	Algoritmo Z
+arvore_string.cpp	Strings em Arvore
+split.cpp	Split strings
+
 
 [Geometria]
 radial_sweep.cpp	Linha de eventos radial

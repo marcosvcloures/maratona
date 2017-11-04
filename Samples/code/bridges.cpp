@@ -10,7 +10,7 @@ class Graph
     void bridgeUtil(int v, bool visited[], int disc[], int low[],
                     int parent[]);
 
-  public:
+public:
     Graph(int V);               // Constructor
     void addEdge(int v, int w); // to add an edge to graph
     void bridge();              // prints all bridges

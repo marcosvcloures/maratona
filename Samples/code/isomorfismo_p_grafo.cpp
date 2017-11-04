@@ -135,18 +135,20 @@ int main()
 
         for (int i = 1; i < n; i++)
             scanf("%d", &a),
-            g.addAresta(i, a - 1),
-            g.addAresta(a - 1, i);
+                  g.addAresta(i, a - 1),
+                  g.addAresta(a - 1, i);
 
         arvores.push_back(g);
     }
 
-    for(i = 0; i < arvores.size(); i++) {
-        for(j = i + 1; j < arvores.size(); j++) {
+    for(i = 0; i < arvores.size(); i++)
+    {
+        for(j = i + 1; j < arvores.size(); j++)
+        {
             if(arvores[i].isomorfismo(arvores[j]))
                 break;
         }
-        
+
         if(j == arvores.size())
             resp++;
     }

@@ -24,7 +24,8 @@ int main()
         scanf("%d %d", &a, &b);
 
         if (a > 100000 && b > 100000)
-        { // (a > sqrt(N) && b > sqrt(N))
+        {
+            // (a > sqrt(N) && b > sqrt(N))
             for (i = a; i <= b; i++)
             {
                 for (j = 0; j < primos.size(); j++)
@@ -32,11 +33,13 @@ int main()
                         goto ab;
 
                 printf("%d\n", i);
-            ab:;
+ab:
+                ;
             }
         }
         else if (a < 100001 && b < 100001)
-        { // (a < sqrt(N) && b < sqrt(N))
+        {
+            // (a < sqrt(N) && b < sqrt(N))
             for (i = a; i <= b; i++)
                 if (!nprimo[i])
                     printf("%d\n", i);
@@ -57,7 +60,8 @@ int main()
                         goto ac;
 
                 printf("%d\n", i);
-            ac:;
+ac:
+                ;
             }
         }
     }
