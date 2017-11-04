@@ -13,7 +13,7 @@
 \contentsline {subsection}{\numberline {2.10}Quantidade de coprimos.}{7}{subsection.2.10}
 \contentsline {subsection}{\numberline {2.11}M\IeC {\'a}ximo e m\IeC {\'\i }nimo de fun\IeC {\c c}\IeC {\~o}es (Busca ternaria)}{8}{subsection.2.11}
 \contentsline {subsection}{\numberline {2.12}Todos divisores de um n\IeC {\'u}mero}{8}{subsection.2.12}
-\contentsline {subsection}{\numberline {2.13}Crivo de Erat\IeC {\'o}stenes segmentado}{8}{subsection.2.13}
+\contentsline {subsection}{\numberline {2.13}Crivo de Erat\IeC {\'o}stenes segmentado}{9}{subsection.2.13}
 \contentsline {section}{\numberline {3}Grafos}{10}{section.3}
 \contentsline {subsection}{\numberline {3.1}Grafos}{10}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Todas as pontes de um grafo}{12}{subsection.3.2}
@@ -25,22 +25,24 @@
 \contentsline {section}{\numberline {4}Strings}{22}{section.4}
 \contentsline {subsection}{\numberline {4.1}Suffix array}{22}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Algoritmo Z}{23}{subsection.4.2}
-\contentsline {section}{\numberline {5}Geometria}{25}{section.5}
-\contentsline {subsection}{\numberline {5.1}Linha de eventos radial}{25}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}KD-Tree para pares mais pr\IeC {\'o}ximos em O(log(n))}{26}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Geometria (reduzido)}{28}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}Geometria (grande)}{30}{subsection.5.4}
-\contentsline {subsection}{\numberline {5.5}Geometria (Marcelo)}{32}{subsection.5.5}
-\contentsline {section}{\numberline {6}Estruturas de dados etc}{36}{section.6}
-\contentsline {subsection}{\numberline {6.1}Wavelet-tree}{36}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Seg-tree 2D}{37}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Seg-tree}{40}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}Mergesort}{41}{subsection.6.4}
-\contentsline {subsection}{\numberline {6.5}Algoritmo de MO (queries offline)}{42}{subsection.6.5}
-\contentsline {subsection}{\numberline {6.6}Union-find}{43}{subsection.6.6}
-\contentsline {subsection}{\numberline {6.7}Arvore para achar o K-esimo termo}{43}{subsection.6.7}
-\contentsline {subsection}{\numberline {6.8}Indice de inversao (n log n)}{44}{subsection.6.8}
-\contentsline {section}{\numberline {7}Python}{46}{section.7}
-\contentsline {subsection}{\numberline {7.1}Matrizes}{46}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}Modpow}{46}{subsection.7.2}
-\contentsline {subsection}{\numberline {7.3}Busca binaria}{47}{subsection.7.3}
+\contentsline {subsection}{\numberline {4.3}Strings em Arvore}{24}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Split strings}{25}{subsection.4.4}
+\contentsline {section}{\numberline {5}Geometria}{27}{section.5}
+\contentsline {subsection}{\numberline {5.1}Linha de eventos radial}{27}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}KD-Tree para pares mais pr\IeC {\'o}ximos em O(log(n))}{28}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Geometria (reduzido)}{31}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Geometria (grande)}{32}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Geometria (Marcelo)}{34}{subsection.5.5}
+\contentsline {section}{\numberline {6}Estruturas de dados etc}{38}{section.6}
+\contentsline {subsection}{\numberline {6.1}Wavelet-tree}{38}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Seg-tree 2D}{39}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Seg-tree}{42}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Mergesort}{43}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}Algoritmo de MO (queries offline)}{44}{subsection.6.5}
+\contentsline {subsection}{\numberline {6.6}Union-find}{45}{subsection.6.6}
+\contentsline {subsection}{\numberline {6.7}Arvore para achar o K-esimo termo}{45}{subsection.6.7}
+\contentsline {subsection}{\numberline {6.8}Indice de inversao (n log n)}{46}{subsection.6.8}
+\contentsline {section}{\numberline {7}Python}{48}{section.7}
+\contentsline {subsection}{\numberline {7.1}Matrizes}{48}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Modpow}{48}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Busca binaria}{49}{subsection.7.3}

@@ -247,6 +247,12 @@ INPUT code/suffixarray.cpp
 INPUT code/z.cpp
 INPUT code/z.cpp
 INPUT code/z.cpp
+INPUT code/arvore_string.cpp
+INPUT code/arvore_string.cpp
+INPUT code/arvore_string.cpp
+INPUT code/split.cpp
+INPUT code/split.cpp
+INPUT code/split.cpp
 INPUT code/radial_sweep.cpp
 INPUT code/radial_sweep.cpp
 INPUT code/radial_sweep.cpp

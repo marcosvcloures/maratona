@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.15)  4 NOV 2017 17:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.15)  4 NOV 2017 17:37
 entering extended mode
 **./notebook.tex
 (notebook.tex
@@ -879,36 +879,37 @@ LaTeX Font Info:    Font shape `T1/fdm/m/it' in size <8> not available
 
 ] [4]) (code/matriz.cpp [5])
 (code/qtdPrimos.cpp [6]) (code/prime_factors.cpp) (code/modpow.cpp)
-(code/eulerPhi.cpp [7]) (code/gss.cpp) (code/divisores.cpp)
-(code/crivosegmentado.cpp [8]) [9] (code/grafos.cpp [10
+(code/eulerPhi.cpp [7]) (code/gss.cpp) (code/divisores.cpp) [8]
+(code/crivosegmentado.cpp) [9] (code/grafos.cpp [10
 
 
-] [11])
-(code/bridges.cpp [12]) [13] (code/isomorfismo_tree.cpp [14])
-(code/matching_bipartido.cpp [15]) (code/hungaro.cpp [16] [17])
-(code/isomorfismo_p_grafo.cpp [18] [19]) (code/max_flow_min_cost.cpp [20])
-[21] (code/suffixarray.cpp [22
+] [11]) (code/bridges.cpp
+[12] [13]) (code/isomorfismo_tree.cpp [14]) (code/matching_bipartido.cpp
+[15]) (code/hungaro.cpp [16] [17]) (code/isomorfismo_p_grafo.cpp [18] [19])
+(code/max_flow_min_cost.cpp [20]) [21] (code/suffixarray.cpp [22
 
 
-]) (code/z.cpp [23]) [24] (code/radial_sweep.cpp
-[25
+]) (code/z.cpp
+[23]) (code/arvore_string.cpp [24]) (code/split.cpp [25]) [26]
+(code/radial_sweep.cpp [27
 
 
-]) (code/kd-tree.cpp [26] [27]) (code/geometria_reduzido.cpp [28]) [29]
-(code/geometria.cpp [30]) [31] (code/geometria_marcelo.cpp [32] [33] [34])
-[35] (code/wavelet.cpp [36
+]) (code/kd-tree.cpp [28] [29]) [30]
+(code/geometria_reduzido.cpp [31]) (code/geometria.cpp [32] [33])
+(code/geometria_marcelo.cpp [34] [35] [36]) [37] (code/wavelet.cpp [38
 
 
-]) (code/segtree2d.cpp [37] [38]) [39]
-(code/seg_tree.cpp [40]) (code/mergesort.cpp [41]) (code/mo.cpp [42])
-(code/unionfind.cpp) (code/k_th_tree.cpp [43]) (code/inversao.cpp [44])
-[45] ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+])
+(code/segtree2d.cpp [39] [40]) [41] (code/seg_tree.cpp [42])
+(code/mergesort.cpp [43]) (code/mo.cpp [44]) (code/unionfind.cpp)
+(code/k_th_tree.cpp [45]) (code/inversao.cpp [46]) [47]
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-(code/matrizes.py) (code/modpow.py) [46
+(code/matrizes.py) (code/modpow.py) [48
 
 
-] (code/busca_binaria.py) [47])
+] (code/busca_binaria.py) [49])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 165.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 165.
 
@@ -916,7 +917,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 165.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 165.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 165.
 Package rerunfilecheck Info: File `notebook.out' has not changed.
-(rerunfilecheck)             Checksum: 60D06359C67A4D36525CD670F27E9761;3244.
+(rerunfilecheck)             Checksum: 05ACE643937EABEF4E5E6D6338377F3F;3376.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -924,22 +925,22 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 165.
  ) 
 Here is how much of TeX's memory you used:
- 14158 strings out of 493323
- 200413 string characters out of 3139040
+ 14386 strings out of 493323
+ 203976 string characters out of 3139040
  597011 words of memory out of 3000000
- 13918 multiletter control sequences out of 15000+200000
+ 13938 multiletter control sequences out of 15000+200000
  55423 words of font info for 56 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,6n,68p,249b,1882s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,6n,68p,249b,1910s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/droid/droid-03.enc}{C:/Program F
 iles/MiKTeX 2.9/fonts/enc/dvips/droid/droid-01.enc}{C:/Program Files/MiKTeX 2.9
 /fonts/enc/dvips/iwona/ec-iwona.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/pu
 blic/droid/DroidSansMono.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/dr
 oid/DroidSansMono.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/nowacki/iwona/iw
 onab.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/nowacki/iwona/iwonar.pfb>
-Output written on notebook.pdf (47 pages, 676608 bytes).
+Output written on notebook.pdf (49 pages, 707364 bytes).
 PDF statistics:
- 4602 PDF objects out of 5155 (max. 8388607)
- 3529 named destinations out of 3580 (max. 500000)
- 369 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4858 PDF objects out of 5155 (max. 8388607)
+ 3731 named destinations out of 4296 (max. 500000)
+ 385 words of extra memory for PDF output out of 10000 (max. 10000000)
 
