@@ -48,7 +48,10 @@ struct Grafo
 
     void removeAresta(int a, int b)
     {
-        g[a].erase(remove_if(g[a].begin(), g[a].end(), [b](Vertice v) { return v.id == b; }));
+        g[a].erase(remove_if(g[a].begin(), g[a].end(), [b](Vertice v)
+        {
+            return v.id == b;
+        }));
     }
 
     ll valAresta(int a, int b)
@@ -79,7 +82,7 @@ struct Grafo
         priority_queue<Vertice> fila;
         bool visitados[n];
 
-        fill(visitados, visitados+n, 0);
+        fill(visitados, visitados + n, 0);
         fill(pais.begin(), pais.end(), -1);
 
         fila.push(Vertice(s, 0));
@@ -116,7 +119,7 @@ struct Grafo
         queue<Vertice> fila;
         bool visitados[n];
 
-        fill(visitados, visitados+n, 0);
+        fill(visitados, visitados + n, 0);
         fill(pais.begin(), pais.end(), -1);
 
         fila.push(Vertice(s, 0));

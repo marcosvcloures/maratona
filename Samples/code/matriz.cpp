@@ -8,7 +8,8 @@ typedef vector<vl> vvl;
 const int mod = 1000000;
 
 // Retorna a matriz I_n
-vvl matrixUnit(int n) {
+vvl matrixUnit(int n)
+{
     vvl res(n, vl(n));
     for (int i = 0; i < n; i++)
         res[i][i] = 1;
@@ -16,7 +17,8 @@ vvl matrixUnit(int n) {
 }
 
 // Retorna a+b
-vvl matrixAdd(const vvl &a, const vvl &b) {
+vvl matrixAdd(const vvl &a, const vvl &b)
+{
     int n = a.size();
     int m = a[0].size();
     vvl res(n, vl(m));
@@ -27,7 +29,8 @@ vvl matrixAdd(const vvl &a, const vvl &b) {
 }
 
 // Retorna a*b
-vvl matrixMul(const vvl &a, const vvl &b) {
+vvl matrixMul(const vvl &a, const vvl &b)
+{
     int n = a.size();
     int m = a[0].size();
     int k = b[0].size();
@@ -35,12 +38,13 @@ vvl matrixMul(const vvl &a, const vvl &b) {
     for (int i = 0; i < n; i++)
         for (int j = 0; j < k; j++)
             for (int p = 0; p < m; p++)
-               res[i][j] = (res[i][j] + ((a[i][p] % mod) * (b[p][j] % mod) % mod)) % mod;
+                res[i][j] = (res[i][j] + ((a[i][p] % mod) * (b[p][j] % mod) % mod)) % mod;
     return res;
 }
 
 // Retorna a matriz a^p
-vvl matrixPow(const vvl &a, long long p) {
+vvl matrixPow(const vvl &a, long long p)
+{
     if (p == 0)
         return matrixUnit(a.size());
     if (p & 1)
@@ -49,7 +53,8 @@ vvl matrixPow(const vvl &a, long long p) {
 }
 
 // Retorna sum^p_i=0 (a^i)
-vvl matrixPowSum(const vvl &a, long long p) {
+vvl matrixPowSum(const vvl &a, long long p)
+{
     long long n = a.size();
     if (p == 0)
         return vvl(n, vl(n));
@@ -58,19 +63,21 @@ vvl matrixPowSum(const vvl &a, long long p) {
     return matrixAdd(a, matrixMul(matrixPowSum(a, p - 1), a));
 }
 
-int main() {
-	long long n, l, k, i;
-	
-	while(scanf("%lld %lld %lld", &n, &l, &k) > 0) {
-		vvl matriz = vvl(2, vl(2));
-		
-		matriz[0][0] = l;
-		matriz[0][1] = k;
-		matriz[1][0] = 1;
-		matriz[1][1] = 0;
-		
-		matriz = matrixPow(matriz, n / 5);
-		
-		printf("%06lld\n", matriz[0][0]);
-	}
+int main()
+{
+    long long n, l, k, i;
+
+    while(scanf("%lld %lld %lld", &n, &l, &k) > 0)
+    {
+        vvl matriz = vvl(2, vl(2));
+
+        matriz[0][0] = l;
+        matriz[0][1] = k;
+        matriz[1][0] = 1;
+        matriz[1][1] = 0;
+
+        matriz = matrixPow(matriz, n / 5);
+
+        printf("%06lld\n", matriz[0][0]);
+    }
 }
