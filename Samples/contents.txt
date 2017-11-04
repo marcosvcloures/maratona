@@ -28,6 +28,7 @@ isomorfismo_tree.cpp	Isomorfismo de árvores
 matching_bipartido.cpp	Matching máximo em grafo bipartido
 hungaro.cpp	Algoritmo húngaro
 isomorfismo_p_grafo.cpp	Isomorfismo de árvores para a biblioteca de grafos.
+max_flow_min_cost.cpp	Fluxo maximo de custo minimo
 
 [Strings]
 suffixarray.cpp	Suffix array

@@ -238,6 +238,9 @@ INPUT code/hungaro.cpp
 INPUT code/isomorfismo_p_grafo.cpp
 INPUT code/isomorfismo_p_grafo.cpp
 INPUT code/isomorfismo_p_grafo.cpp
+INPUT code/max_flow_min_cost.cpp
+INPUT code/max_flow_min_cost.cpp
+INPUT code/max_flow_min_cost.cpp
 INPUT code/suffixarray.cpp
 INPUT code/suffixarray.cpp
 INPUT code/suffixarray.cpp
