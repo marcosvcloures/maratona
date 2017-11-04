@@ -32,6 +32,9 @@ isomorfismo_p_grafo.cpp	Isomorfismo de árvores para a biblioteca de grafos.
 [Strings]
 suffixarray.cpp	Suffix array
 z.cpp	Algoritmo Z
+arvore_string.cpp	Strings em Arvore
+split.cpp	Split strings
+
 
 [Geometria]
 radial_sweep.cpp	Linha de eventos radial
