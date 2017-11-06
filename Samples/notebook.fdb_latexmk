@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1509824261 "notebook.tex" "notebook.pdf" "notebook" 1509824267
+["pdflatex"] 1509996717 "notebook.tex" "notebook.pdf" "notebook" 1509996723
   "C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/droid/droid-01.enc" 1315767328 3208 774a845f3c996f69f4af73dfaa7ec993 ""
   "C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/droid/droid-03.enc" 1315767328 3575 a615c75e8351765beee0ecafb2d78daa ""
   "C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/iwona/ec-iwona.enc" 1280855956 2027 f8708480c25b8150843bb94b8b39c93f ""
@@ -93,7 +93,7 @@
   "code/geometria.cpp" 1505415760 4291 37996564df084c43ba932b0082cd7e8c ""
   "code/geometria_marcelo.cpp" 1509823297 8510 833d07824191dbc72fd64e46c4c03c2a ""
   "code/geometria_reduzido.cpp" 1506024905 3494 ab4eb12ad7da813a4eac540cdecd0d54 ""
-  "code/grafos.cpp" 1509823297 4053 294e8288701c27772e755016608b2bd5 ""
+  "code/grafos.cpp" 1509996701 4091 24958de7dd21a4c7fbedd1ea0bafcca7 ""
   "code/gss.cpp" 1509823297 714 60c9b792f7cc147eb88052eb976c552c ""
   "code/hungaro.cpp" 1506024119 3161 65a1384ff904f9a5257c4d86013a0468 ""
   "code/includes.cpp" 1508857087 245 c415992d51f82ee9d72c981980c6345e ""
@@ -123,11 +123,11 @@
   "code/unionfind.cpp" 1506024960 490 ae9a986505339d491f55a51fcb017096 ""
   "code/wavelet.cpp" 1509823297 3819 9e0b778569605f9e2a4c31e8254f3ed8 ""
   "code/z.cpp" 1509823297 2627 7bd5e543e95bcb81f4f528e49f426667 ""
-  "contents.tex" 1509824254 4802 6effd795b7d8108ebe2b159543215366 ""
-  "notebook.aux" 1509824267 9620 8cfe7eb7e9e1b0a1435c8ce2c1220595 ""
-  "notebook.out" 1509824267 3376 286696b61429d5782161e0d71f510db4 ""
+  "contents.tex" 1509996716 4802 6effd795b7d8108ebe2b159543215366 ""
+  "notebook.aux" 1509996723 9620 8cfe7eb7e9e1b0a1435c8ce2c1220595 ""
+  "notebook.out" 1509996723 3376 286696b61429d5782161e0d71f510db4 ""
   "notebook.tex" 1508244012 3653 3c14bb4a44b3fc559a0768439ed0cf47 ""
-  "notebook.toc" 1509824267 4279 a53c66bad7b4156921720cab5b5414ba ""
+  "notebook.toc" 1509996723 4279 a53c66bad7b4156921720cab5b5414ba ""
   (generated)
   "notebook.aux"
   "notebook.log"

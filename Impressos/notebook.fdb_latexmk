@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1508858384 "notebook.tex" "notebook.pdf" "notebook" 1508858387
+["pdflatex"] 1509972095 "notebook.tex" "notebook.pdf" "notebook" 1509972099
   "C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/droid/droid-01.enc" 1315767328 3208 774a845f3c996f69f4af73dfaa7ec993 ""
   "C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/droid/droid-03.enc" 1315767328 3575 a615c75e8351765beee0ecafb2d78daa ""
   "C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/iwona/ec-iwona.enc" 1280855956 2027 f8708480c25b8150843bb94b8b39c93f ""
@@ -83,9 +83,14 @@
   "C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map" 1508244056 171750 1c391ee560fd42b7e66562633dd295e4 ""
   "C:/Users/Marcos Loures/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt" 1505510189 4060085 78590f45519d84de53c3828ddf8dce2d ""
   "code/coloracao_galaxy_collision.cpp" 1507637974 2453 9c8625e6c537bdb3ef89bb90315acdb1 ""
+  "code/convex_hull_trick.cpp" 1509972061 2993 d756f40202d606c2c410a1d92181b685 ""
   "code/eliminacao_gauss_xor_loteria.cpp" 1508855724 1100 df891419955368d8b466318c958bc9a5 ""
   "code/fft_laboratorio_biotecnologia.cpp" 1508855566 1718 a2c7528774fb172082f891e86cabf4de ""
+  "code/geometria_bloco_preto_branco.cpp" 1509543836 1626 c1258966e697367c92988ee2afd94f9b ""
+  "code/geometria_bolo_do_marcelo.cpp" 1509545689 1822 4f167ef1f0f38a3ac6c455db7f38da95 ""
   "code/line_sweep_k_th_fence_fail.cpp" 1508856369 1626 cea385cc852439c79b97056464e6db45 ""
+  "code/math_pascal.py" 1509445917 508 91d3bc0b6088899d52654859d999a40f ""
+  "code/meet_in_the_middle_caxeiro.cpp" 1509545597 2458 5e511092da15e8e9b3a59da45f31173a ""
   "code/pd_digitos_digits_counting.cpp" 1508856088 1312 cff4743063c18d1a3340b79e030048fe ""
   "code/pd_garcom_internet_trouble.cpp" 1508855329 3496 c2b218bec0cdedc11ff0362a5ef51832 ""
   "code/pd_intervalos_hiperatcive.cpp" 1508856892 967 533a1d285d1c707e5747bbae29371c09 ""
@@ -97,11 +102,11 @@
   "code/segtree_homem_elefante_rato.cpp" 1506519289 2993 c86a2e82de09b67ace1f12bb0e08e02b ""
   "code/suffix_array_growing_strings.cpp" 1508339079 4243 84e4efcc6c5d222f063282ae11ca3299 ""
   "code/trie_cellphone_typing.cpp" 1508856156 823 0ff774536c1a23658135501ad23f9d02 ""
-  "contents.tex" 1508858381 2021 95c10e7cbc8d5c1a412d0a0092cf12a9 ""
-  "notebook.aux" 1508858387 4598 128d092ca16ef272c9bec6167621eadd ""
-  "notebook.out" 1508858387 1202 2a5df3f883d1115a77c9c271717f1bed ""
+  "contents.tex" 1509972089 2633 b1c99dbcf294d1dc19689dac275817ab ""
+  "notebook.aux" 1509972098 5824 dd35559d99b3ebdb5579dbd1a7b1bf6c ""
+  "notebook.out" 1509972098 1569 7aced13cea6c926b43b4857cff756959 ""
   "notebook.tex" 1508244012 3653 3c14bb4a44b3fc559a0768439ed0cf47 ""
-  "notebook.toc" 1508858387 1468 5c84692620e01db68768c2c538a8fad2 ""
+  "notebook.toc" 1509972098 1919 8c7f6fca6eacc76bbc0759f29e76a5eb ""
   (generated)
   "notebook.aux"
   "notebook.log"

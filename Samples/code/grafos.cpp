@@ -70,11 +70,15 @@ struct Grafo
             if (it->id == b)
             {
                 it->dist += dif;
+
                 if (it->dist == 0)
                     g[a].erase(it);
-                break;
+
+                return;
             }
         }
+
+        addAresta(a, b, dif);
     }
 
     ll dijkstra(int s, int d)

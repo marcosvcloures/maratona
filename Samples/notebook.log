@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.15)  4 NOV 2017 17:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.15)  6 NOV 2017 17:31
 entering extended mode
 **./notebook.tex
 (notebook.tex
@@ -925,8 +925,8 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 165.
  ) 
 Here is how much of TeX's memory you used:
- 14386 strings out of 493323
- 203976 string characters out of 3139040
+ 14390 strings out of 493323
+ 204044 string characters out of 3139040
  597011 words of memory out of 3000000
  13938 multiletter control sequences out of 15000+200000
  55423 words of font info for 56 fonts, out of 3000000 for 9000
@@ -938,9 +938,9 @@ iles/MiKTeX 2.9/fonts/enc/dvips/droid/droid-01.enc}{C:/Program Files/MiKTeX 2.9
 blic/droid/DroidSansMono.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/dr
 oid/DroidSansMono.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/nowacki/iwona/iw
 onab.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/nowacki/iwona/iwonar.pfb>
-Output written on notebook.pdf (49 pages, 707364 bytes).
+Output written on notebook.pdf (49 pages, 707877 bytes).
 PDF statistics:
- 4858 PDF objects out of 5155 (max. 8388607)
- 3731 named destinations out of 4296 (max. 500000)
+ 4863 PDF objects out of 5155 (max. 8388607)
+ 3735 named destinations out of 4296 (max. 500000)
  385 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -159,80 +159,11 @@ OUTPUT notebook.toc
 INPUT contents.tex
 INPUT C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/nowacki/iwona/ec-iwonab.tfm
-INPUT code/coloracao_galaxy_collision.cpp
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/listings/lstlang1.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/listings/lstlang1.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/listings/lstlang1.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/listings/lstlang1.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/listings/lstmisc.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/listings/lstmisc.sty
+INPUT code/cht.pdf
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-t1.tfm
-INPUT code/coloracao_galaxy_collision.cpp
-INPUT code/coloracao_galaxy_collision.cpp
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/nowacki/iwona/ec-iwonar.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/public/droid/DroidSansMono-t1.vf
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-01.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-02.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-03.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-04.tfm
-INPUT code/eliminacao_gauss_xor_loteria.cpp
-INPUT code/eliminacao_gauss_xor_loteria.cpp
-INPUT code/eliminacao_gauss_xor_loteria.cpp
-INPUT code/fft_laboratorio_biotecnologia.cpp
-INPUT code/fft_laboratorio_biotecnologia.cpp
-INPUT code/fft_laboratorio_biotecnologia.cpp
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-Slanted-t1.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/public/droid/DroidSansMono-Slanted-t1.vf
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-Slanted-01.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-Slanted-02.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-Slanted-03.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-Slanted-04.tfm
-INPUT code/line_sweep_k_th_fence_fail.cpp
-INPUT code/line_sweep_k_th_fence_fail.cpp
-INPUT code/line_sweep_k_th_fence_fail.cpp
-INPUT code/pd_digitos_digits_counting.cpp
-INPUT code/pd_digitos_digits_counting.cpp
-INPUT code/pd_digitos_digits_counting.cpp
-INPUT code/pd_garcom_internet_trouble.cpp
-INPUT code/pd_garcom_internet_trouble.cpp
-INPUT code/pd_garcom_internet_trouble.cpp
-INPUT code/pd_intervalos_hiperatcive.cpp
-INPUT code/pd_intervalos_hiperatcive.cpp
-INPUT code/pd_intervalos_hiperatcive.cpp
-INPUT code/pd_minmax_bottomup_cartoes.cpp
-INPUT code/pd_minmax_bottomup_cartoes.cpp
-INPUT code/pd_minmax_bottomup_cartoes.cpp
-INPUT code/pd_segtree_keep_it_energized.cpp
-INPUT code/pd_segtree_keep_it_energized.cpp
-INPUT code/pd_segtree_keep_it_energized.cpp
-INPUT code/pd_string_guardioes_curiosos.cpp
-INPUT code/pd_string_guardioes_curiosos.cpp
-INPUT code/pd_string_guardioes_curiosos.cpp
-INPUT code/pd_string_palindromo.cpp
-INPUT code/pd_string_palindromo.cpp
-INPUT code/pd_string_palindromo.cpp
-INPUT code/segtree_acordes_intergalaticos.cpp
-INPUT code/segtree_acordes_intergalaticos.cpp
-INPUT code/segtree_acordes_intergalaticos.cpp
-INPUT code/segtree_homem_elefante_rato.cpp
-INPUT code/segtree_homem_elefante_rato.cpp
-INPUT code/segtree_homem_elefante_rato.cpp
-INPUT code/suffix_array_growing_strings.cpp
-INPUT code/suffix_array_growing_strings.cpp
-INPUT code/suffix_array_growing_strings.cpp
-INPUT code/trie_cellphone_typing.cpp
-INPUT code/trie_cellphone_typing.cpp
-INPUT code/trie_cellphone_typing.cpp
-INPUT notebook.aux
-INPUT ./notebook.out
-INPUT ./notebook.out
-INPUT C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/droid/droid-03.enc
-INPUT C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/droid/droid-01.enc
+INPUT code/cht.pdf
+INPUT code/cht.pdf
 INPUT C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/iwona/ec-iwona.enc
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/droid/DroidSansMono.pfb
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/droid/DroidSansMono.pfb
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/droid/DroidSansMono.pfb
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/droid/DroidSansMono.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/nowacki/iwona/iwonab.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/nowacki/iwona/iwonab.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/nowacki/iwona/iwonar.pfb

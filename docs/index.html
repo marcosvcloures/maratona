@@ -602,11 +602,15 @@ struct Grafo
             if (it-&gt;id == b)
             {
                 it-&gt;dist += dif;
+
                 if (it-&gt;dist == 0)
                     g[a].erase(it);
-                break;
+
+                return;
             }
         }
+
+        addAresta(a, b, dif);
     }
 
     ll dijkstra(int s, int d)
