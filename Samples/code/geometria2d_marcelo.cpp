@@ -296,9 +296,9 @@ void interSegmentoSegmento(const vector<Segmento> &s, vector<Vec2> &p) {
 
 //----------------------------------------------------------------------- OUTROS
 // Retorna o quadrado da menor distancia entre pares de pontos do conjunto p
-// Atribui o par mais proximo a p1 e p2 e seus indices a id1 e id2
+// Atribui o par mais proximo a p1 e p2
 // O(nLogn) (Sweep line)
-T parMaisProximo2(vector<Vec2> &p, Vec2 &p1, Vec2 &p2, int &id1, int &id2) {
+T parMaisProximo2(vector<Vec2> &p, Vec2 &p1, Vec2 &p2) {
 	sort(p.begin(), p.end(), cmpMenorXY);
 
 	set<Vec2> box;
@@ -315,15 +315,11 @@ T parMaisProximo2(vector<Vec2> &p, Vec2 &p1, Vec2 &p2, int &id1, int &id2) {
 		for(auto it = box.lower_bound(Vec2(p[i].x - best, p[i].y - best));
 			it != box.end() && p[i].y + best >= it->y; ++it) {
 
-// id2 = distance(it, box.begin());
-
 			dist = (p[i] - *it).norma2();
 			if(dist < best) {
 				best = dist;
 				p1 = p[i];
 				p2 = *it;
-				id1 = i;
-				// id2 = distance(it, box.begin());
 			}
 		}
 
@@ -417,7 +413,7 @@ int main() {
     	<< interSegmentoSegmento(Segmento(points[4], points[5]), Segmento(points[6], points[7]), pivot) << " " << pivot << "\n"
     	<< interSegmentoSegmento(Segmento(points[3], points[4]), Segmento(points[0], points[6]), pivot) << " " << pivot << endl;
 */
-
+/*
 // PAR MAIS PROXIMO
     Vec2 p1, p2;
     int id1, id2;
@@ -425,9 +421,9 @@ int main() {
     for(auto it : points3)
     	p.push_back(it);
 
-	cout << sqrt(parMaisProximo2(p, p1, p2, id1, id2)) << endl;
-	cout << p1 << " " << p2 << " " << id1 << " " << id2 << endl;	
-
+	cout << sqrt(parMaisProximo2(p, p1, p2)) << endl;
+	cout << p1 << " " << p2 << " " << endl;
+*/
 /*
 // CASCOS CONVEXOS
     Polygon p, ch;
