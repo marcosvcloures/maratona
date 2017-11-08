@@ -169,7 +169,7 @@ struct Grafo
             for (v = d; v != s; v = u)
             {
                 u = g2.pais[v];
-                path = min(path, valAresta(u, v));
+                path = min(path, g2.valAresta(u, v));
             }
 
             for (v = d; v != s; v = u)

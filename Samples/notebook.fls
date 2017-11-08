@@ -174,31 +174,22 @@ INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-01.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-02.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-03.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-04.tfm
-INPUT code/euclides_extended.cpp
-INPUT code/euclides_extended.cpp
-INPUT code/euclides_extended.cpp
-INPUT code/mdc.cpp
-INPUT code/mdc.cpp
-INPUT code/mdc.cpp
-INPUT code/mmc.cpp
-INPUT code/mmc.cpp
-INPUT code/mmc.cpp
-INPUT code/pollard_rho.cpp
-INPUT code/pollard_rho.cpp
-INPUT code/pollard_rho.cpp
-INPUT code/fft.cpp
-INPUT code/fft.cpp
-INPUT code/fft.cpp
+INPUT code/math_geral.cpp
+INPUT code/math_geral.cpp
+INPUT code/math_geral.cpp
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-Slanted-t1.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/nowacki/iwona/ec-iwonar.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/public/droid/DroidSansMono-Slanted-t1.vf
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-Slanted-01.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-Slanted-02.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-Slanted-03.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/droid/DroidSansMono-Slanted-04.tfm
-INPUT code/matriz.cpp
-INPUT code/matriz.cpp
-INPUT code/matriz.cpp
+INPUT code/pollard_rho.cpp
+INPUT code/pollard_rho.cpp
+INPUT code/pollard_rho.cpp
+INPUT code/fft.cpp
+INPUT code/fft.cpp
+INPUT code/fft.cpp
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/nowacki/iwona/ec-iwonar.tfm
 INPUT code/qtdPrimos.cpp
 INPUT code/qtdPrimos.cpp
 INPUT code/qtdPrimos.cpp
@@ -268,6 +259,9 @@ INPUT code/geometria.cpp
 INPUT code/geometria_marcelo.cpp
 INPUT code/geometria_marcelo.cpp
 INPUT code/geometria_marcelo.cpp
+INPUT code/matriz.cpp
+INPUT code/matriz.cpp
+INPUT code/matriz.cpp
 INPUT code/wavelet.cpp
 INPUT code/wavelet.cpp
 INPUT code/wavelet.cpp

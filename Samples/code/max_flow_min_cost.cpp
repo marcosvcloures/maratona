@@ -1,4 +1,4 @@
-int INFINITO = 1 << 30, MAXM = 10000, MAXN = 1000;
+const int MAXM = 10000, MAXN = 1000;
 
 struct Node
 {
@@ -50,9 +50,9 @@ class MinCost
                     }
                 }
             }
-            if (dis[t] == INFINITO)
+            if (dis[t] == oo)
                 break;
-            flow = INFINITO;
+            flow = oo;
             for (x = t; x != s; x = pre[x])
             {
                 int ri = record[x];
@@ -82,6 +82,6 @@ class MinCost
 // Iniciar um grafo com 200 vértices:
 // g.init(200);
 // Adicionar aresta entre 1 e 2 com custo 10 e capacidade 5
-// g.Addedge(1, 2, 10, 5);
+// g.Addedge(1, 2, 5, 10);
 // Achar o fluxo de custo mínimo entre 1 e 2
 // g.mincost(1, 2);

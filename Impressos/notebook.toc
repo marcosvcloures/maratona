@@ -1,0 +1,32 @@
+\contentsline {section}{\numberline {1}Problemas}{2}{section.1}
+\contentsline {subsection}{\numberline {1.1}coloracao galaxy collision}{2}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}convex hull trick}{4}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}eliminacao gauss xor loteria}{6}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}fft laboratorio biotecnologia}{7}{subsection.1.4}
+\contentsline {subsection}{\numberline {1.5}geometria bloco preto branco}{9}{subsection.1.5}
+\contentsline {subsection}{\numberline {1.6}geometria bolo do marcelo}{10}{subsection.1.6}
+\contentsline {subsection}{\numberline {1.7}geometria fila mineira}{11}{subsection.1.7}
+\contentsline {subsection}{\numberline {1.8}grafo caminho unico entre 2 vertices}{12}{subsection.1.8}
+\contentsline {subsection}{\numberline {1.9}grafo centro arvore junte dois reinos}{14}{subsection.1.9}
+\contentsline {subsection}{\numberline {1.10}grundy jogo da velha 1d}{17}{subsection.1.10}
+\contentsline {subsection}{\numberline {1.11}guloso azeitona do vovo pepe}{19}{subsection.1.11}
+\contentsline {subsection}{\numberline {1.12}line sweep k th fence fail}{20}{subsection.1.12}
+\contentsline {subsection}{\numberline {1.13}math integracao simpson}{21}{subsection.1.13}
+\contentsline {subsection}{\numberline {1.14}math pascal}{22}{subsection.1.14}
+\contentsline {subsection}{\numberline {1.15}meet in the middle caxeiro indoring}{23}{subsection.1.15}
+\contentsline {subsection}{\numberline {1.16}pd digitos digits counting}{25}{subsection.1.16}
+\contentsline {subsection}{\numberline {1.17}pd garcom internet trouble}{27}{subsection.1.17}
+\contentsline {subsection}{\numberline {1.18}pd intervalos hiperatcive}{29}{subsection.1.18}
+\contentsline {subsection}{\numberline {1.19}pd math prob war quarta mineira}{30}{subsection.1.19}
+\contentsline {subsection}{\numberline {1.20}pd minmax bottomup cartoes}{32}{subsection.1.20}
+\contentsline {subsection}{\numberline {1.21}pd segtree keep it energized}{33}{subsection.1.21}
+\contentsline {subsection}{\numberline {1.22}pd string guardioes curiosos}{35}{subsection.1.22}
+\contentsline {subsection}{\numberline {1.23}segtree acordes intergalaticos}{36}{subsection.1.23}
+\contentsline {subsection}{\numberline {1.24}segtree homem elefante rato}{39}{subsection.1.24}
+\contentsline {subsection}{\numberline {1.25}simulacao mochilas nwerc}{41}{subsection.1.25}
+\contentsline {subsection}{\numberline {1.26}string aho crosahick}{43}{subsection.1.26}
+\contentsline {subsection}{\numberline {1.27}string matching game of matchings}{44}{subsection.1.27}
+\contentsline {subsection}{\numberline {1.28}string quebrar em palindromos russa}{45}{subsection.1.28}
+\contentsline {subsection}{\numberline {1.29}string trie dicionario portunhol}{47}{subsection.1.29}
+\contentsline {subsection}{\numberline {1.30}suffix array growing strings}{49}{subsection.1.30}
+\contentsline {subsection}{\numberline {1.31}trie cellphone typing}{52}{subsection.1.31}

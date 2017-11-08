@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.15)  6 NOV 2017 12:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.15)  8 NOV 2017 07:52
 entering extended mode
 **./notebook.tex
 (notebook.tex
@@ -851,119 +851,150 @@ File: omxiwona.fd 2008/07/22 v0.995 font definition file for OMX/iwona (MW)
 (contents.tex [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+)
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 3.
 
-(code/cht.pdf
+(code/coloracao_galaxy_collision.cpp
 
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `utf8'.
+LaTeX Font Warning: Font shape `T1/fdm/b/n' undefined
+(Font)              using `T1/fdm/m/n' instead on input line 1.
 
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.9 xúÌΩÀéÏ∏
-             $∏?_°uJêEI_–¿ ΩËôE@=É®¶7˝˚—‹¸ôyÚTÂ.êeG
-? 
+[2
 
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `utf8'.
+]) [3] (code/convex_hull_trick.cpp
+LaTeX Font Info:    Font shape `T1/fdm/m/it' in size <8> not available
+(Font)              Font shape `T1/fdm/m/sl' tried instead on input line 4.
+ [4
 
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.9 xúÌΩÀéÏ∏$∏?
-                _°uJêEI_–¿ ΩËôE@=É®¶7˝˚—‹¸ôyÚTÂ.êeG
-? 
-! Interruption.
-\GenericError  ...                                
-                                                  \endgroup 
-l.9 xúÌΩÀéÏ∏$∏?
-                _°uJêEI_–¿ ΩËôE@=É®¶7˝˚—‹¸ôyÚTÂ.êeG
-? x
- 
+]) [5]
+(code/eliminacao_gauss_xor_loteria.cpp) [6
+
+]
+(code/fft_laboratorio_biotecnologia.cpp [7
+
+]) [8]
+(code/geometria_bloco_preto_branco.cpp) [9
+
+] (code/geometria_bolo_do_marcelo.cpp) [10
+
+] (code/geometria_fila_mineira.cpp) [11
+
+]
+(code/grafo_caminho_unico_entre_2_vertices.cpp [12
+
+]) [13]
+(code/grafo_centro_arvore_junte_dois_reinos.cpp [14
+
+] [15]) [16]
+(code/grundy_jogo_da_velha_1d.cpp [17
+
+]) [18]
+(code/guloso_azeitona_do_vovo_pepe.cpp) [19
+
+]
+(code/line_sweep_k_th_fence_fail.cpp) [20
+
+]
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(code/math_integracao_simpson.java) [21
+
+]
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(code/math_pascal.py) [22
+
+] (code/meet_in_the_middle_caxeiro_indoring.cpp
+[23
+
+]) [24] (code/pd_digitos_digits_counting.cpp [25
+
+]) [26]
+(code/pd_garcom_internet_trouble.cpp [27
+
+]) [28]
+(code/pd_intervalos_hiperatcive.cpp) [29
+
+]
+(code/pd_math_prob_war_quarta_mineira.cpp [30
+
+]) [31]
+(code/pd_minmax_bottomup_cartoes.cpp) [32
+
+]
+(code/pd_segtree_keep_it_energized.cpp [33
+
+]) [34]
+(code/pd_string_guardioes_curiosos.cpp) [35
+
+]
+(code/segtree_acordes_intergalaticos.cpp [36
+
+] [37]) [38]
+(code/segtree_homem_elefante_rato.cpp [39
+
+]) [40]
+(code/simulacao_mochilas_nwerc.cpp [41
+
+]) [42] (code/string_aho_crosahick.java)
+[43
+
+] (code/string_matching_game_of_matchings.py) [44
+
+]
+(code/string_quebrar_em_palindromos_russa.cpp [45
+
+]) [46]
+(code/string_trie_dicionario_portunhol.cpp [47
+
+]) [48]
+(code/suffix_array_growing_strings.cpp [49
+
+] [50]) [51]
+(code/trie_cellphone_typing.cpp) [52
+
+])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 165.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 165.
+ (notebook.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 165.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 165.
+Package rerunfilecheck Info: File `notebook.out' has not changed.
+(rerunfilecheck)             Checksum: 5A359AF32E33608C1D8B99ED7186702B;2474.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 165.
+ ) 
 Here is how much of TeX's memory you used:
- 9185 strings out of 493323
- 128186 string characters out of 3139040
- 230400 words of memory out of 3000000
- 12585 multiletter control sequences out of 15000+200000
- 49680 words of font info for 46 fonts, out of 3000000 for 9000
+ 13696 strings out of 493323
+ 194274 string characters out of 3139040
+ 505545 words of memory out of 3000000
+ 13894 multiletter control sequences out of 15000+200000
+ 55423 words of font info for 56 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 32i,5n,43p,248b,1070s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{subsection.1.22} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.21} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.20} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.19} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.18} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.17} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.16} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.15} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.14} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.13} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.12} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.11} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.10} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.9} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.8} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.7} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.6} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.5} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.4} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.3} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.2} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.1} has been referenced but does not ex
-ist, replaced by a fixed one
-
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/iwona/ec-iwona.enc}<C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/nowacki/iwona/iwonab.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/nowacki/iwona/iwonar.pfb>
-Output written on notebook.pdf (1 page, 61565 bytes).
+ 40i,6n,68p,421b,1994s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/droid/droid-03.enc}{C:/Program F
+iles/MiKTeX 2.9/fonts/enc/dvips/droid/droid-01.enc}{C:/Program Files/MiKTeX 2.9
+/fonts/enc/dvips/iwona/ec-iwona.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/droid/DroidSansMono.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/dr
+oid/DroidSansMono.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/nowacki/iwona/iw
+onab.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/nowacki/iwona/iwonar.pfb>
+Output written on notebook.pdf (52 pages, 592577 bytes).
 PDF statistics:
- 141 PDF objects out of 1000 (max. 8388607)
- 25 named destinations out of 1000 (max. 500000)
- 185 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4060 PDF objects out of 4296 (max. 8388607)
+ 3111 named destinations out of 3580 (max. 500000)
+ 257 words of extra memory for PDF output out of 10000 (max. 10000000)
 

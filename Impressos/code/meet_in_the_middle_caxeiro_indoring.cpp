@@ -13,17 +13,17 @@ int para1, para2;
 
 bool achei;
 
-map<int, set<long long>[15]> puto;
+unordered_map<int, unordered_map<long long, int>[15]> puto;
 
 int vet[20];
 
-long long elevado(int n) {
-	long long aux = 1;
+int preCP[20];
 
-	for(int i=0; i<n; i++)
-		aux *= 2;
+int elevado() {
+	preCP[0] = 1;
 
-	return aux;
+	for(int i=1; i<20; i++)
+		preCP[i] = preCP[i-1] * 2;
 }
 
 void combinacao(int val, int pos) {
@@ -33,14 +33,14 @@ void combinacao(int val, int pos) {
 	if(pos == para1) {
 		int jaSei = 0;
 	    for(int i=0; i<pos; i++)
-	    	jaSei = jaSei | elevado(vet[i]);
+	    	jaSei = jaSei | preCP[vet[i]];
 	    
 	    
 	    do {
 	        dist_total = mat_adj[0][vet[0]];
 	        for(int i=1; i<pos; i++)
 	            dist_total += mat_adj[vet[i]][vet[i-1]];
-		    puto[jaSei][vet[pos-1]].insert(dist_total);
+		    puto[jaSei][vet[pos-1]][dist_total] = 1;
 		} while(next_permutation(vet, vet+pos));
 		
 		return;
@@ -60,7 +60,7 @@ void combinacao2(int val, int pos) {
 	    int jaSei = 0;
 	    for(int i=1; i<n; i++) {
 	    	if(!visitado_combinacao[i]) 
-	        	jaSei = jaSei | elevado(i);
+	        	jaSei = jaSei | preCP[i];
 	    }
 	    
 	    do {
@@ -70,7 +70,7 @@ void combinacao2(int val, int pos) {
 
 		    for(int it=1; it<n; it++) {
 	    		if(!visitado_combinacao[it]) 
-					if (puto[jaSei][it].find(l-dist_total-mat_adj[it][vet[pos-1]]) != puto[jaSei][it].end()) {
+					if (puto[jaSei][it].count(l-dist_total-mat_adj[it][vet[pos-1]]) != 0) {
 						puts("possible");
 						exit(0);
 					}
@@ -91,6 +91,7 @@ void combinacao2(int val, int pos) {
 
 
 int main() {
+		elevado();
 	 cin >> n >> l;
 	    if(n%2 == 0) {
 	        para1 = n/2.0-1;

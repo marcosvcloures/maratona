@@ -1,48 +1,46 @@
 \BOOKMARK [1][-]{section.1}{First things first}{}% 1
 \BOOKMARK [2][-]{subsection.1.1}{Includes}{section.1}% 2
 \BOOKMARK [1][-]{section.2}{Matem\341tica}{}% 3
-\BOOKMARK [2][-]{subsection.2.1}{Algoritmo de euclides extendido}{section.2}% 4
-\BOOKMARK [2][-]{subsection.2.2}{M\341ximo divisor comum}{section.2}% 5
-\BOOKMARK [2][-]{subsection.2.3}{M\355nimo m\372ltiplo comum}{section.2}% 6
-\BOOKMARK [2][-]{subsection.2.4}{Algoritmo de Pollard Rho}{section.2}% 7
-\BOOKMARK [2][-]{subsection.2.5}{Transformada r\341pida de Fourrier}{section.2}% 8
-\BOOKMARK [2][-]{subsection.2.6}{Matrizes}{section.2}% 9
-\BOOKMARK [2][-]{subsection.2.7}{Quantidade de fatores primos de um n\372mero}{section.2}% 10
-\BOOKMARK [2][-]{subsection.2.8}{Fatora\347\343o em n\372meros primos}{section.2}% 11
-\BOOKMARK [2][-]{subsection.2.9}{Modpow}{section.2}% 12
-\BOOKMARK [2][-]{subsection.2.10}{Quantidade de coprimos.}{section.2}% 13
-\BOOKMARK [2][-]{subsection.2.11}{M\341ximo e m\355nimo de fun\347\365es \(Busca ternaria\)}{section.2}% 14
-\BOOKMARK [2][-]{subsection.2.12}{Todos divisores de um n\372mero}{section.2}% 15
-\BOOKMARK [2][-]{subsection.2.13}{Crivo de Erat\363stenes segmentado}{section.2}% 16
-\BOOKMARK [1][-]{section.3}{Grafos}{}% 17
-\BOOKMARK [2][-]{subsection.3.1}{Grafos}{section.3}% 18
-\BOOKMARK [2][-]{subsection.3.2}{Todas as pontes de um grafo}{section.3}% 19
-\BOOKMARK [2][-]{subsection.3.3}{Isomorfismo de \341rvores}{section.3}% 20
-\BOOKMARK [2][-]{subsection.3.4}{Matching m\341ximo em grafo bipartido}{section.3}% 21
-\BOOKMARK [2][-]{subsection.3.5}{Algoritmo h\372ngaro}{section.3}% 22
-\BOOKMARK [2][-]{subsection.3.6}{Isomorfismo de \341rvores para a biblioteca de grafos.}{section.3}% 23
-\BOOKMARK [2][-]{subsection.3.7}{Fluxo maximo de custo minimo}{section.3}% 24
-\BOOKMARK [1][-]{section.4}{Strings}{}% 25
-\BOOKMARK [2][-]{subsection.4.1}{Suffix array}{section.4}% 26
-\BOOKMARK [2][-]{subsection.4.2}{Algoritmo Z}{section.4}% 27
-\BOOKMARK [2][-]{subsection.4.3}{Strings em Arvore}{section.4}% 28
-\BOOKMARK [2][-]{subsection.4.4}{Split strings}{section.4}% 29
-\BOOKMARK [1][-]{section.5}{Geometria}{}% 30
-\BOOKMARK [2][-]{subsection.5.1}{Linha de eventos radial}{section.5}% 31
-\BOOKMARK [2][-]{subsection.5.2}{KD-Tree para pares mais pr\363ximos em O\(log\(n\)\)}{section.5}% 32
-\BOOKMARK [2][-]{subsection.5.3}{Geometria \(reduzido\)}{section.5}% 33
-\BOOKMARK [2][-]{subsection.5.4}{Geometria \(grande\)}{section.5}% 34
-\BOOKMARK [2][-]{subsection.5.5}{Geometria \(Marcelo\)}{section.5}% 35
-\BOOKMARK [1][-]{section.6}{Estruturas de dados etc}{}% 36
-\BOOKMARK [2][-]{subsection.6.1}{Wavelet-tree}{section.6}% 37
-\BOOKMARK [2][-]{subsection.6.2}{Seg-tree 2D}{section.6}% 38
-\BOOKMARK [2][-]{subsection.6.3}{Seg-tree}{section.6}% 39
-\BOOKMARK [2][-]{subsection.6.4}{Mergesort}{section.6}% 40
-\BOOKMARK [2][-]{subsection.6.5}{Algoritmo de MO \(queries offline\)}{section.6}% 41
-\BOOKMARK [2][-]{subsection.6.6}{Union-find}{section.6}% 42
-\BOOKMARK [2][-]{subsection.6.7}{Arvore para achar o K-esimo termo}{section.6}% 43
-\BOOKMARK [2][-]{subsection.6.8}{Indice de inversao \(n log n\)}{section.6}% 44
-\BOOKMARK [1][-]{section.7}{Python}{}% 45
-\BOOKMARK [2][-]{subsection.7.1}{Matrizes}{section.7}% 46
-\BOOKMARK [2][-]{subsection.7.2}{Modpow}{section.7}% 47
-\BOOKMARK [2][-]{subsection.7.3}{Busca binaria}{section.7}% 48
+\BOOKMARK [2][-]{subsection.2.1}{Algoritmos gerais de matematica}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.2}{Algoritmo de Pollard Rho}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.3}{Transformada r\341pida de Fourrier}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.4}{Quantidade de fatores primos de um n\372mero}{section.2}% 7
+\BOOKMARK [2][-]{subsection.2.5}{Fatora\347\343o em n\372meros primos}{section.2}% 8
+\BOOKMARK [2][-]{subsection.2.6}{Modpow}{section.2}% 9
+\BOOKMARK [2][-]{subsection.2.7}{Quantidade de coprimos.}{section.2}% 10
+\BOOKMARK [2][-]{subsection.2.8}{M\341ximo e m\355nimo de fun\347\365es \(Busca ternaria\)}{section.2}% 11
+\BOOKMARK [2][-]{subsection.2.9}{Todos divisores de um n\372mero}{section.2}% 12
+\BOOKMARK [2][-]{subsection.2.10}{Crivo de Erat\363stenes segmentado}{section.2}% 13
+\BOOKMARK [1][-]{section.3}{Grafos}{}% 14
+\BOOKMARK [2][-]{subsection.3.1}{Grafos}{section.3}% 15
+\BOOKMARK [2][-]{subsection.3.2}{Todas as pontes de um grafo}{section.3}% 16
+\BOOKMARK [2][-]{subsection.3.3}{Isomorfismo de \341rvores}{section.3}% 17
+\BOOKMARK [2][-]{subsection.3.4}{Matching m\341ximo em grafo bipartido}{section.3}% 18
+\BOOKMARK [2][-]{subsection.3.5}{Algoritmo h\372ngaro}{section.3}% 19
+\BOOKMARK [2][-]{subsection.3.6}{Isomorfismo de \341rvores para a biblioteca de grafos.}{section.3}% 20
+\BOOKMARK [2][-]{subsection.3.7}{Fluxo maximo de custo minimo}{section.3}% 21
+\BOOKMARK [1][-]{section.4}{Strings}{}% 22
+\BOOKMARK [2][-]{subsection.4.1}{Suffix array}{section.4}% 23
+\BOOKMARK [2][-]{subsection.4.2}{Algoritmo Z}{section.4}% 24
+\BOOKMARK [2][-]{subsection.4.3}{Strings em Arvore}{section.4}% 25
+\BOOKMARK [2][-]{subsection.4.4}{Split strings}{section.4}% 26
+\BOOKMARK [1][-]{section.5}{Geometria}{}% 27
+\BOOKMARK [2][-]{subsection.5.1}{Linha de eventos radial}{section.5}% 28
+\BOOKMARK [2][-]{subsection.5.2}{KD-Tree para pares mais pr\363ximos em O\(log\(n\)\)}{section.5}% 29
+\BOOKMARK [2][-]{subsection.5.3}{Geometria \(reduzido\)}{section.5}% 30
+\BOOKMARK [2][-]{subsection.5.4}{Geometria \(grande\)}{section.5}% 31
+\BOOKMARK [2][-]{subsection.5.5}{Geometria \(Marcelo\)}{section.5}% 32
+\BOOKMARK [1][-]{section.6}{Estruturas de dados etc}{}% 33
+\BOOKMARK [2][-]{subsection.6.1}{Matrizes}{section.6}% 34
+\BOOKMARK [2][-]{subsection.6.2}{Wavelet-tree}{section.6}% 35
+\BOOKMARK [2][-]{subsection.6.3}{Seg-tree 2D}{section.6}% 36
+\BOOKMARK [2][-]{subsection.6.4}{Seg-tree}{section.6}% 37
+\BOOKMARK [2][-]{subsection.6.5}{Mergesort}{section.6}% 38
+\BOOKMARK [2][-]{subsection.6.6}{Algoritmo de MO \(queries offline\)}{section.6}% 39
+\BOOKMARK [2][-]{subsection.6.7}{Union-find}{section.6}% 40
+\BOOKMARK [2][-]{subsection.6.8}{Arvore para achar o K-esimo termo}{section.6}% 41
+\BOOKMARK [2][-]{subsection.6.9}{Indice de inversao \(n log n\)}{section.6}% 42
+\BOOKMARK [1][-]{section.7}{Python}{}% 43
+\BOOKMARK [2][-]{subsection.7.1}{Matrizes}{section.7}% 44
+\BOOKMARK [2][-]{subsection.7.2}{Modpow}{section.7}% 45
+\BOOKMARK [2][-]{subsection.7.3}{Busca binaria}{section.7}% 46

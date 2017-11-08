@@ -7,12 +7,9 @@
 includes.cpp	Includes
 
 [Matemática]
-euclides_extended.cpp	Algoritmo de euclides extendido
-mdc.cpp	Máximo divisor comum
-mmc.cpp	Mínimo múltiplo comum
+math_geral.cpp	Algoritmos gerais de matematica
 pollard_rho.cpp	Algoritmo de Pollard Rho
 fft.cpp	Transformada rápida de Fourrier
-matriz.cpp	Matrizes
 qtdPrimos.cpp	Quantidade de fatores primos de um número
 prime_factors.cpp	Fatoração em números primos
 modpow.cpp	Modpow
@@ -45,6 +42,7 @@ geometria.cpp	Geometria (grande)
 geometria_marcelo.cpp	Geometria (Marcelo)
 
 [Estruturas de dados etc]
+matriz.cpp	Matrizes
 wavelet.cpp	Wavelet-tree
 segtree2d.cpp	Seg-tree 2D 
 seg_tree.cpp	Seg-tree

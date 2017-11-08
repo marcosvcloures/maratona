@@ -51,7 +51,8 @@ def get_tex(sections):
         for (filename, subsection_name) in subsections:
             tex += '\\subsection{%s}\n' % texify(subsection_name)
             tex += '\\raggedbottom\\lstinputlisting[style=%s]{%s/%s}\n' % (get_style(filename), code_dir, filename)
-            tex += '\\hrulefill\n'
+            #tex += '\\hrulefill\n'
+            tex += '\\clearpage\n'
         tex += '\\clearpage\n'
     return tex
 
